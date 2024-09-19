@@ -21,8 +21,8 @@ This is an audio deconvolution program, which is specially designed for the [Hel
 # Installation instructions, including any requirements 
 
 In the spirit of open science, we include all the program in this resipotory, except for the trained model due to its large size. In order to distribute the trained model, we will also compressed all necessary files into zip files in order to simplify the installation and the usesage of the program. 
-- Python 3.9 is required for the main program `main.py`; but 
-- Python 3.8 is required for the model training program (including `data_preprocessing.py`) with requirements in `training_requirement.txt` and the testing program `evaluate.py` with requirements in `preprocessing_evaluate_requirement.txt`. 
+- Python 3.9 is required for the main program `main.py` with requirements in `main_requirements.txt`; but 
+- Python 3.8 is required for the model training program (including `data_preprocessing.py`) with requirements in `training_requirements.txt` and the testing program `evaluate.py` with requirements in `preprocessing_evaluate_requirements.txt`. 
 
 > [!WARNING]
 > It is strongly recommended to open different enviromnent to prevent the incompability of python packages. 
