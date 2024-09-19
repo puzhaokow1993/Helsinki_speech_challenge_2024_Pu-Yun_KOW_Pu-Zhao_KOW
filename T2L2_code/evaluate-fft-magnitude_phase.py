@@ -9,11 +9,11 @@ Created on Tue Sep  3 19:18:23 2024
 
 import numpy as np
 
-data_folder='Task_1_Level_1'
+data_folder='Task_2_Level_2'
 path = r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s'%data_folder
 
 model_name = 'ConvAE'
-pred_data = np.load(r'%s\%s\pred_data-fft3.npy' % (path, model_name)).astype(np.int16)
+pred_data = np.load(r'%s\%s\pred_data-magnitude_phase.npy' % (path, model_name)).astype(np.int16)
 
 #%% read clean and noisy file into int
 
@@ -39,9 +39,9 @@ def sampling(audio_dir):
     
     return audio_int
 
-noisy_dir='D:\important\Hensinki_Speech_Challenge_2024\Evaluate_via_deepspeech\Task_1_Level_1\Recorded'
+noisy_dir=r'D:\important\Hensinki_Speech_Challenge_2024\my_project\raw_dataset\%s\Recorded'%data_folder
 noisy_audio_int=sampling(noisy_dir)
-clean_dir='D:\important\Hensinki_Speech_Challenge_2024\Evaluate_via_deepspeech\Task_1_Level_1\Clean'
+clean_dir=r'D:\important\Hensinki_Speech_Challenge_2024\my_project\raw_dataset\%s\Clean'%data_folder
 clean_audio_int=sampling(clean_dir)
 
 #%% data processing function
@@ -158,23 +158,24 @@ model = Model(model_path)
 
 #%% read file name
 
-clean_dir='D:\important\Hensinki_Speech_Challenge_2024\Evaluate_via_deepspeech\%s\Clean'%data_folder
+clean_dir=r'D:\important\Hensinki_Speech_Challenge_2024\my_project\raw_dataset\%s\Clean'%data_folder
 audio_files = [f for f in os.listdir(clean_dir) if f.endswith('.wav')]
 
 #%% evaluate the performance and save result
 raw_path = r'D:\important\Hensinki_Speech_Challenge_2024\my_project\raw_dataset\%s'%data_folder
 real_words= pd.read_csv(r"%s\%s_text_samples.txt"%(raw_path,data_folder), delimiter='\t',header=None)
+indices = np.load(r'%s\indices.npy' %(path))
 
 full_result = []
-for i in range(pred_data.shape[0]):
+for i in range(len(indices)):
     print(i)
     
-    original_text = real_words.iloc[i,1]
+    original_text = real_words.iloc[int(indices[i,2]),1]
     transcribed_text = model.stt(pred_data[i,:len(noisy_audio_int[i])])
     print(original_text, transcribed_text)
     
     metrics = calculate_metrics(original_text, transcribed_text, transformation)
-    result = {'Filename': audio_files[i], 'Original Text': original_text, 'Transcribed Text': transcribed_text}
+    result = {'Filename': audio_files[int(indices[i,2])], 'Original Text': original_text, 'Transcribed Text': transcribed_text}
     if metrics:
         result.update(metrics)
 
@@ -182,7 +183,7 @@ for i in range(pred_data.shape[0]):
 
 #%%
 df = pd.DataFrame(full_result)
-df.to_csv(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\result\%s\%s_resultt-fft3.csv"%(data_folder,model_name), index=False)
+df.to_csv(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\result\%s\%s_resultt-magnitude_phase.csv"%(data_folder,model_name), index=False)
 
 
 
