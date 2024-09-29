@@ -17,87 +17,89 @@ from tensorflow.keras import backend as K
 import tensorflow as tf
 from scipy import stats
 
-os.chdir(os.path.dirname(__file__))
+# os.chdir(os.path.dirname(__file__))
 
 #%%
-def main(input_wav_dir, task_ID, stage, phase="input"):
+def main(args, phase="input"):
+    # def main(input_wav_dir, task_ID, stage, phase="input"):
+
     data_folders=['Task_1_Level_1','Task_1_Level_2','Task_1_Level_3','Task_1_Level_4',
                   'Task_1_Level_5','Task_1_Level_6','Task_1_Level_7','Task_2_Level_1',
                   'Task_2_Level_2','Task_2_Level_3','Task_3_Level_1','Task_3_Level_2']
     K.clear_session()
     sr=16000; batch_size=8
     
-    if task_ID =='T1L1': 
+    if args.task_ID =='T1L1': 
         task_level=data_folders[0]
         max_len=233340
-        pred_data=ConvAEfft(input_wav_dir, stage, task_level,task_ID, batch_size, sr, max_len)          
+        pred_data=ConvAEfft(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len)          
         return pred_data
     
-    elif task_ID =='T1L2': 
+    elif args.task_ID =='T1L2': 
         task_level=data_folders[1]
         max_len=240252
-        pred_data=ConvAEfft(input_wav_dir, stage, task_level,task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len)
         return pred_data
     
-    elif task_ID =='T1L3':  
+    elif args.task_ID =='T1L3':  
         task_level=data_folders[2]
         max_len=223740
-        pred_data=ConvAEfft(input_wav_dir, stage, task_level,task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len)
         return pred_data
     
-    elif task_ID =='T1L4': 
+    elif args.task_ID =='T1L4': 
         task_level=data_folders[3]
         max_len=250236
         underestimation_penalty, overestimation_penalty = 2.0, 1.0  
-        pred_data=ConvAEfft2(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len,underestimation_penalty, overestimation_penalty, compressed=1)
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len,underestimation_penalty, overestimation_penalty, compressed=1)
         return pred_data
 
-    elif task_ID =='T1L5':     
+    elif args.task_ID =='T1L5':     
         task_level=data_folders[4]
         max_len=220668
-        pred_data=ConvAEfft2(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len, compressed=0)
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
-    elif task_ID =='T1L6': 
+    elif args.task_ID =='T1L6': 
         task_level=data_folders[5]
         max_len=238716
-        pred_data=ConvAEfft2(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len)       
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)       
         return pred_data
 
-    elif task_ID =='T1L7': 
+    elif args.task_ID =='T1L7': 
         task_level=data_folders[6]
         max_len=246012
-        pred_data=ConvAEfft2(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len)       
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)       
         return pred_data
 
-    elif task_ID =='T2L1':   
+    elif args.task_ID =='T2L1':   
         task_level=data_folders[7]
         max_len=291517
-        pred_data=ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
         return pred_data
 
-    elif task_ID =='T2L2':     
+    elif args.task_ID =='T2L2':     
         task_level=data_folders[8]
         max_len=301117
-        pred_data=ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
         return pred_data
 
-    elif task_ID =='T2L3':     
+    elif args.task_ID =='T2L3':     
         task_level=data_folders[9]
         max_len=296893
-        pred_data=ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
         return pred_data
 
-    elif task_ID =='T3L1':     
+    elif args.task_ID =='T3L1':     
         task_level=data_folders[10]
         max_len=301117
-        pred_data=ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
         return pred_data
     
-    elif task_ID =='T3L2':     
+    elif args.task_ID =='T3L2':     
         task_level=data_folders[11]
         max_len=296893
-        pred_data=ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
         return pred_data
 
 def ConvAEfft(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len):
@@ -468,7 +470,7 @@ if __name__ == '__main__':
     gc.collect()
     
     parser = argparse.ArgumentParser(description="Denoise audio files")
-    parser.add_argument('--audio_dir', type=str, required=True, help='Directory containing audio files')
+    parser.add_argument('--input_wav_dir', type=str, required=True, help='Directory containing audio files')
     parser.add_argument('--task_ID', type=str, required=True, help='Task ID')
     parser.add_argument('--stage', type=str, default="testing", help='stage')
 
