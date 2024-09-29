@@ -42,7 +42,7 @@ The main function `main.py` can be called (via Anaconda prompt) with format `pyt
 
 # An illustration of some example results 
 
-We include the results (output denoised wav files) in the folder `output_denoise` above. 
+We include the results (output denoised wav files) in the folder `output_denoise` above, and we also include the transcripted text csv files via `evaluate.py` in the folder `results` above as well. 
 
 > [!NOTE]
 > Here the mean characater error rate (CER) are evaluated using `evaluate.py` provided by the organizer. We do not use it to train our model according to the [rules](https://blogs.helsinki.fi/helsinki-speech-challenge/rules/). 
