@@ -25,23 +25,24 @@ In the spirit of open science, we include all the program in this resipotory.
 
 
 > [!WARNING]
-> It is strongly recommended to open different enviromnent to prevent the incompability of python packages. 
-
-- [ ] Pu-Zhao comments: make sure the program can be run by just unzip the zip file. 
+> It is strongly recommended to open different (Anaconda) enviromnent to prevent the incompability of python packages. 
 
 # Usage instructions 
 
-- [ ] Pu-Zhao comments: TBA 
+The main function `main.py` can be called (via Anaconda prompt) with format `python main.py --input_wav_dir "path/to/files" --task_ID "xxxx"`. Here xxxx can be either `T1L1`, `T1L2`, `T1L3`, `T1L4`, `T1L5`, `T1L6`, `T1L7`, `T2L1`, `T2L2`, `T2L3`, `T3L1` or `T3L2`. 
 
 > [!IMPORTANT] 
 > The programs only handle 16-bit 16kHz audio files, in `.wav` format.
 
 > [!IMPORTANT] 
-> The name of the directories/folders must not be changed. 
+> The name of the directories/folders must not be changed.
+
+> [!IMPORTANT] 
+> If the program halt after importing `tensor flow` and `cuda`, press `enter` to continue, and the command promt will print the file names of the output denoised wav files.  
 
 # An illustration of some example results 
 
-- [ ] Pu-Zhao comments: TBA (put some audio files for demonstration, and also show the mean CER)
+We include the results (output denoised wav files) in the folder `output_denoise` above. 
 
 > [!NOTE]
 > Here the mean characater error rate (CER) are evaluated using `evaluate.py` provided by the organizer. We do not use it to train our model according to the [rules](https://blogs.helsinki.fi/helsinki-speech-challenge/rules/). 
