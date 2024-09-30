@@ -65,44 +65,44 @@ def main(args, phase="input"):
         task_level=data_folders[5]
         max_len=238716
         underestimation_penalty, overestimation_penalty = 0, 0         
-        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, underestimation_penalty, overestimation_penalty, compressed=1)       
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, underestimation_penalty, overestimation_penalty, compressed=1)       
         return pred_data
 
     elif args.task_ID =='T1L7': 
         task_level=data_folders[6]
         max_len=246012
         underestimation_penalty, overestimation_penalty = 0, 0    
-        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, underestimation_penalty, overestimation_penalty, compressed=1)       
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, underestimation_penalty, overestimation_penalty, compressed=1)       
         return pred_data
 
     elif args.task_ID =='T2L1':   
         task_level=data_folders[7]
         max_len=291517
-        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
     elif args.task_ID =='T2L2':     
         task_level=data_folders[8]
         max_len=301117
-        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
     elif args.task_ID =='T2L3':     
         task_level=data_folders[9]
         max_len=296893
-        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
     elif args.task_ID =='T3L1':     
         task_level=data_folders[10]
         max_len=301117
-        pred_data=ConvAEfft4(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
+        pred_data=ConvAEfft4(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
     
     elif args.task_ID =='T3L2':     
         task_level=data_folders[11]
         max_len=296893
-        pred_data=ConvAEfft4(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
+        pred_data=ConvAEfft4(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
 def ConvAEfft(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len):
