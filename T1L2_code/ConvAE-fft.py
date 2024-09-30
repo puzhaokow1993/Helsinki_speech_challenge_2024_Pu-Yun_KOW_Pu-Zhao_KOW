@@ -105,29 +105,6 @@ def ConvAE_model(input_shape):
     model.summary()
     return model 
 
-def DenseAE_model(input_shape):
-    # Input shape is (233472, 1)
-    inputs = Input(shape=(input_shape[1],))  # Flattened input (batch_size, steps)
-    x = Masking(mask_value=0.0)(inputs)
-    # Flatten the input
-    x = Lambda(lambda x: tf.reshape(x, (-1, input_shape[1])))(x)  # Flatten (batch_size, steps * features)
-
-    # Encoder
-    x = Dense(64, activation='linear')(x)
-    x = Dense(32, activation='linear')(x)
-    encoded = Dense(16, activation='linear')(x)
-    
-    # Decoder
-    x = Dense(32, activation='linear')(encoded)
-    x = Dense(64, activation='linear')(x)
-    decoded = Dense(input_shape[1], activation='linear')(x)  # Output shape should match input shape
-
-    # Reshape back to the original dimensions
-    decoded = Reshape((input_shape[1],))(decoded)
-
-    model = Model(inputs=inputs, outputs=decoded)
-    model.summary()
-    return model
 
 #%%
 K.clear_session()
@@ -137,14 +114,14 @@ learning_rate=0.001 #設定學習速率
 adam = Adam(lr=learning_rate) 
 model.compile(optimizer=adam,loss="mse") 
 earlystopper = EarlyStopping(monitor='val_loss', patience=20, verbose=0) 
-checkpoint =ModelCheckpoint(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft3.hdf5"%data_folder,save_best_only=True) 
+checkpoint =ModelCheckpoint(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft.hdf5"%data_folder,save_best_only=True) 
 callback_list=[earlystopper,checkpoint]  
 # history=model.fit(input_fft_magnitude, output_fft_magnitude,epochs=100, batch_size=8,validation_split=0.2,callbacks=callback_list,shuffle=True) 
 history=model.fit(log_input_fft_magnitude, log_fft_magnitude_diff, epochs=100,  batch_size=8,validation_split=0.2, callbacks=callback_list,shuffle=True)
 
 #%%
 #model forecasting result
-model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft3.hdf5"%data_folder) #把儲存好的最佳模式讀入
+model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft.hdf5"%data_folder) #把儲存好的最佳模式讀入
 batch_size=8
 
 log_predicted_fft_diff = np.squeeze((model.predict(log_input_fft_magnitude,batch_size=batch_size))) 
@@ -163,7 +140,7 @@ plt.semilogy(predicted_fft_magnitude[10,:], label='input_fft', color='red')
 plt.show()
 
 #%%
-np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-fft3.npy'%data_folder, pred_data)
+np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-fft.npy'%data_folder, pred_data)
 
 #%%
 
@@ -180,7 +157,7 @@ plt.ylabel("MSE")
 plt.legend(loc='upper right')
 
 # Save the first figure
-plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\training_loss-fft3.png'%data_folder)
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\training_loss-fft.png'%data_folder)
 
 # Show the first plot (optional)
 plt.show()
@@ -194,7 +171,7 @@ plt.ylabel("MSE")
 plt.legend(loc='upper right')
 
 # Save the second figure
-plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\validation_loss-fft3.png'%data_folder)
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\validation_loss-fft.png'%data_folder)
 
 # Show the second plot (optional)
 plt.show()

@@ -214,7 +214,7 @@ learning_rate=0.001 #設定學習速率
 adam = Adam(lr=learning_rate) 
 model.compile(optimizer=adam,loss=custom_loss) 
 earlystopper = EarlyStopping(monitor='val_loss', patience=20, verbose=0) 
-checkpoint =ModelCheckpoint(r"model\ConvAE-model-fft(new2).hdf5",save_best_only=True) 
+checkpoint =ModelCheckpoint(r"model\ConvAE-fft.hdf5",save_best_only=True) 
 callback_list=[earlystopper,checkpoint]  
 # history=model.fit(input_fft_magnitude, output_fft_magnitude,epochs=100, batch_size=8,validation_split=0.2,callbacks=callback_list,shuffle=True) 
 history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_size=8,validation_split=0.2, callbacks=callback_list,shuffle=True)
@@ -223,7 +223,7 @@ history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_s
 
 K.clear_session()
 #model forecasting result
-model=load_model(r"model\ConvAE-model-fft(new2).hdf5", custom_objects={'custom_loss': custom_loss}) #把儲存好的最佳模式讀入
+model=load_model(r"model\ConvAE-fft.hdf5", custom_objects={'custom_loss': custom_loss}) #把儲存好的最佳模式讀入
 batch_size=8
 gc.collect()
 predicted_diff = np.squeeze((model.predict(compressed_log_input_fft_magnitude,batch_size=batch_size))) 
@@ -257,5 +257,5 @@ plt.show()
 
 
 #%%
-np.save('dataset\%s\ConvAE\pred_data-new2.npy'%data_folder, pred_data)
+np.save('dataset\%s\ConvAE\pred_data-new.npy'%data_folder, pred_data)
 

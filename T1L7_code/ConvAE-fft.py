@@ -165,7 +165,7 @@ learning_rate=0.001 #設定學習速率
 adam = Adam(lr=learning_rate) 
 model.compile(optimizer=adam,loss="mse") 
 earlystopper = EarlyStopping(monitor='val_loss', patience=20, verbose=0) 
-checkpoint =ModelCheckpoint(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft4.hdf5"%data_folder,save_best_only=True) 
+checkpoint =ModelCheckpoint(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft.hdf5"%data_folder,save_best_only=True) 
 callback_list=[earlystopper,checkpoint]  
 history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_size=8,validation_split=0.2, callbacks=callback_list,shuffle=True)
 
@@ -173,7 +173,7 @@ history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_s
 
 K.clear_session()
 #model forecasting result
-model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft4.hdf5"%data_folder) #把儲存好的最佳模式讀入
+model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft.hdf5"%data_folder) #把儲存好的最佳模式讀入
 batch_size=8
 gc.collect()
 predicted_diff = np.squeeze((model.predict(compressed_log_input_fft_magnitude,batch_size=batch_size))) 
@@ -187,7 +187,7 @@ del predicted_fft_magnitude
 pred_data  = np.fft.ifft(predicted_output_fft, axis=1).real  # Take the real part after IFFT
 del predicted_output_fft
 
-np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-fft4.npy'%data_folder, pred_data)
+np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-fft.npy'%data_folder, pred_data)
 
 #%%
 
@@ -204,7 +204,7 @@ plt.ylabel("MSE")
 plt.legend(loc='upper right')
 
 # Save the first figure
-plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\training_loss-fft4.png'%data_folder)
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\training_loss-fft.png'%data_folder)
 
 # Show the first plot (optional)
 plt.show()
@@ -218,7 +218,7 @@ plt.ylabel("MSE")
 plt.legend(loc='upper right')
 
 # Save the second figure
-plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\validation_loss-fft4.png'%data_folder)
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\validation_loss-fft.png'%data_folder)
 
 # Show the second plot (optional)
 plt.show()

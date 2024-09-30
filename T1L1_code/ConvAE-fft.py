@@ -150,7 +150,7 @@ history=model.fit(log_input_fft_magnitude, log_fft_magnitude_diff, epochs=100,  
 
 #%%
 #model forecasting result
-model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft3.hdf5"%data_folder) #把儲存好的最佳模式讀入
+model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft.hdf5"%data_folder) #把儲存好的最佳模式讀入
 batch_size=8
 
 log_predicted_fft_diff = np.squeeze((model.predict(log_input_fft_magnitude,batch_size=batch_size))) 
@@ -169,7 +169,7 @@ plt.semilogy(predicted_fft_magnitude[10,:], label='input_fft', color='red')
 plt.show()
 
 #%%
-np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-fft3.npy'%data_folder, pred_data)
+np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-fft.npy'%data_folder, pred_data)
 
 #%%
 # Extract loss and val_loss from history
@@ -185,7 +185,7 @@ plt.ylabel("MSE")
 plt.legend(loc='upper right')
 
 # Save the first figure
-plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\training_loss-fft3.png'%data_folder)
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\training_loss-fft.png'%data_folder)
 
 # Show the first plot (optional)
 plt.show()
@@ -199,7 +199,7 @@ plt.ylabel("MSE")
 plt.legend(loc='upper right')
 
 # Save the second figure
-plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\validation_loss-fft3.png'%data_folder)
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\validation_loss-fft.png'%data_folder)
 
 # Show the second plot (optional)
 plt.show()
