@@ -57,49 +57,52 @@ def main(args, phase="input"):
     elif args.task_ID =='T1L5':     
         task_level=data_folders[4]
         max_len=220668
-        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
+        underestimation_penalty, overestimation_penalty = 0, 0 
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, task_level, args.task_ID, batch_size, sr, max_len, underestimation_penalty, overestimation_penalty, compressed=1)
         return pred_data
 
     elif args.task_ID =='T1L6': 
         task_level=data_folders[5]
         max_len=238716
-        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)       
+        underestimation_penalty, overestimation_penalty = 0, 0         
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, underestimation_penalty, overestimation_penalty, compressed=1)       
         return pred_data
 
     elif args.task_ID =='T1L7': 
         task_level=data_folders[6]
         max_len=246012
-        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)       
+        underestimation_penalty, overestimation_penalty = 0, 0    
+        pred_data=ConvAEfft2(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, underestimation_penalty, overestimation_penalty, compressed=1)       
         return pred_data
 
     elif args.task_ID =='T2L1':   
         task_level=data_folders[7]
         max_len=291517
-        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
     elif args.task_ID =='T2L2':     
         task_level=data_folders[8]
         max_len=301117
-        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
     elif args.task_ID =='T2L3':     
         task_level=data_folders[9]
         max_len=296893
-        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
     elif args.task_ID =='T3L1':     
         task_level=data_folders[10]
         max_len=301117
-        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft4(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
     
     elif args.task_ID =='T3L2':     
         task_level=data_folders[11]
         max_len=296893
-        pred_data=ConvAEfft3(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len)
+        pred_data=ConvAEfft4(args.input_wav_dir, args.stage, phase, task_level, args.task_ID, batch_size, sr, max_len, compressed=0)
         return pred_data
 
 def ConvAEfft(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len):
@@ -148,7 +151,7 @@ def ConvAEfft(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len
     
     return pred_data
 
-def ConvAEfft2(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len,underestimation_penalty,overestimation_penalty, compressed=0):
+def ConvAEfft2(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len,underestimation_penalty=0,overestimation_penalty=0, compressed=0):
     gc.collect()
     # Read all wav files from the specified directory
     input_int16_list, audio_filenames = sampling(input_wav_dir)
@@ -173,8 +176,11 @@ def ConvAEfft2(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_le
         # Preprocess the data using FFT normalization
         log_input_fft_magnitude, input_fft_phase, split_count = fft_log_norm(input_int16_list, max_len)
         # Load the deep learning model and predict the FFT difference
-        model_path = r'model/T1L4-L7/%s/ConvAE-fft(new).hdf5'%task_ID
-        model = load_model(model_path, custom_objects={'custom_loss': custom_loss(underestimation_penalty,overestimation_penalty)})
+        model_path = r'model/T1L4-L7/%s/ConvAE-fft.hdf5'%task_ID
+        if underestimation_penalty ==0 and overestimation_penalty==0:     
+            model = load_model(model_path)        
+        else:
+            model = load_model(model_path, custom_objects={'custom_loss': custom_loss(underestimation_penalty,overestimation_penalty)})
         
         if compressed==0:
             log_predicted_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
@@ -217,7 +223,8 @@ def ConvAEfft2(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_le
     return pred_data
 
 
-def ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len):
+def ConvAEfft3(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len, compressed=0):
+# def ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len):
     gc.collect()
     # Read all wav files from the specified directory
     input_int16_list, audio_filenames = sampling(input_wav_dir)
@@ -241,31 +248,120 @@ def ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr,
         pred_data = pred_data[select_indices, :]
 
     else:
-        if phase =="input":
-            # Preprocess the data using FFT normalization
-            log_input_fft_magnitude, input_fft_phase, split_count = fft_log_norm(input_int16_list, max_len)
-        else:
-            lag = int(np.mean(np.load(r'dataset/%s/lag.npy'%task_level)))
-            # Preprocess the data using FFT normalization
-            log_input_fft_magnitude, unwrapped_input_fft_phase, split_count = fft_log_norm(input_int16_list, max_len, 1, lag)            
 
+        # Preprocess the data using FFT normalization
+        log_input_fft_magnitude, input_fft_phase, split_count = fft_log_norm(input_int16_list, max_len)
+        
         # Load the deep learning model and predict the FFT difference
-        model_path = r'model/T2L1-L3/%s/ConvAE-fft.hdf5'%task_ID
+        model_path = r'model/T2L1-L3/%s/ConvAE-fft.hdf5'%task_ID        
         model = load_model(model_path)
+        
+        if compressed==0:
+            log_predicted_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
+            log_predicted_fft_magnitude = log_input_fft_magnitude+log_predicted_diff
+            del log_input_fft_magnitude
+            # Transform the magnitude data
+            predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)        
+        else:
+            L = log_input_fft_magnitude.shape[1]
+            c = -1; power = 2
+            transformed_log_input_fft_magnitude = transform_function(log_input_fft_magnitude, L, c, power)
+            del log_input_fft_magnitude
+            # Compress the transformed magnitude data
+            c = 0.85
+            log_input_fft_magnitude = compression_function(transformed_log_input_fft_magnitude, c)
+            del transformed_log_input_fft_magnitude
+            log_predicted_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
+            # Decompress and denormalize the predicted magnitude
+            predicted_fft_magnitude = fft_compressed_log_denorm(log_input_fft_magnitude, log_predicted_diff)
+        del log_predicted_diff
         
         log_predicted_fft_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
         # Decompress and denormalize the predicted magnitude
         log_predicted_fft_magnitude = log_input_fft_magnitude + log_predicted_fft_diff 
         del log_input_fft_magnitude
         predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)
+        predicted_output_fft = predicted_fft_magnitude * np.exp(1j * input_fft_phase)
+            
+        # Perform inverse FFT to return to the time domain
+        pred_data = np.fft.ifft(predicted_output_fft, axis=1).real  # Take the real part
+        del predicted_output_fft
+        # merge the padded signal
+        pred_data= merge_signals(pred_data, split_count)
         
-        if phase =="input":
-            predicted_output_fft = predicted_fft_magnitude * np.exp(1j * input_fft_phase)
+    # Save the denoised audio back as wav files
+    for i in range(len(audio_filenames)):
+        old_name = audio_filenames[i]
+        new_name = old_name.replace('recorded', 'denoise')
+        print(new_name)
+        output_wav = os.path.join('output_denoise', task_level, new_name)
+        
+        # Convert the predicted data to int16 format and save as a wav file
+        audio_int16 = pred_data[i].astype(np.int16)
+        save_to_wav(audio_int16, sr, output_wav)
+
+    return pred_data
+
+
+def ConvAEfft4(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len, compressed=0):
+# def ConvAEfft3(input_wav_dir, stage, phase, task_level, task_ID, batch_size, sr, max_len):
+    gc.collect()
+    # Read all wav files from the specified directory
+    input_int16_list, audio_filenames = sampling(input_wav_dir)
+
+    if stage == "training":
+        # Process filenames and load indices
+        new_filenames = np.array([filename.replace('recorded_', '') for filename in audio_filenames])
+        indices = np.load("dataset/%s/indices.npy"%task_level)
+
+        if len(indices[0,:])<7:
+            new_filenames=[filename[-7:] for filename in new_filenames]
+
+        select_indices = []
+        for filename in new_filenames:
+            if filename in indices:
+                select_indices.append(int(indices[np.where(indices[:, 0] == filename)[0][0], 1]))
+
+        select_indices = np.array(select_indices)
+        # Load predicted data for training
+        pred_data = np.load("dataset/%s/ConvAE/pred_data-magnitude_phase.npy"%task_level)
+        pred_data = pred_data[select_indices, :]
+
+    else:
+
+        # Preprocess the data using FFT normalization
+        log_input_fft_magnitude, input_fft_phase, split_count = fft_log_norm(input_int16_list, max_len)
+        
+        # Load the deep learning model and predict the FFT difference
+        model_path = r'model/T3L1-L2/%s/ConvAE-fft.hdf5'%task_ID        
+        model = load_model(model_path)
+        
+        if compressed==0:
+            log_predicted_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
+            log_predicted_fft_magnitude = log_input_fft_magnitude+log_predicted_diff
+            del log_input_fft_magnitude
+            # Transform the magnitude data
+            predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)        
         else:
-            # Predict the phase using the model
-            pred_phase = predict_phase(unwrapped_input_fft_phase, model_path='model/T2L1-L3/%s'%task_ID)
-            # Multiply magnitude with the phase to reconstruct the complex FFT data
-            predicted_output_fft = predicted_fft_magnitude * np.exp(1j * pred_phase)
+            L = log_input_fft_magnitude.shape[1]
+            c = -1; power = 2
+            transformed_log_input_fft_magnitude = transform_function(log_input_fft_magnitude, L, c, power)
+            del log_input_fft_magnitude
+            # Compress the transformed magnitude data
+            c = 0.85
+            log_input_fft_magnitude = compression_function(transformed_log_input_fft_magnitude, c)
+            del transformed_log_input_fft_magnitude
+            log_predicted_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
+            # Decompress and denormalize the predicted magnitude
+            predicted_fft_magnitude = fft_compressed_log_denorm(log_input_fft_magnitude, log_predicted_diff)
+        del log_predicted_diff
+        
+        log_predicted_fft_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
+        # Decompress and denormalize the predicted magnitude
+        log_predicted_fft_magnitude = log_input_fft_magnitude + log_predicted_fft_diff 
+        del log_input_fft_magnitude
+        predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)
+        predicted_output_fft = predicted_fft_magnitude * np.exp(1j * input_fft_phase)
             
         # Perform inverse FFT to return to the time domain
         pred_data = np.fft.ifft(predicted_output_fft, axis=1).real  # Take the real part
