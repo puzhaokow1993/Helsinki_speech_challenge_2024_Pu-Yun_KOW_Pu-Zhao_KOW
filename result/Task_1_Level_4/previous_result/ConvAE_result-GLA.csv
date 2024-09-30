@@ -1,0 +1,614 @@
+Filename,Original Text,Transcribed Text,WER,CER,MER,WIL,WIP
+task_1_level_4_clean_001.wav,"I would offer to escort you, but duty takes me, at an early hour, in quite another direction.",i would offer to es port them but de think te an an early howur and quite another directin,0.555555556,0.236111111,0.526315789,0.763157895,0.236842105
+task_1_level_4_clean_002.wav,"Yet it appeared to me that we were all, at Bly, sufficiently sacrificed to make that venial.",let it e po e what he were all a clid efficiently sot the fice o make that ,0.823529412,0.410958904,0.736842105,0.918300654,0.081699346
+task_1_level_4_clean_003.wav,"The young man was amused, and the dog also seemed to enjoy the exercise.",young an with a mee in the dag al o het injoyed e eti,0.928571429,0.50877193,0.928571429,0.994897959,0.005102041
+task_1_level_4_clean_004.wav,He fairly glittered in the gloom.,he tar gleter in e greem,0.666666667,0.481481481,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_005.wav,"Ah, the world is too much for us.",ah the wold is he nut fa,0.625,0.458333333,0.625,0.839285714,0.160714286
+task_1_level_4_clean_006.wav,When he thanked her she started to her feet.,when he ume mus e batter to is is,0.666666667,0.6,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_007.wav,No doubt she had bought that lot very cheap and it did not look at all inviting.,no doubt tey pought that lot er tee an is did not look at all in bi hem,0.588235294,0.301587302,0.526315789,0.735294118,0.264705882
+task_1_level_4_clean_008.wav,"They came round the bend together, and out into the clearing.",te came round e bun deter and out in te perin,0.636363636,0.326530612,0.636363636,0.867768595,0.132231405
+task_1_level_4_clean_009.wav,I had so feared you might think it useless or foolish.,i a dot fel you might interduce lit or toer,0.636363636,0.534883721,0.636363636,0.854545455,0.145454545
+task_1_level_4_clean_010.wav,And now let me ask you a few questions.,a now lat me ask to he few question,0.555555556,0.233333333,0.555555556,0.802469136,0.197530864
+task_1_level_4_clean_011.wav,The neighbourhood of Brunswick Square is very different from almost all the rest.,the naighborhood of brunfan wer y very different from halmas all the ruck,0.461538462,0.28358209,0.461538462,0.710059172,0.289940828
+task_1_level_4_clean_012.wav,The moonlight on the lake is worth seeing from the terrace.,on might on the lak o wore seing from the car,0.636363636,0.375,0.636363636,0.867768595,0.132231405
+task_1_level_4_clean_013.wav,"Yes, it was always this colour.",yeh it was always this toler,0.333333333,0.130434783,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_014.wav,"It hops about upon the ground, chirping anxiously.",e happed thabout upon the ground tioing on titee,0.75,0.463414634,0.666666667,0.875,0.125
+task_1_level_4_clean_015.wav,But you will do every thing right.,but you will be uvery thing riht,0.428571429,0.148148148,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_016.wav,"Those who knew any thing about it, must have felt the difference.",tho en me anything about it must have selt e defen,0.666666667,0.307692308,0.666666667,0.878787879,0.121212121
+task_1_level_4_clean_017.wav,Then I had better speak to him and remind him who I am.,then i had but a feot to him and remind hem to i wan,0.461538462,0.30952381,0.428571429,0.648351648,0.351648352
+task_1_level_4_clean_018.wav,Something new for your coachman and horses to be making their way through a storm of snow.,something new o the comsment and horses in the making moir way toh a stormer now,0.588235294,0.342465753,0.588235294,0.819852941,0.180147059
+task_1_level_4_clean_019.wav,I asked him how old he was.,often how old you wae,0.714285714,0.6,0.714285714,0.885714286,0.114285714
+task_1_level_4_clean_020.wav,No sooner was it finished than it began to laugh and poke fun at him.,no ho now wan e tan and of began to laugh and poe funnit,0.733333333,0.425925926,0.6875,0.880952381,0.119047619
+task_1_level_4_clean_021.wav,He looked like a giant lizard with legs and arms.,you looked like a giant lidder with legs an arm,0.4,0.230769231,0.4,0.64,0.36
+task_1_level_4_clean_022.wav,"Good man, will you be kind enough to give a penny to a poor boy who is yawning from hunger?",wit man whel you be pind enough to get a pano to a poor boy e is yorning from hinden,0.4,0.3,0.4,0.64,0.36
+task_1_level_4_clean_023.wav,"He has no income, no profession, no home all those things tell against him.",he had no any cime no pocesson no home all thosh things hower gon,0.571428571,0.338983051,0.533333333,0.75,0.25
+task_1_level_4_clean_024.wav,He is a most valorous captain.,emos valerous asten,1,0.416666667,1,1,0
+task_1_level_4_clean_025.wav,Somewhere in a window a caged bird was singing its heart out to the sky.,tome werein a window of eas birden en art out e stie,0.8,0.473684211,0.8,0.95,0.05
+task_1_level_4_clean_026.wav,He will never think anything worth while.,will never think anything was wine,0.428571429,0.235294118,0.428571429,0.619047619,0.380952381
+task_1_level_4_clean_027.wav,What have you been doing to it?,what have you been doing to it,0,0,0,0,1
+task_1_level_4_clean_028.wav,You were most amiable to me when I first saw you.,you were most onlyable to me what i first thought you,0.272727273,0.342105263,0.272727273,0.47107438,0.52892562
+task_1_level_4_clean_029.wav,"He saw no fault in the room, he would acknowledge none which they suggested.",he thought no fault in the orn he would acknowledge none o satygesti,0.357142857,0.360655738,0.357142857,0.554945055,0.445054945
+task_1_level_4_clean_030.wav,Do you fellows know who it is?,go fellen founde an,1,0.739130435,1,1,0
+task_1_level_4_clean_031.wav,"I want to experiment on something large, he replied.",i wanted to sfarman on something ligeied,0.555555556,0.404761905,0.555555556,0.746031746,0.253968254
+task_1_level_4_clean_032.wav,These were horrors and no mistake.,he for horrd a nemeslet,1,0.607142857,1,1,0
+task_1_level_4_clean_033.wav,I have not the smallest doubt of the issue.,i have not the smallest dout of the issue,0.111111111,0.029411765,0.111111111,0.209876543,0.790123457
+task_1_level_4_clean_034.wav,I really think she has been very honest.,i willin think  at insaryona,0.75,0.59375,0.75,0.9,0.1
+task_1_level_4_clean_035.wav,"Ah, what a boy he was in some ways!",ah what a boy he was i some ting,0.222222222,0.2,0.222222222,0.395061728,0.604938272
+task_1_level_4_clean_036.wav,"I washed, and dined, and now I am telling you the story.",i washed and dine a mow in telling e to to,0.666666667,0.333333333,0.666666667,0.878787879,0.121212121
+task_1_level_4_clean_037.wav,It was the old Italian and his daughters returning from the ball who were trying to get in.,i would the old te palion and his daughter determined fom the ball we tined to get er,0.611111111,0.369863014,0.578947368,0.802469136,0.197530864
+task_1_level_4_clean_038.wav,In the company of this common man the world was beautiful and direct.,in the company of thitcommon man the world was beautiful and the rest,0.307692308,0.089285714,0.285714286,0.408284024,0.591715976
+task_1_level_4_clean_039.wav,We shall see if you are telling the truth.,we felt fee it your teleng is i,0.888888889,0.545454545,0.888888889,0.986111111,0.013888889
+task_1_level_4_clean_040.wav,"Fifteen shillings and five shillings make one pound, you see.",it e felling been five bins make one poun i e,0.8,0.46,0.727272727,0.918181818,0.081818182
+task_1_level_4_clean_041.wav,All eyes were turned on me.,all i hecame on men,0.666666667,0.619047619,0.666666667,0.866666667,0.133333333
+task_1_level_4_clean_042.wav,"The river was rushing below them, almost black in the advancing night.",the river wasd rushin below them almost blauched in te bent in e,0.583333333,0.315789474,0.538461538,0.769230769,0.230769231
+task_1_level_4_clean_043.wav,"Some laughed, most of them looked sorely frightened.",some last lost of them look tore bitein,0.625,0.418604651,0.625,0.859375,0.140625
+task_1_level_4_clean_044.wav,Have a good look at the thing.,praba good look at the thing,0.285714286,0.173913043,0.285714286,0.404761905,0.595238095
+task_1_level_4_clean_045.wav,He must have stepped back a pace to hurl himself bodily against the panels.,heu must have strucped op a pace on her he elf boty i in te pan,0.857142857,0.442622951,0.75,0.928571429,0.071428571
+task_1_level_4_clean_046.wav,He had either to work or to beg.,yho have either te work on  an,0.75,0.458333333,0.75,0.928571429,0.071428571
+task_1_level_4_clean_047.wav,"I could see your face, I resumed, and it seemed to me to be very sorrowful.",i coul fe o fae i resume an a sito envayed sara o,0.875,0.526315789,0.875,0.980769231,0.019230769
+task_1_level_4_clean_048.wav,Her influence would have been enough.,but anfluence would have been lough,0.5,0.193548387,0.5,0.75,0.25
+task_1_level_4_clean_049.wav,"This was not in the rubric, and proved disconcerting to the clergyman.",this is not in the moodbrek and pee tis inservent o the clasin,0.583333333,0.438596491,0.538461538,0.769230769,0.230769231
+task_1_level_4_clean_050.wav,I saw that I must act quickly.,a saw af i must i quickly,0.428571429,0.304347826,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_051.wav,"If it rains, what shall I do with a coat of flowered paper?", at land what thol i do with he cod of flower paper,0.538461538,0.333333333,0.538461538,0.769230769,0.230769231
+task_1_level_4_clean_052.wav,"You do, and it becomes you, she retorted with a faint smile.",you on e tecome ye in wheported woth the fant mile,0.916666667,0.413043478,0.916666667,0.992424242,0.007575758
+task_1_level_4_clean_053.wav,But she was so unsympathetic that she must be reliable.,i he was so uncinpathetic of he must be re lian,0.7,0.333333333,0.636363636,0.854545455,0.145454545
+task_1_level_4_clean_054.wav,I was carried away in London!,i was playing teway  london,0.5,0.434782609,0.5,0.7,0.3
+task_1_level_4_clean_055.wav,Then go in for other big things in America.,one going for other big things ,0.555555556,0.382352941,0.555555556,0.703703704,0.296296296
+task_1_level_4_clean_056.wav,I have no doubt it worked.,i have no doubt et work,0.333333333,0.15,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_057.wav,What do you mean by all the rest?,what do you mean by all the west,0.125,0.04,0.125,0.234375,0.765625
+task_1_level_4_clean_058.wav,"I reasoned, save the mark, as a psychologist.",i weeven tan the mar at the patology,0.75,0.571428571,0.75,0.9375,0.0625
+task_1_level_4_clean_059.wav,When he faced the world he also masked it.,when e face the world he also moste,0.444444444,0.212121212,0.444444444,0.652777778,0.347222222
+task_1_level_4_clean_060.wav,You cannot know how his expression followed the turns of his story!,he ponl not know how he dopessin bollowed the can tat his sore,0.75,0.381818182,0.692307692,0.897435897,0.102564103
+task_1_level_4_clean_061.wav,He felt he was on the right tack.,he felt he was on the life pack,0.25,0.2,0.25,0.4375,0.5625
+task_1_level_4_clean_062.wav,"Everything is permitted you and every one makes allowance, but every one cannot be a victim to caprice.",averything is comitted an every one mased alout but every one hal not be a dictent pre,0.611111111,0.30952381,0.578947368,0.790849673,0.209150327
+task_1_level_4_clean_063.wav,"He had his moustaches so, and his teeth were very white when he smiled at her.",he had a youth bastes so and his seep were very white han mloede,0.5625,0.37704918,0.529411765,0.714285714,0.285714286
+task_1_level_4_clean_064.wav,Did it come down from Heaven?,tin e come down from heaven,0.333333333,0.173913043,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_065.wav,"There is the danger of her own self, poor girl.",man to ban to afher onyself pour gel,1,0.527777778,1,1,0
+task_1_level_4_clean_066.wav,All this she told me with a sweet seriousness seldom seen in any one but children.,all this epold me with  leet par in seuom tonin ony one the soen,0.6875,0.409090909,0.6875,0.888392857,0.111607143
+task_1_level_4_clean_067.wav,How did she come to slip this bit of silk and silver about your neck?,how did ye come to kip with tit sil con sil by about your mon,0.6,0.388888889,0.6,0.84,0.16
+task_1_level_4_clean_068.wav,"Here, take them, little Snail, and give them to my good Fairy.",hel pat som little smill and give them to my district,0.5,0.382978723,0.5,0.727272727,0.272727273
+task_1_level_4_clean_069.wav,"This concert is arranged for the amusement of her house party, and for the gratification and glorification of local celebrities.",the confide thewang to te musein o or house party and for the gratificoyton an god the cate in of local collebity,0.8,0.373831776,0.695652174,0.888636364,0.111363636
+task_1_level_4_clean_070.wav,A fireplace full of burning logs was painted on the wall opposite the door.,a fire pateful of bunin lobs e pented on the wall offie ord,0.642857143,0.360655738,0.642857143,0.862637363,0.137362637
+task_1_level_4_clean_071.wav,"She saw, visibly flushing, where I was coming out.",he sow isibly flush where i was coming off,0.555555556,0.205128205,0.555555556,0.802469136,0.197530864
+task_1_level_4_clean_072.wav,I believe it was my photographs that you threw away.,i believe tit was my photograph an e tlor away,0.5,0.261904762,0.5,0.75,0.25
+task_1_level_4_clean_073.wav,He was used to these nervous old maids and to the exaggerated importance that they attach to words.,i ies to es nevotald nighed and to be inxactilated im portunte to thei past te world,0.888888889,0.530864198,0.842105263,0.970588235,0.029411765
+task_1_level_4_clean_074.wav,a man does not imagine any such thing.,a man does not imagine hamthing ta,0.375,0.3,0.375,0.553571429,0.446428571
+task_1_level_4_clean_075.wav,I hear light footsteps behind closed doors...,i do light fiote behind clote doors,0.428571429,0.305555556,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_076.wav,It was manifest to me that his soul was absent in some hell of its own.,thet would nane of that tan every sol went abent in some sower of ol,0.8125,0.654545455,0.8125,0.9625,0.0375
+task_1_level_4_clean_077.wav,The next thing wanted was to get the picture framed and here were a few difficulties.,lock in anted was to difepit or flin and dere were e difficulty,0.75,0.449275362,0.75,0.923076923,0.076923077
+task_1_level_4_clean_078.wav,He dreamed he was in the middle of a field.,he bremed he with in the middle of a field,0.2,0.151515152,0.2,0.36,0.64
+task_1_level_4_clean_079.wav,But is it really true that in that country boys never have to study?,u li at really tarin ot e not contry boys nother hap a srede,0.857142857,0.462962963,0.857142857,0.979591837,0.020408163
+task_1_level_4_clean_080.wav,"If she had steeled herself against the possibility of his shaking her, she failed herself now.",i he had teal eself aganst u possibility of his takone e sale emselfo,0.75,0.350649351,0.75,0.928571429,0.071428571
+task_1_level_4_clean_081.wav,What was I in comparison with the Principle of Legitimacy?,what would i in comparitin wit the principle of he disnese,0.5,0.3125,0.454545455,0.672727273,0.327272727
+task_1_level_4_clean_082.wav,"I winced at my mistake, which I attenuated as I could, and opened my letter again to repeat it to her then, faltering in the act and folding it up once more, I put it back in my pocket.",i went but my fod with i penlad about tir and open my letter don to a seat of ti her ran faltor  rosk and olding it up once more put i bocke my pocet,0.641025641,0.429577465,0.625,0.835164835,0.164835165
+task_1_level_4_clean_083.wav,I must have known that there were admirers!,i must have known that there were admires,0.125,0.028571429,0.125,0.234375,0.765625
+task_1_level_4_clean_084.wav,Neither man nor woman has been created to live alone....,lether man nor woman had been cated to live alone,0.3,0.11627907,0.3,0.51,0.49
+task_1_level_4_clean_085.wav,I come in for a pretty good share as a second.,i come in for a pity good shar at  sbeckon,0.454545455,0.257142857,0.454545455,0.672727273,0.327272727
+task_1_level_4_clean_086.wav,You want to go to your uncle?,one of the your uncle,0.714285714,0.454545455,0.714285714,0.885714286,0.114285714
+task_1_level_4_clean_087.wav,"It stretched and stretched and stretched till it became so long, it seemed endless.",t not i srupt i suct per te can so long o seemed une,0.785714286,0.632352941,0.785714286,0.954081633,0.045918367
+task_1_level_4_clean_088.wav,"He cried, Halt, or I fire!",the plie hit wy fire,0.833333333,0.5,0.833333333,0.966666667,0.033333333
+task_1_level_4_clean_089.wav,"I shall be eighteen in February, you know, and we want to go round the world.",i sell e eighteen in subuan we now and we want to go around the world,0.375,0.220338983,0.375,0.609375,0.390625
+task_1_level_4_clean_090.wav,"I say, Brand, I do think it is extraordinarily good of you to come all this way to see me.",i think bram compu think o ente woas nae go me to come all is lay e en,0.75,0.588235294,0.75,0.930555556,0.069444444
+task_1_level_4_clean_091.wav,And he drew back his foot to give the Dog a kick.,and he drew back in good to git the dobe kip,0.5,0.27027027,0.5,0.727272727,0.272727273
+task_1_level_4_clean_092.wav,I suppose they are no more friends to you than they are to me.,a tu pose te a no more from se or the more ,0.928571429,0.520833333,0.866666667,0.976190476,0.023809524
+task_1_level_4_clean_093.wav,"I was facing the door, and saw it first.",i thinking the door an fosler,0.666666667,0.533333333,0.666666667,0.833333333,0.166666667
+task_1_level_4_clean_094.wav,"White lines had drawn themselves about his tightly closed lips, yet he was smiling.",white line have gone themselves about his piset both wift yet the was mile,0.571428571,0.367647059,0.571428571,0.816326531,0.183673469
+task_1_level_4_clean_095.wav,"But there had not been time for him to return, and if he had returned, I must have seen him.",tthey had not been pomed for him to efern n is be hobdes fom e and must av dede,0.7,0.457142857,0.666666667,0.871052632,0.128947368
+task_1_level_4_clean_096.wav,The style of the letter was much above her expectation., tyle of the ron wis much as bobd for  a tas,0.9,0.555555556,0.75,0.918181818,0.081818182
+task_1_level_4_clean_097.wav,The Phantom of the Past would go no further.,the tanim of the path was bill no clothing,0.555555556,0.514285714,0.555555556,0.802469136,0.197530864
+task_1_level_4_clean_098.wav,"The men piled into the car, and went off for their golf.",the men piled into the car and went off to the golf,0.166666667,0.093023256,0.166666667,0.305555556,0.694444444
+task_1_level_4_clean_099.wav,"She leaned her head upon her hands, and answered softly, I love you.",he lint te had upon her hand an anwer sosslin i love hem,0.692307692,0.377358491,0.692307692,0.905325444,0.094674556
+task_1_level_4_clean_100.wav,It was all the romance of the nursery and the poetry of the schoolroom.,the with all the ro man af e nartan in a poeti a dewon,0.857142857,0.614035088,0.857142857,0.979591837,0.020408163
+task_1_level_4_clean_101.wav,"Here, it is only on Saturdays that we have no school.",here is o on pasfiday but be hape my school,0.636363636,0.414634146,0.636363636,0.854545455,0.145454545
+task_1_level_4_clean_102.wav,His hands were spread over his knees and he looked perfectly insensible.,the corn was bread over his deom and he were perfectly insomtible,0.583333333,0.383333333,0.583333333,0.826388889,0.173611111
+task_1_level_4_clean_103.wav,"That done, he started to bark.",tat don sturtid to bar,0.833333333,0.304347826,0.833333333,0.966666667,0.033333333
+task_1_level_4_clean_104.wav,I know you for a frank and loyal gentleman...,a mane cas sontin mora jumponin,1,0.823529412,1,1,0
+task_1_level_4_clean_105.wav,She had never seen anything so radiant as his face.,wiv moteste one in so wadn in or ispace,0.9,0.609756098,0.9,0.988888889,0.011111111
+task_1_level_4_clean_106.wav,I had imagined you were consulting me only as to the wording of it.,i had a norgin north an seltinin e only as it e wortene,0.785714286,0.490566038,0.733333333,0.912087912,0.087912088
+task_1_level_4_clean_107.wav,"Here we are, said the Fox to the Marionette.",here we are what the fox o the manino,0.333333333,0.323529412,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_108.wav,"Along the railroad embankment across the ditch, another column moved parallel to their own.",along the railroad in dunk in across in dit another column moved terallel ti their own,0.5,0.197368421,0.4375,0.638392857,0.361607143
+task_1_level_4_clean_109.wav,"They are sent to school, and whether they want to or not, they must study.",the are soc to ear and whether they want to remar ther must sece,0.466666667,0.350877193,0.466666667,0.695238095,0.304761905
+task_1_level_4_clean_110.wav,It could not be because it was untrue.,it could not be because it was unecreaed,0.125,0.166666667,0.125,0.234375,0.765625
+task_1_level_4_clean_111.wav,There had been for the two children at first a young lady whom they had had the misfortune to lose.,the had been for the e children a fers a young wag an dey had had the me forcin in e,0.55,0.341772152,0.523809524,0.761904762,0.238095238
+task_1_level_4_clean_112.wav,"I reassured her and sent her away, saying I would look about myself.",i wi ser ho in someher away traing i woud look about myself,0.538461538,0.333333333,0.538461538,0.786982249,0.213017751
+task_1_level_4_clean_113.wav,She pointed at the other carriage.,he pointed of he other cler,0.666666667,0.357142857,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_114.wav,The rose was big and red.,the rode was see en well,0.666666667,0.473684211,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_115.wav,"Do you know about it, please?",ho know about it pot,0.5,0.409090909,0.5,0.7,0.3
+task_1_level_4_clean_116.wav,"He is the best father in the world, even as I am the worst son that can be found.",me te best father in the world even as i am the word sun mat e he sound,0.473684211,0.229508197,0.473684211,0.707602339,0.292397661
+task_1_level_4_clean_117.wav,I am as empty as a dried well.,al ma gumty at he drive wal,1,0.545454545,1,1,0
+task_1_level_4_clean_118.wav,"Rubbing his hands together happily, he mumbled half to himself  This has come in the nick of time.",robin e pan together happiy numble passinself this is cuming i misis pin,0.888888889,0.461538462,0.888888889,0.982905983,0.017094017
+task_1_level_4_clean_119.wav,We are going to see it.,we are going to fee,0.333333333,0.176470588,0.333333333,0.466666667,0.533333333
+task_1_level_4_clean_120.wav,He had eaten it all during the night.,you be o ale don e not,1,0.724137931,1,1,0
+task_1_level_4_clean_121.wav,"Round about him, not a leaf stirred.",round about him not a loop fird,0.285714286,0.25,0.285714286,0.489795918,0.510204082
+task_1_level_4_clean_122.wav,"he repeated, striking his breast with his closed fist on which the knuckles stood out very white.",he was peated liking his grast wit e close tes on mist e knuckle tithout very wife,0.823529412,0.35443038,0.777777778,0.944636678,0.055363322
+task_1_level_4_clean_123.wav,"Yet as he spoke the darkness was withdrawn, veil after veil, and she saw to the bottom of her soul.",lot er be placed the darkness is the stroi tal as te sar and he sawed the bottom of the soll,0.8,0.441558442,0.727272727,0.914285714,0.085714286
+task_1_level_4_clean_124.wav,"Also he waited for more, knowing it would come more easily if he waited silently.",olto he waited fom more knowing t would come more easily at he waited thine,0.333333333,0.2,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_125.wav,It rouses certain feelings within me which I do not care to explain.,it rowses for i ein wit him te had de not far is wine,0.923076923,0.527272727,0.857142857,0.978021978,0.021978022
+task_1_level_4_clean_126.wav,"In that, however, I was wrong.",notoebet i would wron,0.833333333,0.590909091,0.833333333,0.958333333,0.041666667
+task_1_level_4_clean_127.wav,"I began, laughing, but the girl interrupted me with a frightened cry.",i began laughing but the girl interrupted me to the flight ind crie,0.416666667,0.145454545,0.384615385,0.58974359,0.41025641
+task_1_level_4_clean_128.wav,"And then to them, Come in, girls.",a yong to tom an ingil,0.857142857,0.583333333,0.857142857,0.976190476,0.023809524
+task_1_level_4_clean_129.wav,Would you add to your kindness by fetching them?,would you add yo a kindnes a cectin e,0.666666667,0.358974359,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_130.wav,The story I told you was true.,etory i told me was soo,0.571428571,0.434782609,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_131.wav,You may say anything without offence.,mot by unti about a tat,1,0.741935484,1,1,0
+task_1_level_4_clean_132.wav,It is time to hunt again.,te time to huntegawn,0.666666667,0.263157895,0.666666667,0.833333333,0.166666667
+task_1_level_4_clean_133.wav,"And if I go on studying, what will you do to me?",in e i go ond studying what werl you do ti,0.5,0.285714286,0.5,0.727272727,0.272727273
+task_1_level_4_clean_134.wav,"And what was his grief when on looking up toward the boxes, he saw that the Fairy had disappeared!",and what wos his be when in looking up toward the boxes he saw that the tiry had beefesed,0.263157895,0.205128205,0.263157895,0.457063712,0.542936288
+task_1_level_4_clean_135.wav,No one ever passes except a policeman.,no one of her parte e cete tetion,0.857142857,0.516129032,0.75,0.928571429,0.071428571
+task_1_level_4_clean_136.wav,She wanted to be with me always.,he wanted to de with me alway,0.428571429,0.12,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_137.wav,Some one overtook and passed me.,some one oder te inpast me,0.5,0.346153846,0.5,0.75,0.25
+task_1_level_4_clean_138.wav,He felt he had to make up his mind for either one thing or another.,he felt have make up id mine for either one thing or another,0.333333333,0.153846154,0.333333333,0.487179487,0.512820513
+task_1_level_4_clean_139.wav,"The unlucky Marionette, hearing this, began to cry and wail and beg.",yor motky mali mat dearing tis gand te cry and wale an a ad,1,0.481481481,0.857142857,0.976190476,0.023809524
+task_1_level_4_clean_140.wav,"It had had its times of seeming frightful to her, this secret, in the troubled musings of the past year.",it is hated time e cein sightful differ is sites in he tluble esin of the passear,0.8,0.43902439,0.8,0.952941176,0.047058824
+task_1_level_4_clean_141.wav,"The passage was blocked by a wardrobe, which the removal men had failed to carry up the stairs.",the partof with blocked by a ward robe with removal men had failed e vari upe tit,0.555555556,0.302631579,0.555555556,0.790849673,0.209150327
+task_1_level_4_clean_142.wav,I would rather not be tempted.,i would rother noth be pemted,0.5,0.166666667,0.5,0.75,0.25
+task_1_level_4_clean_143.wav,"It was a peaceful scene, the morning light, the bit of open country framed in steep stony slopes, a high peak or two in the distance, the thin smoke of some invisible caserios, rising straight up here and there.",o the peocl seen at the morning lihe a git of open comtrys rain in see terin slop a high peop of comimetes im the stimis  smok on in vigible poser mary riding so uc tean mher,0.794871795,0.479041916,0.794871795,0.955647956,0.044352044
+task_1_level_4_clean_144.wav,I shall have no fears for you with him.,i fell have no coe for you ith him,0.333333333,0.3,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_145.wav,"Everything still seemed grey, but presently I remarked that the confusion in my ears was gone.",u wein guilto flad thet prosedly i remarked tat the confusion in my fears wis gone,0.5625,0.324675325,0.5625,0.80859375,0.19140625
+task_1_level_4_clean_146.wav,"For, listen, child of man, I loved thee more than ever I loved my cubs.",we mee phild of morn i loved hem more than ever i loved my cub,0.4,0.264150943,0.4,0.64,0.36
+task_1_level_4_clean_147.wav,"This will be enough to fetch him down here, I can assure you.",this wol be a mast e fustin down the ir in a tae,0.769230769,0.574468085,0.769230769,0.946745562,0.053254438
+task_1_level_4_clean_148.wav,"Before you do anything else, come and see this sunset on the lake.",the for y belanything of camin totes some fat on the lake,0.769230769,0.480769231,0.769230769,0.942307692,0.057692308
+task_1_level_4_clean_149.wav,"Very much to the honour of both, was the handsome reply.",ver much to be honor of both it the hanton o line,0.545454545,0.348837209,0.5,0.727272727,0.272727273
+task_1_level_4_clean_150.wav,"You had your own way about these rooms, at all events.",yo had your own way about this men a all of them,0.545454545,0.357142857,0.5,0.727272727,0.272727273
+task_1_level_4_clean_151.wav,"Heed the warning then, she cried, with a nervous laugh.",in the worning tan he cried with a nervous lag,0.5,0.23255814,0.5,0.75,0.25
+task_1_level_4_clean_152.wav,The unpleasant sensations of the start were less poignant now.,young pleasant contations of the sart we left pon ,0.8,0.384615385,0.8,0.955555556,0.044444444
+task_1_level_4_clean_153.wav,"The books he touched, the chair he had at breakfast, his young, lithe body in its golfing knickerbockers, or his sleek black head above the dull black of evening wear, haunted her oddly.",the book be cout tarty at it leste hat young life body in gulping misebote for he top glashd at above the dogl blackof an hen war ponte teraen,0.818181818,0.493243243,0.818181818,0.962382445,0.037617555
+task_1_level_4_clean_154.wav,Here we are with the difficulty solved already.,il be are with the difficulty solt alres,0.5,0.282051282,0.5,0.75,0.25
+task_1_level_4_clean_155.wav,I seized the tallow dip and sprang to the door.,i see f the palarget and friend to the door,0.5,0.405405405,0.454545455,0.64,0.36
+task_1_level_4_clean_156.wav,I am certain that I was not in my right mind.,i am thertaen that i was not in my life mind,0.181818182,0.205882353,0.181818182,0.330578512,0.669421488
+task_1_level_4_clean_157.wav,"replied the Marionette, jumping to his feet.",the plied the mon net sumething i,1,0.527777778,0.875,0.979591837,0.020408163
+task_1_level_4_clean_158.wav,"He was done up, finished but perhaps he did not know it himself.",he e ban up inest at perhas te did not know if himself,0.538461538,0.32,0.538461538,0.786982249,0.213017751
+task_1_level_4_clean_159.wav,His particular trick of speaking of any third person as of a lay figure was exasperating.,i peticulart wipe speaking a enin tord person ol of a lac iger with a josran,0.8125,0.438356164,0.764705882,0.9375,0.0625
+task_1_level_4_clean_160.wav,Here I am so comfortable with a fire.,the ian so comfortl with a fire,0.5,0.24137931,0.5,0.714285714,0.285714286
+task_1_level_4_clean_161.wav,They merged at last into a kind of hysterical exhilaration.,the mord that last into a tind of isterical esoration,0.6,0.265306122,0.6,0.84,0.16
+task_1_level_4_clean_162.wav,Such things in general cannot be too short.,but tingin gener o conot in pesor,1,0.457142857,1,1,0
+task_1_level_4_clean_163.wav,I am telling you this because you are younger than myself.,im pellin ate it is you are younger than myself,0.545454545,0.29787234,0.545454545,0.772727273,0.227272727
+task_1_level_4_clean_164.wav,Two men loomed up in the twilight.,you won lomed up in the qwiet,0.571428571,0.407407407,0.571428571,0.816326531,0.183673469
+task_1_level_4_clean_165.wav,But she said nothing aloud as they turned back into the warm house.,te he daid nothing allowed as i prin backin to one hou,0.846153846,0.444444444,0.846153846,0.974358974,0.025641026
+task_1_level_4_clean_166.wav,Really I have not had rheumatism for years.,really i have not had ruomoty intee,0.375,0.4,0.375,0.553571429,0.446428571
+task_1_level_4_clean_167.wav,"She will want new gowns, want to display her new importance a little.",he will want me down wonto te weder o important from ebol,0.846153846,0.490909091,0.846153846,0.974358974,0.025641026
+task_1_level_4_clean_168.wav,It had occurred to me to make a very elaborate toilet.,thu hav a cod human make a very a logret poi,0.818181818,0.581395349,0.75,0.925619835,0.074380165
+task_1_level_4_clean_169.wav,It would not have been better.,the would not have been better,0.166666667,0.125,0.166666667,0.305555556,0.694444444
+task_1_level_4_clean_170.wav,Things must come to a crisis soon now.,thi must come to a clisis an,0.5,0.333333333,0.5,0.714285714,0.285714286
+task_1_level_4_clean_171.wav,"The forest was passed, and the sun slipped from behind the trees, flooding the earth again with brightness.",the boy wit car and the sun slipped an the hond the steen loving the earth again with biting an,0.555555556,0.356321839,0.5,0.722222222,0.277777778
+task_1_level_4_clean_172.wav,My love for you told me who you were.,my lovely hold me he was,0.777777778,0.5,0.777777778,0.925925926,0.074074074
+task_1_level_4_clean_173.wav,"He fell to the ground and, covering the cold marble with kisses, burst into bitter tears.",he felt to the ground in tubering the cold marble with kifty birst in tosittered ter,0.5,0.225352113,0.5,0.75,0.25
+task_1_level_4_clean_174.wav,"Three several times, as I scanned the slope, I saw white figures.",wen ov e mon wit i fon te wo by so white facer,0.916666667,0.666666667,0.846153846,0.974358974,0.025641026
+task_1_level_4_clean_175.wav,"I could not think about you so much without doating on you, faults and all and by dint of fancying so many errors, have been in love with you ever since you were thirteen at least.",i did not think about the filma without good an moning  fault an all and by dinta fancing so many errors and then love wit to you everthink o is tir ten in,0.666666667,0.38028169,0.666666667,0.878787879,0.121212121
+task_1_level_4_clean_176.wav,"He climbed down from the chair and squatting on the floor, took the creature into his arms and caressed her.",the cline down fom i hair and wating on the floor with the teacer into e arm and corress,0.6,0.379310345,0.6,0.831578947,0.168421053
+task_1_level_4_clean_177.wav,"The platforms of our playground, all shining smooth and worn!",the platform aborplagroun all shiling ins and warn,0.7,0.28,0.7,0.8875,0.1125
+task_1_level_4_clean_178.wav,It had become a great thing now.,the had become a great tine ,0.428571429,0.32,0.428571429,0.619047619,0.380952381
+task_1_level_4_clean_179.wav,It is a very simple story.,it is a bun somple stor,0.5,0.3,0.5,0.75,0.25
+task_1_level_4_clean_180.wav,It was not of this earth.,thet wod not have been fa,0.833333333,0.789473684,0.833333333,0.972222222,0.027777778
+task_1_level_4_clean_181.wav,Do you think it strange that she objected?,e think it's tranged that he a drected,0.875,0.323529412,0.7,0.875,0.125
+task_1_level_4_clean_182.wav,"Well, he worked and I watched him in silence, and we went on that way until nearly midnight.",well he was an i watch them in sienc and we went on tat way and tell me an miss,0.611111111,0.361111111,0.55,0.775,0.225
+task_1_level_4_clean_183.wav,I gave a cry of surprise.,an davbe clired te fi,1,0.842105263,1,1,0
+task_1_level_4_clean_184.wav,The duchess preferred managing her own parties in her oven way.,the doctor e fared managing her own partys of ther other way,0.636363636,0.307692308,0.583333333,0.810606061,0.189393939
+task_1_level_4_clean_185.wav,I took this as a direct disproof of his having really been chastised.,i put wis i ol dorest it proot of the hutting wolin cat a,0.923076923,0.589285714,0.857142857,0.978021978,0.021978022
+task_1_level_4_clean_186.wav,"His pursuers were after him at once, like two dogs chasing a hare.",it pefu as were aftir tin at one bi te dogs isin a har,0.769230769,0.403846154,0.714285714,0.912087912,0.087912088
+task_1_level_4_clean_187.wav,"I could only paint her with closed eyes, for in dreams alone can such colours as I need be found.",i could only tan her is cloce bo for in hon alone on suc colli a ty men in on,0.65,0.453333333,0.65,0.8775,0.1225
+task_1_level_4_clean_188.wav,Get off with his sister as soon as possible and leave me with him alone.,te opwitet sister assum is passible and wed mo is e orin,0.866666667,0.49122807,0.866666667,0.977777778,0.022222222
+task_1_level_4_clean_189.wav,I must speak to the priest about this.,i must be to the priese about this,0.25,0.166666667,0.25,0.4375,0.5625
+task_1_level_4_clean_190.wav,"Beautiful and cruel, she repeated dreamily, beautiful and cruel.",iubebor in crool he look eed geamily inte ful in cruel,1.111111111,0.528301887,0.909090909,0.98989899,0.01010101
+task_1_level_4_clean_191.wav,"No, certainly not I shall go home in the cool of the evening.",node thet me not i shall go home in cool it o isme,0.538461538,0.425531915,0.5,0.710059172,0.289940828
+task_1_level_4_clean_192.wav,Nothing of the sort is being talked about.,nothing of the sord is being polkabout,0.375,0.147058824,0.375,0.553571429,0.446428571
+task_1_level_4_clean_193.wav,I have seen the effect in a thousand ways.,i have been e fact in a thousand ways,0.333333333,0.181818182,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_194.wav,"She flattened one ear, but neither turned nor interrupted her toilet.",he flattened one war but neither turn nor intorrupted eforet,0.545454545,0.175438596,0.545454545,0.772727273,0.227272727
+task_1_level_4_clean_195.wav,I was just going to buy some clothes.,i was se ting e bye an sore,0.75,0.586206897,0.75,0.9375,0.0625
+task_1_level_4_clean_196.wav,"She watched the erect, splendid old figure ascending.",he watched the e rust wendinold thegin funmin,0.75,0.431818182,0.75,0.9375,0.0625
+task_1_level_4_clean_197.wav,"He sat back in his chair at first, and spoke like a weary man.",he tlaght back on a car wa and sboke went he weeling mon,0.785714286,0.638297872,0.785714286,0.950549451,0.049450549
+task_1_level_4_clean_198.wav,"But you are too good for that, I am sure.",but you are tiged o tot on sure,0.6,0.366666667,0.6,0.8,0.2
+task_1_level_4_clean_199.wav,"How can you do anything, unless you can spin round at once when the rein is pressed on your neck?",how can ye do anything fo mest you con stin round at once when the rain  pressed on ther neck,0.4,0.184210526,0.380952381,0.5775,0.4225
+task_1_level_4_clean_200.wav,"From your own account, you told her as much.",from the own account in told her as muct,0.333333333,0.235294118,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_201.wav,Now wash your very ungainly hands and go to bed.,now what you bal young game a and dak e by,0.9,0.605263158,0.818181818,0.963636364,0.036363636
+task_1_level_4_clean_202.wav,"She had plenty of it, and it had a quality.",lad pleny of it ind the cada quality,0.7,0.28125,0.7,0.8875,0.1125
+task_1_level_4_clean_203.wav,"And then far away in the distance, along the white ribbon of road, winding up from the valley, she saw a high gig, trotting swiftly one man in it, and a small groom seated behind.",and then for away in the disen long the white driven a road winding up rim the valley he saw high go trottin wits an one moming and a small groom heat ef behind,0.485714286,0.215827338,0.472222222,0.696638655,0.303361345
+task_1_level_4_clean_204.wav,She changed her tone from sarcasm to a soft and even dreamy note.,he came to tone from sartagin to a stopk and ewen dein at,0.615384615,0.423076923,0.615384615,0.852071006,0.147928994
+task_1_level_4_clean_205.wav,And when he reached the fourth line of the second verse he sang with loyal fervour.,when he weeps the fourth line at the sucping birdh e sal is the goial poher,0.6875,0.47761194,0.647058824,0.859375,0.140625
+task_1_level_4_clean_206.wav,"Plainly, this second species of Man was subterranean.",whanly with pletant peaty of man was subserani,0.625,0.477272727,0.625,0.859375,0.140625
+task_1_level_4_clean_207.wav,"They brought it it is mine, she sobbed.",he brought it to his mind he stobbed,0.75,0.266666667,0.75,0.9375,0.0625
+task_1_level_4_clean_208.wav,"It was quite in another manner that I, for my part, let myself go.",i i quite a nother mome that i for my part rep myself gron,0.5,0.28,0.5,0.75,0.25
+task_1_level_4_clean_209.wav,"An hour passed, two hours and the door was still closed.",now a path through hours and the door was still clored,0.454545455,0.318181818,0.454545455,0.702479339,0.297520661
+task_1_level_4_clean_210.wav,"She had looked extremely beautiful in that long, dark blue bedroom gown, reading Shakespeare.",he had looked enly beautiful an not long dark bleem bedon down iving a shap,0.714285714,0.376623377,0.666666667,0.880952381,0.119047619
+task_1_level_4_clean_211.wav,The girl walked swiftly on for a full minute.,the girl walked withly on we a fol mon,0.444444444,0.333333333,0.444444444,0.691358025,0.308641975
+task_1_level_4_clean_212.wav,He looked down at the terrace.,yo looked down at the ter,0.333333333,0.25,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_213.wav,"You must excuse me if I say stupid things, but my brain has gone to pieces.",must ecuse me if i thin to e ten buf my brain had gone to pec,0.5625,0.362068966,0.529411765,0.75,0.25
+task_1_level_4_clean_214.wav,"I think I will go to church, after all.",i think i will go to terterall,0.333333333,0.24137931,0.333333333,0.428571429,0.571428571
+task_1_level_4_clean_215.wav,"I slipped on the uneven floor, and fell over one of the malachite tables, almost breaking my shin.",i flip on  uneven floor and fell over one of the malecotad almost waking my fer,0.333333333,0.294871795,0.333333333,0.5,0.5
+task_1_level_4_clean_216.wav,"I should have become a real boy, like all these friends of mine!",i pold av become a real boy i gabbe sone ti her,0.615384615,0.48,0.615384615,0.83974359,0.16025641
+task_1_level_4_clean_217.wav,Why do you try to look like an owl?,widy pried a look like an hour,0.666666667,0.5,0.666666667,0.857142857,0.142857143
+task_1_level_4_clean_218.wav,"Well, you had nothing to do with it!",well you have nothing to do with thit,0.25,0.148148148,0.25,0.4375,0.5625
+task_1_level_4_clean_219.wav,And this was the man to whom she had signed herself Your wife.,and tes wit the man to cane to a sin het out nou wife,0.692307692,0.469387755,0.642857143,0.862637363,0.137362637
+task_1_level_4_clean_220.wav,"Well, said he, I cannot help it if they do disapprove of me.",well tad be i cannot help it tat they do to te preted me,0.461538462,0.333333333,0.428571429,0.648351648,0.351648352
+task_1_level_4_clean_221.wav,"As a daughter, she hoped she was not without a heart.",at the daogter he hoped she was not withbout the heart,0.545454545,0.268292683,0.545454545,0.79338843,0.20661157
+task_1_level_4_clean_222.wav,I know nothing about it whatever.,i now nothing about it wel,0.333333333,0.259259259,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_223.wav,"They that marry do well, but they that refrain do better.",we bet more well a they that rereplained he sol,0.727272727,0.555555556,0.727272727,0.918181818,0.081818182
+task_1_level_4_clean_224.wav,"And what is it to you, if I do study?",an what is i peyou if i be sutter,0.6,0.384615385,0.6,0.822222222,0.177777778
+task_1_level_4_clean_225.wav,And as a matter of fact I was touched.,n e matter pack on tu,0.888888889,0.620689655,0.888888889,0.981481481,0.018518519
+task_1_level_4_clean_226.wav,"When morning came he was very stiff, but well pleased with his doings.",when morning came to the drihe blest but well cleaed wit in tin,0.615384615,0.392857143,0.615384615,0.852071006,0.147928994
+task_1_level_4_clean_227.wav,The difficulty had been to obtain from him any response whatever.,the difficulty had been t retained fom him any respons whatever,0.363636364,0.12962963,0.363636364,0.595041322,0.404958678
+task_1_level_4_clean_228.wav,But there is nobody hereabouts to attach her and she goes so seldom from home.,the ton  nobody wo about te pace and she wune ther selldom an home,0.733333333,0.492063492,0.733333333,0.923809524,0.076190476
+task_1_level_4_clean_229.wav,"Go on, continue to be amusing.",no he commited  amuiated,1,0.695652174,1,1,0
+task_1_level_4_clean_230.wav,The extreme sweetness of her temper must hurt his.,it goom weet mesh o pettemper must pursly,0.888888889,0.487804878,0.888888889,0.986111111,0.013888889
+task_1_level_4_clean_231.wav,"Being pretty well aware of what sort of joy you must both be feeling, I have been in no hurry with my congratulations but I hope it all went off tolerably well.",te pretty well aware of what sol atoy mes bos o tein i have been no herrin if my cedoterion but i hope it all went off polerably well,0.4375,0.31496063,0.4375,0.650862069,0.349137931
+task_1_level_4_clean_232.wav,"And you are going to implore him, to beg him to keep silence?",o e going to impor him e begged him to se bilen,0.615384615,0.425531915,0.615384615,0.83974359,0.16025641
+task_1_level_4_clean_233.wav,it is good to be here!,en e good to be thet,0.5,0.4375,0.5,0.75,0.25
+task_1_level_4_clean_234.wav,"Two nightingales, in distant trees, sang alternately answering one another in liquid streams of melody.",who milindill and wit en e son altinately anster one another in liqwird steens of meli,0.8,0.406976744,0.75,0.933333333,0.066666667
+task_1_level_4_clean_235.wav,I never expected to see you again.,i mover ofter te fen a gain,0.857142857,0.518518519,0.857142857,0.979591837,0.020408163
+task_1_level_4_clean_236.wav,While I was busy about it a bell began to ring in the distance.,while i wous thiny about this aboul began to ren in te isten,0.571428571,0.367346939,0.571428571,0.802197802,0.197802198
+task_1_level_4_clean_237.wav,Instantly a stillness entered into her soul.,inently noma ante into the sore,0.857142857,0.540540541,0.857142857,0.976190476,0.023809524
+task_1_level_4_clean_238.wav,"The stores were closed, the doors, the windows.",nord were closed indoors the windows,0.5,0.27027027,0.5,0.666666667,0.333333333
+task_1_level_4_clean_239.wav,"This letter, however, was written, and sealed, and sent.",with leather however wald wittnes in feel insant,0.888888889,0.465116279,0.888888889,0.986111111,0.013888889
+task_1_level_4_clean_240.wav,"If any place in the sea is safe, this is it.",the wonen play from e se af say wis is it,0.818181818,0.59375,0.818181818,0.966942149,0.033057851
+task_1_level_4_clean_241.wav,She raised her hand to her cheek.,he ray por hante te,1,0.576923077,1,1,0
+task_1_level_4_clean_242.wav,"In reward for your kind heart, I forgive you for all your old mischief.",in the woard tho the hind pos a the given wor all your oldmister,0.857142857,0.482142857,0.8,0.954081633,0.045918367
+task_1_level_4_clean_243.wav,He was a wealthy cousin of mine.,e the wealthy pousin of mine,0.571428571,0.24,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_244.wav,"You must remember, my boy, answered the Pigeon, that hunger is the best sauce!",yeu must elonder my boy anteed the pigin what unde is te bat tort,0.642857143,0.37704918,0.642857143,0.87244898,0.12755102
+task_1_level_4_clean_245.wav,My very admiration was making me more angry.,my grary admily on i wi de more andry,0.875,0.472222222,0.777777778,0.944444444,0.055555556
+task_1_level_4_clean_246.wav,Every body is so surprized and every body says the same obliging things.,everybody is fot tepied in everybody said to sang obliging from e,0.923076923,0.338983051,0.923076923,0.993589744,0.006410256
+task_1_level_4_clean_247.wav,"At this second lie, his nose grew a few more inches.",ati stucken ly with node through a few more ingte,0.727272727,0.55,0.727272727,0.918181818,0.081818182
+task_1_level_4_clean_248.wav,Apparently I was not romantic enough.,apparently i was not remoned to the mo,0.666666667,0.35483871,0.5,0.666666667,0.333333333
+task_1_level_4_clean_249.wav,"Close upon her radiant dream had come this shadow, far more a shadow now, when her responsibility had infinitely increased, and when she had had proof of the love and respect in which they held her here.",woth upon the wady an rin and com tis tat far more tatow lag when her wesponsibility o infimately and wen to hid had te trut the rov in thepest an wis a help it te,0.810810811,0.478527607,0.789473684,0.951951952,0.048048048
+task_1_level_4_clean_250.wav,Into the face had stolen the light that never was on sea or land.,into the face of lowing a light of nother wise on se a mon,0.642857143,0.470588235,0.642857143,0.87244898,0.12755102
+task_1_level_4_clean_251.wav,"Then we heard the door open and shut sharply, and a swift rush in the next room.",then we horted door opening such oute and a slift rushe in the mexten,0.588235294,0.35483871,0.588235294,0.794117647,0.205882353
+task_1_level_4_clean_252.wav,Also I feel like offering a reward for the discovery of that tune.,afso i fen afforin a wi wor to the di cozery of as ten,0.846153846,0.433962264,0.785714286,0.950549451,0.049450549
+task_1_level_4_clean_253.wav,I shall press you no more.,and too casin sno more,0.833333333,0.65,0.833333333,0.966666667,0.033333333
+task_1_level_4_clean_254.wav,Somewhere within the house a door slammed.,nom where within the house and dore wane,0.714285714,0.257142857,0.625,0.839285714,0.160714286
+task_1_level_4_clean_255.wav,"Remember, Father, that I am like a cat.",erember father that i am lik the capte,0.5,0.24137931,0.5,0.75,0.25
+task_1_level_4_clean_256.wav,"And because he is mine, my beloved is safe and because I am his, he is content.",and the papulise mounds myt the levet i sac and te saian her misen,0.882352941,0.6,0.882352941,0.983193277,0.016806723
+task_1_level_4_clean_257.wav,He has to build us both up from the beginning again., hat te build a pot up in the beginning gan,0.636363636,0.341463415,0.636363636,0.854545455,0.145454545
+task_1_level_4_clean_258.wav,How could they do such a thing?,how could they be such a fin,0.285714286,0.208333333,0.285714286,0.489795918,0.510204082
+task_1_level_4_clean_259.wav,I want to tell you about it!,i want to tell you about it,0,0,0,0,1
+task_1_level_4_clean_260.wav,It was an island in the middle of the sea.,it was an island in the middle of the feet,0.1,0.09375,0.1,0.19,0.81
+task_1_level_4_clean_261.wav,He glared at me like a basilisk.,he glad that me like a bowdlof,0.428571429,0.36,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_262.wav,After this discovery he was fit to face anything.,after this deseber te as sit etat ant,0.777777778,0.45,0.777777778,0.944444444,0.055555556
+task_1_level_4_clean_263.wav,"She sat up, and put her bare feet on the floor, groping for slippers, and yawned, with a red face.",tat up and put her bare fa yon the floor broping her flipper and elan an te res ta,0.6,0.337837838,0.6,0.831578947,0.168421053
+task_1_level_4_clean_264.wav,I suppose he thought that his prey was escaping him.,i suppose you thought he his polin e inee,0.6,0.476190476,0.6,0.822222222,0.177777778
+task_1_level_4_clean_265.wav,The big ravine of the Waingunga.,the big lemem of the wine bundar,0.5,0.423076923,0.428571429,0.619047619,0.380952381
+task_1_level_4_clean_266.wav,"That thick man, he said in a tone of perfect urbanity, is as fine as a needle.",that pick man he fed in a tone of perfect ybanicy as i finees e meve,0.470588235,0.288135593,0.470588235,0.702205882,0.297794118
+task_1_level_4_clean_267.wav,"She had taken off her loose white coat, and pushed back the hat that pressed upon her thick, shining hair.",yo dod offer roph white coat and push back tho hat an prest upon his fic sining hand,0.7,0.380952381,0.7,0.9,0.1
+task_1_level_4_clean_268.wav,"If not, it will kill you in the end.",it not the istein an,0.888888889,0.653846154,0.888888889,0.977777778,0.022222222
+task_1_level_4_clean_269.wav,Do not you begin to feel that now?,he must be tegen to se a lot long,1,0.692307692,0.888888889,0.986111111,0.013888889
+task_1_level_4_clean_270.wav,Finally a little woman went by carrying two water jugs.,finally a little woman went by tering thew water drad,0.3,0.244444444,0.3,0.51,0.49
+task_1_level_4_clean_271.wav,She can hardly bear to speak of it.,ti cen hardly bed in tee,0.875,0.592592593,0.875,0.979166667,0.020833333
+task_1_level_4_clean_272.wav,And so you absolutely opened what was directed to her!,an tel you ur paly opened het win elucted te her,0.8,0.454545455,0.727272727,0.918181818,0.081818182
+task_1_level_4_clean_273.wav,"She sailed out of her pew, and advanced to the chancel step.",e failed out of her few in a dant to the canpel step,0.583333333,0.255319149,0.538461538,0.769230769,0.230769231
+task_1_level_4_clean_274.wav,"Yes, said his brother hesitatingly, there is a likeness.",yo rotes brother had e fain thereis a lightnes,0.888888889,0.444444444,0.888888889,0.987654321,0.012345679
+task_1_level_4_clean_275.wav,It does not bear talking of.,the dad not ber possinel,0.833333333,0.636363636,0.833333333,0.966666667,0.033333333
+task_1_level_4_clean_276.wav,You will feel better in the morning.,wou will feel batter in the morning,0.285714286,0.068965517,0.285714286,0.489795918,0.510204082
+task_1_level_4_clean_277.wav,"They had long since dropped to pieces, and every semblance of print had left them.",ther had long sin ropped tho pete and ot hen sonden o prince ad lect him,0.866666667,0.393939394,0.8125,0.9625,0.0375
+task_1_level_4_clean_278.wav,"In case you do disobey, you will be the one to suffer, not anyone else.",e pen to wides a bas you will be the wine  suffer moten one of,0.733333333,0.462962963,0.6875,0.888888889,0.111111111
+task_1_level_4_clean_279.wav,"They seemed distressed to find me, my arm against the overturned pillar, peering down the well.",teking the threat efine my arm atem and overturned toller hering down the well,0.625,0.428571429,0.625,0.839285714,0.160714286
+task_1_level_4_clean_280.wav,"There are people, who the more you do for them, the less they will do for themselves.",now people with the more than case a oni the last ase be o ensel,0.764705882,0.636363636,0.764705882,0.937254902,0.062745098
+task_1_level_4_clean_281.wav,"It is easy to enter, but sometimes they who enter never leave it.",t easi to unter a some times gay te unten never eo,0.923076923,0.431372549,0.923076923,0.993589744,0.006410256
+task_1_level_4_clean_282.wav,Apparently she had given the wrong answer.,upartment he ad liven around tanter,1,0.514285714,1,1,0
+task_1_level_4_clean_283.wav,"Because I was all but your brother in blood, I promise that when I am a man among men I will not betray ye to men as ye have betrayed me.",it cal lame il but your brother in blood i promised bat when i am a man o mon mone i will not petray yo o mo af youa yer,0.580645161,0.323809524,0.5625,0.789247312,0.210752688
+task_1_level_4_clean_284.wav,"I thought I would make a virtue of necessity, and see the sunrise.",i thought i would make a firt fe of ma seci and e te srun,0.538461538,0.326923077,0.466666667,0.671794872,0.328205128
+task_1_level_4_clean_285.wav,"She wished him very well but he gave her pain, and his welfare twenty miles off would administer most satisfaction.",with them very well an he good the poan and is dwelfare twenty miles off tot is minister most by e fact,0.75,0.35106383,0.652173913,0.854545455,0.145454545
+task_1_level_4_clean_286.wav,"I mean, would you have wished to paint her?",i men wild you have wish to pay her,0.444444444,0.242424242,0.444444444,0.691358025,0.308641975
+task_1_level_4_clean_287.wav,"In a few moments, all had disappeared.",an a few moments all had biseppear,0.285714286,0.166666667,0.285714286,0.489795918,0.510204082
+task_1_level_4_clean_288.wav,"Ah, and how appropriate for us on this day, of all days.",ah n how felt be it for i fond yor said an all day,0.833333333,0.547619048,0.714285714,0.904761905,0.095238095
+task_1_level_4_clean_289.wav,"I am afraid it has been a bothersome business, he said gently.",i am afraid of the in a boted onwicen e ad danly,0.666666667,0.469387755,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_290.wav,"And thus they started down through the wood, on that lovely Sabbath morn of early summer and the doctor walked erect between those two severed hearts, uniting, and yet dividing them.",and that they sat ed bround he the woy an mat lovely rate mor of erin soner and the bactor  walked he rusk e tee mas beak other hart remighted and let te iden,0.806451613,0.466216216,0.735294118,0.923149905,0.076850095
+task_1_level_4_clean_291.wav,"The yoke snapped with a twang, and they lumbered off together.",the yok capd it the twan and e rumbered off together,0.636363636,0.26,0.636363636,0.867768595,0.132231405
+task_1_level_4_clean_292.wav,What are you mumbling to yourself?,what ave you mumbling to eself,0.333333333,0.178571429,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_293.wav,The feeling soon passed it was unlike her to have entertained anything so subtle.,tet te on ten pash it as unlike hers wo have intertained anything so subtle,0.642857143,0.23880597,0.6,0.828571429,0.171428571
+task_1_level_4_clean_294.wav,In one point she was fully justified.,in one point he was fely ductified,0.428571429,0.166666667,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_295.wav,At midnight the wagon passes here that is to take us within the boundaries of that marvelous country.,at midnight the wagon pated feel a we tek us with in the boundyr of the fact marvlos cinten,0.722222222,0.325301205,0.684210526,0.894736842,0.105263158
+task_1_level_4_clean_296.wav,"The necessary roar ensued, and then they drove off.",the matebery rar ing fe an enly gorboc,0.888888889,0.56097561,0.888888889,0.986111111,0.013888889
+task_1_level_4_clean_297.wav,I could not even satisfy myself whether or not she breathed.,a could not even thoughtify myself whether or not imtre,0.363636364,0.346938776,0.363636364,0.554545455,0.445454545
+task_1_level_4_clean_298.wav,Now there is a cloud coming to cover that moon.,now there is a cloud om  the covered that moon,0.3,0.216216216,0.3,0.51,0.49
+task_1_level_4_clean_299.wav,I merely throw it out as a suggestion.,i knewly throw it out as i edet,0.375,0.433333333,0.375,0.609375,0.390625
+task_1_level_4_clean_300.wav,Take him home and bind his wounds.,take hem home and bins e we or,0.714285714,0.37037037,0.625,0.839285714,0.160714286
+task_1_level_4_clean_301.wav,queried the strained voice from the bed.,col the sun boice on the back,0.714285714,0.606060606,0.714285714,0.918367347,0.081632653
+task_1_level_4_clean_302.wav,Some day they will lead you astray.,someday they will lead the di,0.571428571,0.321428571,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_303.wav,"Yes, I venture still to think it.",yot li bente still te sinti,0.857142857,0.44,0.857142857,0.976190476,0.023809524
+task_1_level_4_clean_304.wav,"And at others, what a heap of absurdities it is!",in at other would av eep of a thirty easiday,0.8,0.513513514,0.8,0.96,0.04
+task_1_level_4_clean_305.wav,"asked the Marionette, who was beginning to waver and weaken in his good resolutions.",after milionet wi be gining to waver and reeken and his food revolution,0.714285714,0.333333333,0.714285714,0.912087912,0.087912088
+task_1_level_4_clean_306.wav,"The light at the window had nearly failed, and the girl bent low over her work.",the light of the window ho be ali fal and the girl bunt row over her work,0.4375,0.193548387,0.411764706,0.632352941,0.367647059
+task_1_level_4_clean_307.wav,"There was a scraping of chairs on the stone floor, and a rustling as the congregation rose.",em was a greaping of chil on the sane floor and he rocklan it the contredation rode,0.529411765,0.328767123,0.529411765,0.778546713,0.221453287
+task_1_level_4_clean_308.wav,The minute or two gained by hurrying them is lost in the final results.,the milit of te galin by hary mon as lost in he finan edolt,0.714285714,0.438596491,0.714285714,0.918367347,0.081632653
+task_1_level_4_clean_309.wav,The next morning they were at the seashore.,e moc morning they were at the tento,0.375,0.342857143,0.375,0.609375,0.390625
+task_1_level_4_clean_310.wav,She heard the door into the lower hall open and close.,he had the door  the lower hall opened and clothe,0.454545455,0.255813953,0.454545455,0.672727273,0.327272727
+task_1_level_4_clean_311.wav,"I lit a match and went on past the dusty curtains, of which I have told you.",i ril a mat and went on pask abust e coot of with y ha tare,0.647058824,0.465517241,0.647058824,0.867647059,0.132352941
+task_1_level_4_clean_312.wav,"Well, papa, if this is not encouragement to marry, I do not know what is.",wele papa is lis is not inturgement o mar i do not know whether,0.533333333,0.272727273,0.533333333,0.766666667,0.233333333
+task_1_level_4_clean_313.wav,"No, it shall be of gold and silver with diamond buttons.",no shall be a golden filer in sinon button,0.727272727,0.363636364,0.727272727,0.909090909,0.090909091
+task_1_level_4_clean_314.wav,"As he became rational, he ought to have roused himself and shaken off all that was unworthy in their authority.",i think thecame lashnal he not to ha loud hemself and shake in off ard hat the bunwer is in ter so,0.85,0.477777778,0.772727273,0.943181818,0.056818182
+task_1_level_4_clean_315.wav,"No, I want to be really truthful.",no on to be rad wiful,0.571428571,0.52,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_316.wav,"This thing is beyond words altogether, I said.",the sin is beon word docter goter i said,0.75,0.351351351,0.666666667,0.875,0.125
+task_1_level_4_clean_317.wav,"Yes, I too was born among men.",yet i do wis orn among mon,0.714285714,0.272727273,0.714285714,0.918367347,0.081632653
+task_1_level_4_clean_318.wav,And then something happened which almost caused a riot.,a mhen something happened with almost carsed a rit,0.555555556,0.152173913,0.555555556,0.802469136,0.197530864
+task_1_level_4_clean_319.wav,And will you let me play a few of your accompaniments?,and whel you ret me play a feof you a company,0.545454545,0.279069767,0.545454545,0.79338843,0.20661157
+task_1_level_4_clean_320.wav,"The doctor kicked the pine log, and the flames darted up merrily.",he doctord pit thu pine lan in wlain darded up marrily,0.833333333,0.384615385,0.833333333,0.96969697,0.03030303
+task_1_level_4_clean_321.wav,I shall have to look again some other day.,i shall have to look again or mother day,0.222222222,0.090909091,0.222222222,0.395061728,0.604938272
+task_1_level_4_clean_322.wav,I am not certain about the stupidity.,i am not certin about the peplitye,0.285714286,0.233333333,0.285714286,0.489795918,0.510204082
+task_1_level_4_clean_323.wav,"They have their positions, their families to go back to but we are different.",the have the polition an familys to go back te but we are different,0.428571429,0.209677419,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_324.wav,As I had no matches on me I waited for a while in the dark.,althou had no mape on e i waited for a while in the dide,0.333333333,0.295454545,0.333333333,0.523809524,0.476190476
+task_1_level_4_clean_325.wav,"Two or three white peacocks picked their way across the lawns, and a drab coloured pigeon sat so motionless on the arm of one of the Fates, that it seemed to be a part of the sculptured stone.",he weure three white detoc pit their way cross the lown and a drabed colened kicking sat so mostinly on arm of one of the pace but i cend to be a part of thi sulty sone,0.473684211,0.350993377,0.473684211,0.715504979,0.284495021
+task_1_level_4_clean_326.wav,But I am not afraid of your seeing what he writes.,but iam not afraid of the beeng what he write,0.454545455,0.179487179,0.454545455,0.672727273,0.327272727
+task_1_level_4_clean_327.wav,I had no doubt that the man knew of her being there but he only knew it by hearsay.,i had no gloud at the mon we of e de mas at he only ele is on tis e,0.684210526,0.546875,0.65,0.871052632,0.128947368
+task_1_level_4_clean_328.wav,I fancy I am rather a favourite he took notice of my gown.,i fant te o rater fav with te sod notice of my don,0.692307692,0.363636364,0.692307692,0.905325444,0.094674556
+task_1_level_4_clean_329.wav,"I know, I know, I know!",a now i know i know,0.333333333,0.133333333,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_330.wav,What are you doing stretched out on the ground?,wha being redh out on the ground,0.555555556,0.368421053,0.555555556,0.746031746,0.253968254
+task_1_level_4_clean_331.wav,But I had no sooner spoken than I caught myself up.,but i had not fis both in when i caught myself up,0.454545455,0.3,0.416666667,0.628787879,0.371212121
+task_1_level_4_clean_332.wav,"Do you, in the first place, mind her breaking with Vyse?",do o the fust i mind have write in ebie,0.727272727,0.581395349,0.727272727,0.918181818,0.081818182
+task_1_level_4_clean_333.wav,My mother and my cousin have gone.,my mother and my cusin had gone,0.285714286,0.111111111,0.285714286,0.489795918,0.510204082
+task_1_level_4_clean_334.wav,They seldom keep their exploits to themselves.,en faldom tepar aplace tor temselve,1,0.512820513,1,1,0
+task_1_level_4_clean_335.wav,The acquaintance she had already formed were unworthy of her.,he acquaintant fe obalen orn fere unwodiness,1,0.509803922,1,1,0
+task_1_level_4_clean_336.wav,I have never seen anything like that.,i have never seen anything like that,0,0,0,0,1
+task_1_level_4_clean_337.wav,"said the mother, and the conversation lagged.",that the mother and the conversation laved,0.285714286,0.162162162,0.285714286,0.489795918,0.510204082
+task_1_level_4_clean_338.wav,But for its elasticity it might have been frozen.,but mik te last id tite that might have been closy,0.777777778,0.375,0.636363636,0.838383838,0.161616162
+task_1_level_4_clean_339.wav,And what a horrible night it was!,and what  horrible night iway,0.428571429,0.115384615,0.428571429,0.542857143,0.457142857
+task_1_level_4_clean_340.wav,Then another sound broke upon my ears like the raising of a window sash.,on another found broke upon my vears like the waving of a window,0.357142857,0.206896552,0.357142857,0.554945055,0.445054945
+task_1_level_4_clean_341.wav,"By the way, I was quite unprepared to find him such a character.",by the way i was quite unpepared to find in uc a forence,0.307692308,0.24,0.307692308,0.520710059,0.479289941
+task_1_level_4_clean_342.wav,That day she carried no barbarous arrow in her hair.,that bave  played no birbar arn,0.8,0.571428571,0.8,0.933333333,0.066666667
+task_1_level_4_clean_343.wav,He listened for a few moments and heard nothing.,e litting brossin momen and serd nothing,0.777777778,0.384615385,0.777777778,0.936507937,0.063492063
+task_1_level_4_clean_344.wav,This was too true for contradiction.,to e conseqiten,1,0.7,1,1,0
+task_1_level_4_clean_345.wav,Did he put that to you as a justification?,tut yeu go up o or the detif tecyton,1,0.696969697,1,1,0
+task_1_level_4_clean_346.wav,Then she took up the paper and opened it.,don't you pock up the paper and opened it,0.444444444,0.3125,0.4,0.6,0.4
+task_1_level_4_clean_347.wav,"Never, truly, had a person turned out shown so little to explain it as this little person!",never to out a person toned out showin stone little to plan an e prine,0.647058824,0.450704225,0.647058824,0.858823529,0.141176471
+task_1_level_4_clean_348.wav,"But they answered the call from habit and some of them were lame from the traps they had fallen into, and some limped from shot wounds, and some were mangy from eating bad food, and many were missing.",wat they wont tis the call from ober and some of them were laing in the clop her in folmenty and some rip an shotin an in some wone men inten eding dad trogh an woman wen mesin,0.684210526,0.459119497,0.666666667,0.882963989,0.117036011
+task_1_level_4_clean_349.wav,"This was the man who, bowing his dark head towards the crucifixion window, said I accept the cross.",wi hi the man he bowing his dor had towards the cisetiption and that i haccept the cros,0.555555556,0.341772152,0.555555556,0.802469136,0.197530864
+task_1_level_4_clean_350.wav,But at my first gesture towards this they behaved very oddly.,but at my first gesture towards this te desa very objet,0.272727273,0.22,0.272727273,0.47107438,0.52892562
+task_1_level_4_clean_351.wav,"she was as grateful as possible, you may be sure.",he witer play for a passible emo besion,1,0.552631579,1,1,0
+task_1_level_4_clean_352.wav,"Well, take off the bandage and look, said the doctor.",well the ot the bandof you work sais the astin,0.7,0.43902439,0.7,0.91,0.09
+task_1_level_4_clean_353.wav,I caught up my coat left my hat and bag.,a cought up my pote lick my hatting abot,0.7,0.466666667,0.7,0.9,0.1
+task_1_level_4_clean_354.wav,"Even to tears, I said provokingly.",e ont e peal y som casot tinly,1.333333333,0.592592593,1,1,0
+task_1_level_4_clean_355.wav,Do you find such sayings in your books?,te find a sen e boo,0.875,0.677419355,0.875,0.979166667,0.020833333
+task_1_level_4_clean_356.wav,"It must, if I were not here.",bit o must if i werl not fealing,0.571428571,0.45,0.5,0.714285714,0.285714286
+task_1_level_4_clean_357.wav,"She kept her eyes on me, and repeated with a sort of whimsical enviousness  The sea!",the cupter eyes on and respeated with he sort of wintacle andgean the fees,0.5625,0.393939394,0.5625,0.78125,0.21875
+task_1_level_4_clean_358.wav,What to my backward glance seems startling and a little awful is their punctualness and inevitability.,what o my backward gland be sartling in a little awful it their punch ine and ting evitability,0.625,0.220930233,0.555555556,0.777777778,0.222222222
+task_1_level_4_clean_359.wav,"Its population, large though it was, was composed wholly of boys.",the population liges the relife of copa poli a forn,0.909090909,0.576923077,0.909090909,0.990909091,0.009090909
+task_1_level_4_clean_360.wav,What was wrong with that silence?,what wo bon with that filent,0.5,0.296296296,0.5,0.75,0.25
+task_1_level_4_clean_361.wav,I had a bizarre notion that he was not to be disturbed.,i had a begad noton at he wis not ee tured,0.583333333,0.372093023,0.583333333,0.810606061,0.189393939
+task_1_level_4_clean_362.wav,Are you sure we are alone?,a you sill te ano mine,0.833333333,0.55,0.833333333,0.972222222,0.027777778
+task_1_level_4_clean_363.wav,"In that very room she had been measured last September, with her two friends.",e not very room e had been resured laugh that pumbr if the keep ren,0.785714286,0.451612903,0.733333333,0.923809524,0.076190476
+task_1_level_4_clean_364.wav,I do not know how long I sat peering down that well.,i do not know how long i thought plaing down that wrell,0.25,0.25,0.25,0.4375,0.5625
+task_1_level_4_clean_365.wav,"You can direct me in most things, but not in this.",you can direct me amosgt thim but not in there,0.363636364,0.236842105,0.363636364,0.554545455,0.445454545
+task_1_level_4_clean_366.wav,They want to get to them.,they want to get tr them,0.166666667,0.052631579,0.166666667,0.305555556,0.694444444
+task_1_level_4_clean_367.wav,"The sense of manhood and mastery the right of control, the joy of possession, arose within him.",the pent of man hood in mathte e writ a pentol hejoyed possessing aroad titkin hing,0.882352941,0.381578947,0.882352941,0.985294118,0.014705882
+task_1_level_4_clean_368.wav,The hands spun backward upon the dials.,the hond flun backward upon the dile,0.428571429,0.1875,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_369.wav,She even answered my question quite readily with many words out of which I could make very little.,het even anteed my question qi grateli a mony word hout of wich i could moke very little,0.555555556,0.2375,0.555555556,0.802469136,0.197530864
+task_1_level_4_clean_370.wav,The darkness presently fell from my eyes.,the batmes hadeli folnd fom mohies,0.857142857,0.558823529,0.857142857,0.976190476,0.023809524
+task_1_level_4_clean_371.wav,"He looked at me curiously, with that same searching glance which I hate and fear so in doctors.",he look ed me soles tabot ten for in gran o botis in hear sol in doctor,0.833333333,0.526315789,0.833333333,0.970588235,0.029411765
+task_1_level_4_clean_372.wav,"We were soon seated together in a little stone arbour, engaged in conversation, chiefly of smiles.",he wald do in to together in a little son arbor and gave hin conversation  to dete of mile,0.8125,0.325,0.684210526,0.881578947,0.118421053
+task_1_level_4_clean_373.wav,A horrid mistrust of the whole house possessed me.,a hardles ut tat the whole house todect i,0.555555556,0.463414634,0.555555556,0.802469136,0.197530864
+task_1_level_4_clean_374.wav,"Did you really tell him to get out and never come near you again, or something awful like that?",an really tell hing to get out and never come en ye a gain i something owful like that,0.473684211,0.213333333,0.45,0.664819945,0.335180055
+task_1_level_4_clean_375.wav,They were looking over views in Swisserland.,avir looking oer bee in wicelan,0.714285714,0.459459459,0.714285714,0.904761905,0.095238095
+task_1_level_4_clean_376.wav,"I, too, she said with a sort of funny eagerness.",i tin e en with the sort of puny togen,0.6,0.5,0.6,0.84,0.16
+task_1_level_4_clean_377.wav,I shall have to send to town.,i to had te send town,0.571428571,0.454545455,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_378.wav,"Then she asked me in her soft quaint accent how I had passed the night, and whether I was very much inconvenienced by wearing the clothes which old Pelagie had put there for me while I slept.",then she asked me  her shoft coin acte how i passed he nice and whether i was very much intoden by whereing yo clothes with a helligence of wictare for me wele i wert,0.486486486,0.366013072,0.486486486,0.713036566,0.286963434
+task_1_level_4_clean_379.wav,Faces grew more distinct among the marching masses and he recognized one.,open te more diftent mong the markin mattin and recognized one,0.583333333,0.327868852,0.583333333,0.810606061,0.189393939
+task_1_level_4_clean_380.wav,He is taking his meal with the others.,the aposin te deal with level,0.875,0.6,0.875,0.979166667,0.020833333
+task_1_level_4_clean_381.wav,And then it came into my head that I would amaze our friends behind by lighting it.,and mon a climon my hard that i would amave of un behind by londonme,0.588235294,0.439393939,0.588235294,0.807843137,0.192156863
+task_1_level_4_clean_382.wav,"Your one possible course would be to collapse into the mud, and let the ducal gouties trample on you.",the one possible court would be the collapse into the mind and ret the duop of goudis templ on im,0.526315789,0.283950617,0.5,0.736842105,0.263157895
+task_1_level_4_clean_383.wav,"She was his object, and every body must perceive it.",he was in object an ever body mut to see it,0.7,0.292682927,0.636363636,0.854545455,0.145454545
+task_1_level_4_clean_384.wav,I left him three days ago on the shore of a large sea.,i left thim three tars ago on the sore of a large,0.307692308,0.170731707,0.307692308,0.480769231,0.519230769
+task_1_level_4_clean_385.wav,He who steals grapes may very easily steal chickens also.,e is tel groat may gon e on ban set an dolor,1.1,0.680851064,0.916666667,0.991666667,0.008333333
+task_1_level_4_clean_386.wav,"A glorious September sun blazed down upon the water, there was absolute silence up and down the curving shore.",a glory of e cunte son blayed bown upon the water ther wer hap taly siden up an down the tleden taor,0.789473684,0.4,0.681818182,0.88277512,0.11722488
+task_1_level_4_clean_387.wav,"Possibly he does know, for I refer to Lorenzo the poet.",possibly he diged i flire hers of the rendor te pol,0.818181818,0.465116279,0.818181818,0.966942149,0.033057851
+task_1_level_4_clean_388.wav,"I went back to the studio, and resumed my work.",i went back to the fedio in the uned my work,0.4,0.222222222,0.363636364,0.554545455,0.445454545
+task_1_level_4_clean_389.wav,"So you do love me, little thing?", wol be love me little bit,0.571428571,0.416666667,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_390.wav,I went eagerly to every unbroken case.,i went intoly the every unwoltin cane,0.571428571,0.419354839,0.571428571,0.816326531,0.183673469
+task_1_level_4_clean_391.wav,The woods had opened to leave space for a sloping triangular meadow.,the wood put open to fot for slopen find e mater,0.75,0.553571429,0.75,0.931818182,0.068181818
+task_1_level_4_clean_392.wav,"Heaps of people can sing a little, but very few can accompany properly.",he po people cansinulitle but vo to i company propely,0.846153846,0.315789474,0.846153846,0.969230769,0.030769231
+task_1_level_4_clean_393.wav,"No.  Bribes were out of the question, he admitted.",no wride with out of the question wit me,0.444444444,0.342105263,0.444444444,0.691358025,0.308641975
+task_1_level_4_clean_394.wav,His long nose became at least two inches longer.,e blon lared became op in tet in her blonder,1,0.538461538,0.9,0.988888889,0.011111111
+task_1_level_4_clean_395.wav,"He chanced to be in a lucid critical mood, and would not sympathize with exaltation.",he can't be in a weep of clitical mead and the not empasize it i calt e,0.8,0.470588235,0.666666667,0.866666667,0.133333333
+task_1_level_4_clean_396.wav,"Apparently the single house, and possibly even the household, had vanished.",a tawy ti single house in possibly even the household of dan,0.545454545,0.306451613,0.5,0.727272727,0.272727273
+task_1_level_4_clean_397.wav,They were never importunate and yet never listless.,et would never import mo and that never liftid,0.75,0.465116279,0.666666667,0.875,0.125
+task_1_level_4_clean_398.wav,No one has come out this way.,no one had ponouted for,0.714285714,0.5,0.714285714,0.885714286,0.114285714
+task_1_level_4_clean_399.wav,I saw one little thing that seemed odd to me.,i brought one little thing i heme dod be,0.6,0.457142857,0.6,0.822222222,0.177777778
+task_1_level_4_clean_400.wav,"However, when I read on, I found it was not near so bad as I had fancied at first and I make so light of it now to her, that she does not think much about it.",however when i re on i found it was not me  fer bot a by a tance tat far and i a so lighted at ma se ba war she did not think my about her,0.567567568,0.372881356,0.567567568,0.807807808,0.192192192
+task_1_level_4_clean_401.wav,This is a poor reward for following thee twenty miles.,thit is the four reward o fowlowing e hon mile,0.8,0.409090909,0.8,0.96,0.04
+task_1_level_4_clean_402.wav,That part of it represented by the fabulous collections was still being protected by the police.,that part of i represented by the fabulous collection whith still being protected by the ceen,0.25,0.15,0.25,0.4375,0.5625
+task_1_level_4_clean_403.wav,I have never seen you in such a mood.,i old never se ye ater moon,0.777777778,0.571428571,0.777777778,0.936507937,0.063492063
+task_1_level_4_clean_404.wav,"We are waiting, was the reply.",we ar wating wan to require,0.833333333,0.434782609,0.833333333,0.972222222,0.027777778
+task_1_level_4_clean_405.wav,A cloud passed before the sun.,a cloud passed before the son,0.166666667,0.041666667,0.166666667,0.305555556,0.694444444
+task_1_level_4_clean_406.wav,"I, of course, could not share his consternation.",i of course did not fear his confinentan,0.375,0.368421053,0.375,0.609375,0.390625
+task_1_level_4_clean_407.wav,It is the greatest amusement in the world!,it in the greates ti musian in the world,0.5,0.176470588,0.444444444,0.652777778,0.347222222
+task_1_level_4_clean_408.wav,"Remember, Mother, it is always the seventh wave that goes farthest up the beach.",e younber mother bed it always be seven ways a the fare uff te be,0.928571429,0.46875,0.8125,0.957142857,0.042857143
+task_1_level_4_clean_409.wav,"Waiting, he replied, in accents of adoration.",waiting ho thepied in act ented ateration,0.714285714,0.277777778,0.714285714,0.918367347,0.081632653
+task_1_level_4_clean_410.wav,"I knew that something strange had happened, and for the moment could not distinguish what the strange thing might be.",a new that something plains the papen an for the moment did not restingwith what the strame ting might see,0.55,0.291666667,0.55,0.7975,0.2025
+task_1_level_4_clean_411.wav,"Well, pretty good news, is not it?",well pretty good mew  not it,0.285714286,0.16,0.285714286,0.404761905,0.595238095
+task_1_level_4_clean_412.wav,The public pays and must be served well.,the public pay and must be served well,0.125,0.03125,0.125,0.234375,0.765625
+task_1_level_4_clean_413.wav,"Why yes, but he is going to have a tough time when some of his illusions are dispelled.",why lo tut be point hav a cush time and some of the beliesions a e dout,0.777777778,0.485294118,0.736842105,0.918300654,0.081699346
+task_1_level_4_clean_414.wav,"Some took a nibble, some took a bite, but no sooner had they tasted a page or two, than they spat them out with a wry face, as if to say  What a horrid taste!",some tiinleble some to a bite at most ine hav ben pace o the pretefte an thes sack a out with a rise tine wis a te they what a horid tin,0.742857143,0.491525424,0.742857143,0.927678571,0.072321429
+task_1_level_4_clean_415.wav,"I long to make apologies, excuses, to urge something for myself.",a longed to make a pology to cei thet ird something for myself,0.636363636,0.31372549,0.538461538,0.748251748,0.251748252
+task_1_level_4_clean_416.wav,My fire would not need replenishing for an hour or so.,my fire would not nev repunish thim for nour of te,0.636363636,0.302325581,0.583333333,0.79338843,0.20661157
+task_1_level_4_clean_417.wav,"Nothing can be more simple, you see.",nothing can be more timple te,0.428571429,0.214285714,0.428571429,0.619047619,0.380952381
+task_1_level_4_clean_418.wav,"What I remember is that I was content not, for the time, to open the question, and that contentment must have sprung from the sense of his perpetually striking show of cleverness.",what i wilmember the than i was inpent not for the time the open suston and that ce sent mas moe run for e sense as is posettes ritin  sor of sevrnen,0.625,0.395833333,0.606060606,0.834960938,0.165039063
+task_1_level_4_clean_419.wav,"It is a great secret, but I am glad to say that she is writing another novel.",it is a great sepe but i am glad to say he is liceing anothing novel,0.294117647,0.254237288,0.294117647,0.470588235,0.529411765
+task_1_level_4_clean_420.wav,Along the way he felt very uneasy.,along the way he felt very uneasi,0.142857143,0.037037037,0.142857143,0.265306122,0.734693878
+task_1_level_4_clean_421.wav,Fearing lest he might examine the combination I led the way into my study.,hoin left he mied dom in the combiny om my led teway  bude,0.928571429,0.483333333,0.8125,0.950549451,0.049450549
+task_1_level_4_clean_422.wav,The little woman stood a moment pensive and then sighed.,the little woman sood a moment and ti and thenside,0.5,0.217391304,0.454545455,0.64,0.36
+task_1_level_4_clean_423.wav,But I shall get it out of you yet!,but i forget it out of me yer,0.444444444,0.36,0.444444444,0.652777778,0.347222222
+task_1_level_4_clean_424.wav,What do I care when the child has nothing?,wotdo i car we thild as nothing,0.777777778,0.272727273,0.777777778,0.936507937,0.063492063
+task_1_level_4_clean_425.wav,"I knew all that was taking place, as soon as I should have known it had I had my sight.",i knew all that was ticking place a feem about firer no twhat i had my sight,0.5,0.333333333,0.5,0.705882353,0.294117647
+task_1_level_4_clean_426.wav,He growled as much as a man of his accomplished manner and voice could growl.,he growed as much as a man of his accomplished manner an boice te grow,0.333333333,0.14516129,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_427.wav,"Ah, well, I knew of course that you would manage it!",ah well i knew of course if you would manage it,0.090909091,0.102564103,0.090909091,0.173553719,0.826446281
+task_1_level_4_clean_428.wav,After some cogitation he murmured There is another way of getting the news to Headquarters.,after some contipation de marmone tos another way of gelin e to head qir,0.666666667,0.368421053,0.666666667,0.880952381,0.119047619
+task_1_level_4_clean_429.wav,She should not have asked him to dinner he should not accept her invitation.,e sould not have ask him to dinnin in could not accept for andication,0.571428571,0.258064516,0.571428571,0.816326531,0.183673469
+task_1_level_4_clean_430.wav,You had much better not play.,ho have not by not a,0.833333333,0.652173913,0.833333333,0.972222222,0.027777778
+task_1_level_4_clean_431.wav,"She does not know all our plans of cords, and notches, and things.",he does not know all our plan o cord in not hesintin,0.615384615,0.235294118,0.615384615,0.83974359,0.16025641
+task_1_level_4_clean_432.wav,"It would be rather a blow to sculpture, would it not?",it would be rather a blow ton ol te woth it lost,0.454545455,0.268292683,0.416666667,0.628787879,0.371212121
+task_1_level_4_clean_433.wav,"Leaving him to be annoyed, she gazed at the black head again.",leaving him to be annoyed gave at the black ese o ten,0.416666667,0.25,0.384615385,0.555555556,0.444444444
+task_1_level_4_clean_434.wav,I braced myself up against the moment when it would move.,a break myself up against the moment on he eme,0.545454545,0.369565217,0.545454545,0.772727273,0.227272727
+task_1_level_4_clean_435.wav,"You know that all my people like you very much, though they hold various opinions as to your discretion.",o mi e foll mig ceople like yo vary much to they hold varan tepion as  e yortespecson,0.736842105,0.44047619,0.736842105,0.926900585,0.073099415
+task_1_level_4_clean_436.wav,He forebore to repress the sources of youth.,before boy to a pressed eforce of a mese,0.875,0.416666667,0.777777778,0.944444444,0.055555556
+task_1_level_4_clean_437.wav,"Depend upon it, he will be much farther from doing you justice.",the pon thepon it he wold much father from deing juste,0.75,0.34,0.692307692,0.878787879,0.121212121
+task_1_level_4_clean_438.wav,"This, I must warn you, was my theory at the time.",wi a'm a for your with my ferier at time,0.818181818,0.638888889,0.75,0.925619835,0.074380165
+task_1_level_4_clean_439.wav,"It is true that we only see out of our eyes, and we are not very clever.",it is sen that the only te out of our eyes and not very ples,0.352941176,0.314814815,0.352941176,0.525490196,0.474509804
+task_1_level_4_clean_440.wav,Pray do not let them talk of it.,play not let im pockite,0.75,0.5,0.75,0.9,0.1
+task_1_level_4_clean_441.wav,"I wore a beard out there no time to shave and my jacket proclaimed me a serjeant, not a surgeon.",a wor  ber bout the no time before and my gapid poclame he sirg not a third,0.7,0.48,0.7,0.894117647,0.105882353
+task_1_level_4_clean_442.wav,"My mother has never been treated with impertinence before, and the aesthetic impression must have been of extraordinary strength.",my mother had never been preated with impertinent for and the tet igam pression is must have been  ordana ston,0.578947368,0.275229358,0.523809524,0.736842105,0.263157895
+task_1_level_4_clean_443.wav,I would draw a long breath of relief to have it settled.,i would draw a long breath of e leaf had  acted,0.416666667,0.295454545,0.416666667,0.628787879,0.371212121
+task_1_level_4_clean_444.wav,My nervous annoyance changed to anger.,my never can noi a ande,0.833333333,0.5625,0.833333333,0.972222222,0.027777778
+task_1_level_4_clean_445.wav,How dare you offer me this charlatanism of passion?,how dan you often me e soltin of me past,0.666666667,0.5,0.6,0.822222222,0.177777778
+task_1_level_4_clean_446.wav,I mean your choice of words.,im men retoy the word,1,0.590909091,1,1,0
+task_1_level_4_clean_447.wav,Do you say these horrors to make me tremble?,le pa be fard magni fumble,1,0.742857143,1,1,0
+task_1_level_4_clean_448.wav,"he asked, with a little husky laugh.",hear with a little husfbe lagh,0.571428571,0.285714286,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_449.wav,You must have seen that I did., must't se that i do,0.571428571,0.47826087,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_450.wav,"We had arrived within sight of the church and of various persons, including several of the household of Bly, on their way to it and clustered about the door to see us go in.",you had arrived with inciht of the church and a verios perfen and cre in suverl of the household wlide on the waser when clustered about the door e is sorin,0.647058824,0.299270073,0.611111111,0.814041746,0.185958254
+task_1_level_4_clean_451.wav,The gentlemen spoke of his horse.,the donteman foke of the forth,0.666666667,0.444444444,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_452.wav,"Finally, he could control himself no longer and gave a loud sneeze.",finally ho the contold memself in a longer and ge a loud ten,0.666666667,0.333333333,0.615384615,0.83974359,0.16025641
+task_1_level_4_clean_453.wav,It was a serious matter for him.,it was a fow with madar for him,0.428571429,0.4,0.375,0.553571429,0.446428571
+task_1_level_4_clean_454.wav,"They were rapidly forming words for each other, or for any body else who would be puzzled.",they were rapidly forming words on ec other or for anybody else we e upe,0.470588235,0.236111111,0.470588235,0.682352941,0.317647059
+task_1_level_4_clean_455.wav,What was it that had got into that stillness?,what was it that a got into bot fim,0.333333333,0.361111111,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_456.wav,"I wanted to know a little more, and this tells me quite enough.",i wanted to know a little more and is tell he quite enough,0.230769231,0.081632653,0.230769231,0.408284024,0.591715976
+task_1_level_4_clean_457.wav,She hardly wished to have more leisure for them.,he hidly with pot more leger for them,0.666666667,0.384615385,0.666666667,0.875,0.125
+task_1_level_4_clean_458.wav,"We are confronted in this case by a psychological problem, and one which very likely has not occurred to you.",yeu have conplented in he case by a sychological problem a one his very likely of not aposed to yo,0.5,0.295454545,0.5,0.75,0.25
+task_1_level_4_clean_459.wav,Not a soul knows I have come home.,not a tol no i had cometem,0.625,0.384615385,0.625,0.839285714,0.160714286
+task_1_level_4_clean_460.wav,The big panther turned his head away in half a minute.,the big pathed tunded head away in half a mine,0.363636364,0.209302326,0.363636364,0.554545455,0.445454545
+task_1_level_4_clean_461.wav,But the fault is not mine.,but the polt is not min,0.333333333,0.2,0.333333333,0.555555556,0.444444444
+task_1_level_4_clean_462.wav,In my trouser pocket were still some loose matches.,n my tous e pockes is still fom lis mater,0.888888889,0.380952381,0.8,0.955555556,0.044444444
+task_1_level_4_clean_463.wav,I might run up now and see the old lady!,a might run up now and thro the old lady,0.2,0.166666667,0.2,0.36,0.64
+task_1_level_4_clean_464.wav,"Nevertheless she was, somehow, a very great comfort.",nevertheless he was somehow very great on,0.375,0.19047619,0.375,0.553571429,0.446428571
+task_1_level_4_clean_465.wav,"Just so, said the other meaningly.",lut so at the oter nen,0.666666667,0.481481481,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_466.wav,"Well, we must look for love affairs now!",well e must look the love of theire,0.5,0.387096774,0.5,0.75,0.25
+task_1_level_4_clean_467.wav,"In the pan, instead of oil or butter, he poured a little water.",in the pam in tile coil a bother epor the little water,0.692307692,0.333333333,0.692307692,0.897435897,0.102564103
+task_1_level_4_clean_468.wav,At the same instant he plunged his hand into the basin and drew out the flower.,at the filman e pun hi parm into the boat  ghrew out the flower,0.5625,0.380952381,0.5625,0.78125,0.21875
+task_1_level_4_clean_469.wav,"His cheerful, casual manner masked no weakness, every muscle in the young, big body was hard from tennis and baseball.",heful pady manf last nowy every munto he run good body an part an pon and ter for,0.9,0.578947368,0.857142857,0.975,0.025
+task_1_level_4_clean_470.wav,"The poor thing was very ill after it, and so got tempted into cigarettes.",the poorthin was welly gil at ther and so bac pumted in to siger,0.785714286,0.396551724,0.733333333,0.918367347,0.081632653
+task_1_level_4_clean_471.wav,Take him to the market and sell him.,whey con te the market an solf,0.75,0.5,0.75,0.928571429,0.071428571
+task_1_level_4_clean_472.wav,"It was rather fascinating to see him so quiet at the end of all that fury, clamour, passion, and uproar.",it was rather fastenit he an no quiet ot the oung to all tot reary plamor pastin and upwor,0.65,0.3625,0.65,0.871052632,0.128947368
+task_1_level_4_clean_473.wav,"Hundreds of other men were presumably buying their wives shoes, up and down the brilliant street.",undreds of other mone of predinably byng their wife an up en down the bolmin,0.625,0.375,0.625,0.85,0.15
+task_1_level_4_clean_474.wav,Yet they were as beautifully smooth as her voice when she admitted That protection naturally is only partial.,not they were beautiful cometed fom forn an timat ad mon that the cuck in  mop ary as only partial,0.888888889,0.505494505,0.8,0.955555556,0.044444444
+task_1_level_4_clean_475.wav,"And in any case, if it is written that we must die, we shall at least die together.",and the menitad thi tot e written that we must dide he sell at lest ie o get,0.722222222,0.380952381,0.684210526,0.888888889,0.111111111
+task_1_level_4_clean_476.wav,This cottage was given to me yesterday by a little Goat with blue hair.,wis polet was liven to me yestaday by a little sgost with three hair,0.428571429,0.298245614,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_477.wav,"And, upon my word, they have an air of great probability.",on upon my word then having or of gated bo the din,0.818181818,0.431818182,0.75,0.931818182,0.068181818
+task_1_level_4_clean_478.wav,"If it is true, she sighed, that you find in me a friend, let us turn back together.",i prove beside that ce find in in a friend tut a turn back tegether,0.611111111,0.370967742,0.611111111,0.818518519,0.181481481
+task_1_level_4_clean_479.wav,"Scarce anything in the whole history seems to me so odd as this fact that my real beginning of fear was one, as I may say, with the instinct of sparing my companion.",des anysin in the hole itre is me trow on at his fact that my real begiing te ter wish one a by my sine it i infence  bar myt etinin,0.757575758,0.461538462,0.757575758,0.937438905,0.062561095
+task_1_level_4_clean_480.wav,"I had read all the papers and all the books in the library, but for the sake of something to do I went to the bookcases and shoved them open with my elbow.",i had red all the papers and all the book in the library but for the fake of comthing to do i went to the book pape and sebbed thim open with my elbow,0.242424242,0.099173554,0.235294118,0.397504456,0.602495544
+task_1_level_4_clean_481.wav,He turned back into the room.,he come barin te room,0.666666667,0.434782609,0.666666667,0.866666667,0.133333333
+task_1_level_4_clean_482.wav,She had never been admitted before to be seriously ill.,heha never benlyd littled before erisi hell,0.8,0.377777778,0.8,0.942857143,0.057142857
+task_1_level_4_clean_483.wav,"It is so perfect out here, and I must go in to my maid.",it is sol pepef oterin and an must going to my mod,0.571428571,0.35,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_484.wav,"I thought, for a Catholic priest.",i thought but at a proof,0.666666667,0.538461538,0.571428571,0.75,0.25
+task_1_level_4_clean_485.wav,"Even in his blindness, he was the stronger.",even in his blindley e was testoner,0.5,0.205882353,0.5,0.714285714,0.285714286
+task_1_level_4_clean_486.wav,The car shook and the windows rattled.,the cast took and the window bacte,0.571428571,0.258064516,0.571428571,0.816326531,0.183673469
+task_1_level_4_clean_487.wav,Your reasonings carry my judgment along with them entirely.,e meding very my judgment along with them in pire,0.555555556,0.34,0.5,0.722222222,0.277777778
+task_1_level_4_clean_488.wav,But I ought to have gone before.,but i ought tove gone before,0.285714286,0.08,0.285714286,0.404761905,0.595238095
+task_1_level_4_clean_489.wav,A pretty girl gave him a glance from a pair of violet eyes.,a pretty girl did im the glanc in a par of by a eyes,0.615384615,0.434782609,0.571428571,0.802197802,0.197802198
+task_1_level_4_clean_490.wav,I have heard her every year of our lives since we both began.,i have heard her iv te rear of our lam and seges began,0.538461538,0.354166667,0.5,0.710059172,0.289940828
+task_1_level_4_clean_491.wav,"He is an excellent young man, both as son and brother.",you van upfolent yyoung man both a son an brother,0.636363636,0.285714286,0.636363636,0.854545455,0.145454545
+task_1_level_4_clean_492.wav,Would you like one for your buttonhole?,wuld you like one felan butten hole,0.571428571,0.25,0.571428571,0.816326531,0.183673469
+task_1_level_4_clean_493.wav,Seemed to have a restless brain.,in to have a restlessly,0.5,0.423076923,0.5,0.7,0.3
+task_1_level_4_clean_494.wav,I waited for what the girl had to say.,a waled for what the girl had pesan,0.444444444,0.206896552,0.444444444,0.652777778,0.347222222
+task_1_level_4_clean_495.wav,He came four times a day for a week.,he pon or timed the day for me,0.666666667,0.518518519,0.666666667,0.875,0.125
+task_1_level_4_clean_496.wav,The whine had changed to a sort of humming purr that seemed to come from every quarter of the compass.,the ine had cloned e e fort o prommony per that been come an ugery quarter of the compan,0.65,0.365853659,0.65,0.871052632,0.128947368
+task_1_level_4_clean_497.wav,A kind look shone in his eyes.,a kind look show me adie,0.571428571,0.391304348,0.571428571,0.785714286,0.214285714
+task_1_level_4_clean_498.wav,I do not scruple to say that she plays extremely well.,a do not people to say that he pay i enly well,0.545454545,0.325581395,0.5,0.727272727,0.272727273
+task_1_level_4_clean_499.wav,And I longed very much to kill a Morlock or so.,and i long very much o pille morlogi to,0.636363636,0.277777778,0.636363636,0.838383838,0.161616162
+task_1_level_4_clean_500.wav,Then the Time Traveller put forth his finger towards the lever.,on the time fably put forch his singer towards the rubber,0.454545455,0.307692308,0.454545455,0.702479339,0.297520661
+task_1_level_4_clean_501.wav,But he was not satisfied with this.,a he wousd not tatify tith thir,0.714285714,0.464285714,0.714285714,0.918367347,0.081632653
+task_1_level_4_clean_502.wav,"She wore white, transparent, simple there were coral beads about her firm young throat.",she will wite an pan himple there were calld ins about her firn line flote,0.714285714,0.38028169,0.666666667,0.880952381,0.119047619
+task_1_level_4_clean_503.wav,"Soft little hands, too, were creeping over my coat and back, touching even my neck.",dock mittle hame te he creeping over my poast and back huching beating my mack,0.6,0.338461538,0.6,0.84,0.16
+task_1_level_4_clean_504.wav,She slurred over the word dangerous but I picked it up.,he flurred over the wobd danger but i tioked it up,0.454545455,0.181818182,0.454545455,0.702479339,0.297520661
+task_1_level_4_clean_505.wav,one can think of nothing else.,one con sent of nothing ol,0.5,0.333333333,0.5,0.75,0.25
+task_1_level_4_clean_506.wav,And now came the reaction of the altered conditions.,n wile pan e athing af te alten te lien,1.111111111,0.627906977,1,1,0
+task_1_level_4_clean_507.wav,"But that was nothing once, there, I was over twelve hundred in.",the that was nothing one ther are wild over twelve hundred an,0.5,0.224489796,0.5,0.75,0.25
+task_1_level_4_clean_508.wav,"He may be asleep now, and even were he awake what if he would rather kill his own goats?",he may be a feat wile and even wort the away what is he was rother so e en boat,0.684210526,0.426470588,0.65,0.871052632,0.128947368
+task_1_level_4_clean_509.wav,So he threw back his long hair and frowned at the crowd.,ble trew bad tis long hair and frowned at the croud,0.5,0.181818182,0.5,0.727272727,0.272727273
+task_1_level_4_clean_510.wav,"Not so far out, Valentine, take care!",not to bil down tikne,0.857142857,0.678571429,0.857142857,0.971428571,0.028571429
+task_1_level_4_clean_511.wav,"Nothing, but that the lessons of her past folly might teach her humility and circumspection in future.",nothing but hat the lesson of rer pass folly might beep ther hemility and firconstruction in duter,0.529411765,0.214285714,0.529411765,0.778546713,0.221453287
+task_1_level_4_clean_512.wav,"Mother Necessity, who had been staved off for a few thousand years, came back again, and she began below.",mothern te fated had been played dorkbort e toutin year ame bap adan and she began below,0.684210526,0.34939759,0.684210526,0.888544892,0.111455108
+task_1_level_4_clean_513.wav,I drew a great security in this particular from her mere smooth aspect.,i do a great gicurty in tis sarticular un he mear any doc,0.692307692,0.431034483,0.692307692,0.905325444,0.094674556
+task_1_level_4_clean_514.wav,But to go to school I need a suit of clothes.,i te go to school an a feet of clote,0.545454545,0.382352941,0.545454545,0.772727273,0.227272727
+task_1_level_4_clean_515.wav,"That quiet, level voice was awakening doubts as to his view of the situation, the first he had had since the moment of turning and walking down the Shenstone village church three years ago.",that quiet level voyd to the waking doubt af in he itituation the first te ave had ec te moment of tinn and walking down the sen on do cer e wereda,0.647058824,0.39869281,0.647058824,0.867647059,0.132352941
+task_1_level_4_clean_516.wav,"It only, in truth, left my friend still more grave.",het only intruted left my friend til more grav,0.5,0.179487179,0.5,0.722222222,0.277777778
+task_1_level_4_clean_517.wav,"He only stopped once, to pick her some great blue violets.",yo nmy tath one  it lis in great ble by e,1,0.608695652,1,1,0
+task_1_level_4_clean_518.wav,"She renewed it when the two carriages stopped, half into Florence.",in emedet in e pe tard es trock passed in the flon,1.090909091,0.648148148,1,1,0
+task_1_level_4_clean_519.wav,"But halfway to the bell his resolution wavered, disappeared.",but hatf way to the bell epaselekin waging if tese,0.666666667,0.46,0.6,0.822222222,0.177777778
+task_1_level_4_clean_520.wav,"I went so far, in the evening, as to make a beginning.",i went so far an emin a e as te begimit,0.666666667,0.45,0.615384615,0.810606061,0.189393939
+task_1_level_4_clean_521.wav,"He began to speak again, touching her caressingly at times by way of emphasis.",it egan to seet e gon pucing her corruptingy a pownd by way ofentetin,0.785714286,0.476190476,0.733333333,0.918367347,0.081632653
+task_1_level_4_clean_522.wav,I only told him I thought we had better not be seen very often together in the streets.,i only told him i thought we had better not be see very often to sether in seet,0.277777778,0.115942029,0.263157895,0.395061728,0.604938272
+task_1_level_4_clean_523.wav,"I heard the bells in the city ring ten, eleven, and midnight.",i heard the bousin of titin an pann eleven and midnan,0.583333333,0.361702128,0.583333333,0.810606061,0.189393939
+task_1_level_4_clean_524.wav,"We broke our fast, speaking of ourselves.",we bug ar fa eaking a by sin,1,0.606060606,0.875,0.982142857,0.017857143
+task_1_level_4_clean_525.wav,It was sad to see her thus blind to the beauties of an August wood.,it was bad to he her dust wine  edis of an august way,0.533333333,0.384615385,0.533333333,0.748717949,0.251282051
+task_1_level_4_clean_526.wav,"But see, he looks up and is not afraid.",but es you looked up and is not a place,0.555555556,0.379310345,0.5,0.722222222,0.277777778
+task_1_level_4_clean_527.wav,She wanted the artist soul of him to realise it.,wanted the artist bow in to realize it,0.4,0.263157895,0.4,0.55,0.45
+task_1_level_4_clean_528.wav,"This hay is not bad, he said to himself.",the pilis not bad esase imself,0.777777778,0.366666667,0.777777778,0.925925926,0.074074074
+task_1_level_4_clean_529.wav,I shall go and say we are sorry.,i tont go and say the on star,0.5,0.541666667,0.5,0.75,0.25
+task_1_level_4_clean_530.wav,bleated the little Goat on the high rock.,gleeded the little goat on the high rock,0.125,0.090909091,0.125,0.234375,0.765625
+task_1_level_4_clean_531.wav,It had only one row of windows above the ground floor.,he had only one rod window he loved the ground floor,0.454545455,0.209302326,0.454545455,0.702479339,0.297520661
+task_1_level_4_clean_532.wav,"And as for the frescoes, I see no truth in them.",an an for the fres sod as eno trot e mer,0.818181818,0.388888889,0.818181818,0.966942149,0.033057851
+task_1_level_4_clean_533.wav,"She, called upon to yield and give, has her mind turned at once upon herself.",he all upon ho yield and did at the min o find at once tupon therself,0.733333333,0.316666667,0.6875,0.895833333,0.104166667
+task_1_level_4_clean_534.wav,"but he only grinned, dusting the chalk from my black cloak.",but n only grin dotting the talk in my black clot,0.545454545,0.319148936,0.545454545,0.79338843,0.20661157
+task_1_level_4_clean_535.wav,"But there were the two somber figures still following him, though their black sacks were drenched and dripping with water.",but thy were the cu fromber wigen still followin him so that black back wis ran intisting e forte,0.7,0.435643564,0.7,0.905263158,0.094736842
+task_1_level_4_clean_536.wav,How soon shall we be quite alone?,out loon tol e requite alone,0.857142857,0.384615385,0.857142857,0.976190476,0.023809524
+task_1_level_4_clean_537.wav,"he repeated, with interrogative amazement in his voice.",he repeated with in porogothiv an madent in his voice,0.5,0.217391304,0.4,0.55,0.45
+task_1_level_4_clean_538.wav,Everything in this world may be of some use!,everything in the world may be a come,0.444444444,0.228571429,0.444444444,0.652777778,0.347222222
+task_1_level_4_clean_539.wav,"Within it sat either a Fox, a Hawk, or a Vulture.",but tin a cot e ther fox of fock emer,1,0.611111111,0.916666667,0.990909091,0.009090909
+task_1_level_4_clean_540.wav,I am afraid it will give her a shock.,al my tatibl different tock,1,0.642857143,1,1,0
+task_1_level_4_clean_541.wav,"She too is enamoured of heavy winds, and vast panoramas, and green expanses of the sea.",imlude the mammer of heavy wimdn and vast anaround indren spanci of the sees,0.625,0.441176471,0.625,0.839285714,0.160714286
+task_1_level_4_clean_542.wav,"And she was no nymph, but only a goatherd girl.",in si ad noman at only a golden girl,0.7,0.472222222,0.7,0.9,0.1
+task_1_level_4_clean_543.wav,No.  But it might have been an assassin that pulled the bell ready to kill a poor harmless woman.,no o but might have been in a topt en that po te bell bather te tiller for famter one,0.789473684,0.473684211,0.681818182,0.871052632,0.128947368
+task_1_level_4_clean_544.wav,For not alluding to your leaving us?,thet not alluding to your meating at,0.428571429,0.275862069,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_545.wav,The Further Vision   I have already told you of the sickness and confusion that comes with time travelling.,the further visin on arty polled me of the sickness and consuson of pun e in fatmen,0.666666667,0.459770115,0.666666667,0.882352941,0.117647059
+task_1_level_4_clean_546.wav,A table laid out for four occupied very little space.,the people lad out for four occupie bery little por,0.6,0.325581395,0.6,0.84,0.16
+task_1_level_4_clean_547.wav,But she distinctly uttered the word fear.,bu few we intly uttered the word eer,0.714285714,0.294117647,0.625,0.839285714,0.160714286
+task_1_level_4_clean_548.wav,Then he rose to his feet and looked across once more to the stone lion and the broad coping.,then roti pe and looked across once more to the stone lie in then the broad popen,0.473684211,0.260273973,0.45,0.625386997,0.374613003
+task_1_level_4_clean_549.wav,It was a clear thing he was less in love than he had been.,it was a clear famo in the blact and love an he contin,0.571428571,0.477272727,0.571428571,0.802197802,0.197802198
+task_1_level_4_clean_550.wav,"To do that I had actually to raise her chin with my finger, and it sank slowly down again.",teta aharactal to wait es hine lik tinder and it tank lowy down adan,0.789473684,0.414285714,0.789473684,0.939849624,0.060150376
+task_1_level_4_clean_551.wav,"The centre window, immediately over the communion table, represented the Saviour of the world, dying upon the cross.",the sontal window meiately over the fen in pa represented the save ir of the world dying upon the cros,0.444444444,0.212765957,0.4,0.6,0.4
+task_1_level_4_clean_552.wav,"Go home, you yelping little beast!",go home w yelcem lin e body,0.833333333,0.518518519,0.714285714,0.904761905,0.095238095
+task_1_level_4_clean_553.wav,"You would not come in and sit with us in this comfortable way, if you were married.",you would not come in and sit with ut an the comfortable way if you armoried,0.294117647,0.138461538,0.294117647,0.470588235,0.529411765
+task_1_level_4_clean_554.wav,"A squeal from one of the falcons interrupted her, and she arose to adjust the longe which had become whipped about the bloc, but the bird still flapped its wings and screamed.",eol om one of the south in in cleptes er on she arose wi just the long i had te som e gift about the block but the bird still lapped it win and trin,0.6875,0.368794326,0.611111111,0.825,0.175
+task_1_level_4_clean_555.wav,You will have to be my wife.,you will have to be my wife,0,0,0,0,1
+task_1_level_4_clean_556.wav,To his poor little innocent mates!,his corn litten annen,0.833333333,0.571428571,0.833333333,0.958333333,0.041666667
+task_1_level_4_clean_557.wav,"This, then, is my revenge, that you do me the courtesy of accepting food and shelter at my own house.",with them my weven of edo mi ecurd it the of icepting ses in shelter at my own hout,0.7,0.461538462,0.7,0.905263158,0.094736842
+task_1_level_4_clean_558.wav,I suppose you got him out of the house about five minutes after you heard I was coming here.,i suppose you got a out of the house about five minutes last ye heard a a comin to i,0.421052632,0.232876712,0.4,0.621052632,0.378947368
+task_1_level_4_clean_559.wav,"You see, I come into my money next year.",whi comin t my money ne hear,0.777777778,0.366666667,0.777777778,0.936507937,0.063492063
+task_1_level_4_clean_560.wav,I lead the battery when it comes to that sort of climbing.,i live the battly when it come to that ot a climane,0.5,0.282608696,0.5,0.75,0.25
+task_1_level_4_clean_561.wav,He looked up and saw two tall Carabineers near him.,ye looked up and thought he palse herben ov me,0.7,0.56097561,0.7,0.91,0.09
+task_1_level_4_clean_562.wav,"What a dreadful turn, to be sure, miss!",what a dreadful time he see mot,0.625,0.379310345,0.625,0.839285714,0.160714286
+task_1_level_4_clean_563.wav,"Having had one glimpse of her as The Wife, his mind had leaped on, and seen her as The Mother.",having had one grimp of her and the wife end mind had meat gon and fear her unter mother,0.4,0.263888889,0.4,0.621052632,0.378947368
+task_1_level_4_clean_564.wav,"exclaimed the doctor, almost surprised into another slip.",wlane the dactor almost urprised and wo another tres,0.75,0.3125,0.666666667,0.875,0.125
+task_1_level_4_clean_565.wav,"His body, not counting the tail, is almost a mile long.",we body mott canting a failas almost a mir mon,0.727272727,0.380952381,0.727272727,0.918181818,0.081818182
+task_1_level_4_clean_566.wav,The twinkling succession of darkness and light was excessively painful to the eye.,the cinklin e cattin a darkness and life it e cacfidly placos the eye,0.692307692,0.463768116,0.642857143,0.862637363,0.137362637
+task_1_level_4_clean_567.wav,That is more to the point.,that it more to the point,0.166666667,0.05,0.166666667,0.305555556,0.694444444
+task_1_level_4_clean_568.wav,"I, being alone and idle, stared abstractedly.",i do nalone and idle thered breste an,0.714285714,0.416666667,0.625,0.839285714,0.160714286
+task_1_level_4_clean_569.wav,"Transcribed here the speech sounds harmless enough, particularly as uttered in the sweet, high, casual pipe with which, at all interlocutors, but above all at his eternal governess, he threw off intonations as if he were tossing roses.",then plid here e seep down ton with e non the ticulary as uttered in peet hie casul pipe o tat soling tolocata for habove all an e cound overnor the threw often tomovton of whi e e talking ros,0.921052632,0.471204188,0.833333333,0.967763158,0.032236842
+task_1_level_4_clean_570.wav,I no longer asked for any one.,an o longer afferin one,0.714285714,0.347826087,0.714285714,0.885714286,0.114285714
+task_1_level_4_clean_571.wav,It was the third day of the month he had often consulted her as to expenses before this.,e le e third day of the mind yeat often confulted fo ostis senti worer,0.722222222,0.457142857,0.722222222,0.907407407,0.092592593
+task_1_level_4_clean_572.wav,"No, I had no plans against him.",no i had no plan a entin,0.428571429,0.304347826,0.428571429,0.673469388,0.326530612
+task_1_level_4_clean_573.wav,I am a little to blame.,i am a little to lane,0.166666667,0.117647059,0.166666667,0.305555556,0.694444444
+task_1_level_4_clean_574.wav,In the morning there was the getting of the Time Machine.,in the morning there was be getting of the time in,0.181818182,0.152173913,0.181818182,0.330578512,0.669421488
+task_1_level_4_clean_575.wav,There was a challenge in the reposeful black eyes resting upon my face.,ter wet a clalend in in o place said black beyes resting upon me tod,0.769230769,0.448275862,0.666666667,0.871794872,0.128205128
+task_1_level_4_clean_576.wav,"Then in that warm and scented infinity, or eternity, in which I rested lost in bliss but ready for any catastrophe, I heard the distant, hardly audible, and fit to strike terror into the heart, ringing of a bell.",then i met warman sente i tine or turnin me and which i rested lock in with tat ready for any compact e at herd tho gist an hardly audible and coo o sright terror into the hart an in in o the bout,0.743589744,0.359281437,0.659090909,0.868881119,0.131118881
+task_1_level_4_clean_577.wav,"We are tired of hearing you bragging about yourself, you little turkey cock!",en pired a gein graging abou therself in the little pertin topk,0.923076923,0.483870968,0.923076923,0.993589744,0.006410256
+task_1_level_4_clean_578.wav,I wanted to make sure at once.,i wanted te line tor af one,0.714285714,0.391304348,0.714285714,0.918367347,0.081632653
+task_1_level_4_clean_579.wav,Those eyebrows alone ought to have been enough to give her away.,ond ill dri the lon optes en a mare dip er awar,1,0.692307692,1,1,0
+task_1_level_4_clean_580.wav,I recognized the rights of his passion which I could very well see.,i recognize that right o e passin if i could very well be,0.615384615,0.277777778,0.615384615,0.852071006,0.147928994
+task_1_level_4_clean_581.wav,"How I had overlooked him during my search for the cat, I cannot imagine.",how i an overlooked in during my thirt the cop and ot a matin,0.642857143,0.350877193,0.642857143,0.87244898,0.12755102
+task_1_level_4_clean_582.wav,"A knock at the door interrupted him, and his face resumed its amiable expression.",an art at the door in errupted him and his face re domed  in neabos fressen,0.642857143,0.287878788,0.5625,0.78125,0.21875
+task_1_level_4_clean_583.wav,"But as he was about to give it the first blow, he stood still with arm uplifted, for he had heard a wee, little voice say in a beseeching tone Please be careful!",but of tin o about to iv as te first lon si tood tell with arm upnesses but he aterba rea little boice say in an te feein tine please be trestful,0.666666667,0.368,0.647058824,0.863636364,0.136363636
+task_1_level_4_clean_584.wav,The Phantom of the Past would go no further.,the fandom of the pat wis go no fort,0.444444444,0.342857143,0.444444444,0.691358025,0.308641975
+task_1_level_4_clean_585.wav,Instantly he brought reassurance to her.,othe wy he bought ye a shi athe,1.166666667,0.5,0.875,0.979166667,0.020833333
+task_1_level_4_clean_586.wav,"And I obedient, he said, bowing low over her hand.",a byobedience a dad folling lowolsof ther hen,1,0.473684211,1,1,0
+task_1_level_4_clean_587.wav,She crossed the street with a hole in her stocking.,he clossed the feet with a whole in his bosin,0.6,0.292682927,0.6,0.84,0.16
+task_1_level_4_clean_588.wav,She stared at mine as if they might really have resembled them.,he thought at mind and tat there might really have te numbled on,0.75,0.450980392,0.692307692,0.897435897,0.102564103
+task_1_level_4_clean_589.wav,"He felt restless and anything but sleepy, and glanced irresolutely at the library door, and at the stairway.",he felt left and anything te feety and glanced the weatherle ing at a library door and at e sal,0.5,0.397727273,0.45,0.663888889,0.336111111
+task_1_level_4_clean_590.wav,"She was happy, she knew she was happy, and knew she ought to be happy.",he was afi the mosri a possen and men the ought o be he,0.733333333,0.528301887,0.733333333,0.923809524,0.076190476
+task_1_level_4_clean_591.wav,My poor wife will be quite distracted.,i poor whife i e quite de drapted,0.857142857,0.35483871,0.75,0.928571429,0.071428571
+task_1_level_4_clean_592.wav,It was the last evening of Carnival.,it was the lost is min of conibal,0.571428571,0.310344828,0.5,0.714285714,0.285714286
+task_1_level_4_clean_593.wav,Good boys always tell the truth.,good boy always teld e ti,0.666666667,0.307692308,0.666666667,0.888888889,0.111111111
+task_1_level_4_clean_594.wav,It was always touch and go.,he was always pusing gow,0.666666667,0.428571429,0.666666667,0.866666667,0.133333333
+task_1_level_4_clean_595.wav,But they were conscious of a love more mysterious than this.,uter wer concieus of a love mor moss se in tes,0.818181818,0.408163265,0.75,0.925619835,0.074380165
+task_1_level_4_clean_596.wav,"She rocked, with a benignly triumphant expression, and a complacent rustle of silken skirts.",he walked with a belon e folem on bressin and the complace int bloftly  o in so,1,0.526315789,0.823529412,0.962184874,0.037815126
+task_1_level_4_clean_597.wav,Then we can go on and be at the seashore in the morning.,tone would can go on and be a the pesureof in the morning,0.307692308,0.325581395,0.307692308,0.520710059,0.479289941
+task_1_level_4_clean_598.wav,And do you know that you are missing the curate?,o know that you are miking tery,0.6,0.394736842,0.6,0.771428571,0.228571429
+task_1_level_4_clean_599.wav,"Not my heart, she said quietly.",not my heart she tad quietly,0.166666667,0.083333333,0.166666667,0.305555556,0.694444444
+task_1_level_4_clean_600.wav,I saw the white of his eye glitter in the dark.,i saw the white of the dye litdered in the dark,0.272727273,0.222222222,0.272727273,0.47107438,0.52892562
+task_1_level_4_clean_601.wav,"These buffaloes will not charge unless they wind him, and I cannot speak their language.",we lupalo wil not carge un less tho wine in and i cannot pe teir langage,0.8,0.291666667,0.75,0.933333333,0.066666667
+task_1_level_4_clean_602.wav,"Very good, said the young seal carelessly.",ver de bat the young fion elet,0.714285714,0.558823529,0.714285714,0.918367347,0.081632653
+task_1_level_4_clean_603.wav,"She was not yet dancing she was working her way up from the bottom, and had therefore leisure to look around, and by only turning her head a little she saw it all.", diud not yet ben t reworking her way up in the body and had therefore metes to look around and by only cuming her otewal and saw it oll,0.454545455,0.3671875,0.454545455,0.661442006,0.338557994
+task_1_level_4_clean_604.wav,"Well, I thought perhaps I had better get out.",well thought the hap on had better got out,0.555555556,0.2,0.555555556,0.802469136,0.197530864
+task_1_level_4_clean_605.wav,The Killer Whale himself could not have cut them up worse.,the pillawhale hemself did not the pubem of work,0.818181818,0.404255319,0.818181818,0.95959596,0.04040404
+task_1_level_4_clean_606.wav,"Then I shall be free, Brand, when you are.",en i tell e seen when you are,0.555555556,0.387096774,0.555555556,0.777777778,0.222222222
+task_1_level_4_clean_607.wav,If it were only a big enough cloud I might try to run away in the darkness.,the there were only a big enough cloud and might fit e run away in the bucken,0.352941176,0.344827586,0.352941176,0.581314879,0.418685121
+task_1_level_4_clean_608.wav,Yes they said you would like it better.,no ti said you would like i tate,0.5,0.322580645,0.5,0.75,0.25
+task_1_level_4_clean_609.wav,"Brand, I am often so tried by the sense of an unseen human presence near me.",clan i am often so tried by the senea an unesteing te in sugent ae,0.5,0.372881356,0.5,0.733333333,0.266666667
+task_1_level_4_clean_610.wav,"he muttered, and lighting a candle, went into the bedroom.",moden lighting at mono when ento the budin,0.8,0.52173913,0.8,0.95,0.05
+task_1_level_4_clean_611.wav,"Tuesday passed uneventfully, to all outward seeming.",to dey passe on a bunchfully i fall outwards in,1.428571429,0.386363636,1,1,0
+,,,,,,,
+,,,,0.372262103,,,
