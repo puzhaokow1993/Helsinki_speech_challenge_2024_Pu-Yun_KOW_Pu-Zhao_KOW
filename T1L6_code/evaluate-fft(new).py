@@ -8,12 +8,15 @@ Created on Tue Sep  3 19:18:23 2024
 #%% read prediction result
 
 import numpy as np
+import os
 
-data_folder='Task_2_Level_3'
+os.chdir(r'D:\important\Hensinki_Speech_Challenge_2024\my_project')
+
+data_folder='Task_1_Level_6'
 path = r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s'%data_folder
 
 model_name = 'ConvAE'
-pred_data = np.load(r'%s\%s\pred_data-fft.npy' % (path, model_name)).astype(np.int16)
+pred_data = np.load(r'%s\%s\pred_data-new.npy' % (path, model_name)).astype(np.int16)
 
 #%% read clean and noisy file into int
 
@@ -39,9 +42,9 @@ def sampling(audio_dir):
     
     return audio_int
 
-noisy_dir=r'D:\important\Hensinki_Speech_Challenge_2024\my_project\raw_dataset\%s\Recorded'%data_folder
+noisy_dir=r'raw_dataset\%s\Recorded'%data_folder
 noisy_audio_int=sampling(noisy_dir)
-clean_dir=r'D:\important\Hensinki_Speech_Challenge_2024\my_project\raw_dataset\%s\Clean'%data_folder
+clean_dir=r'raw_dataset\%s\Clean'%data_folder
 clean_audio_int=sampling(clean_dir)
 
 #%% data processing function
@@ -158,11 +161,11 @@ model = Model(model_path)
 
 #%% read file name
 
-clean_dir=r'D:\important\Hensinki_Speech_Challenge_2024\my_project\raw_dataset\%s\Clean'%data_folder
+clean_dir=r'raw_dataset\%s\Clean'%data_folder
 audio_files = [f for f in os.listdir(clean_dir) if f.endswith('.wav')]
 
 #%% evaluate the performance and save result
-raw_path = r'D:\important\Hensinki_Speech_Challenge_2024\my_project\raw_dataset\%s'%data_folder
+raw_path = r'raw_dataset\%s'%data_folder
 real_words= pd.read_csv(r"%s\%s_text_samples.txt"%(raw_path,data_folder), delimiter='\t',header=None)
 indices = np.load(r'%s\indices.npy' %(path))
 
@@ -183,7 +186,7 @@ for i in range(len(indices)):
 
 #%%
 df = pd.DataFrame(full_result)
-df.to_csv(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\result\%s\%s_resultt-fft.csv"%(data_folder,model_name), index=False)
+df.to_csv(r"result\%s\%s_result-new.csv"%(data_folder,model_name), index=False)
 
 
 

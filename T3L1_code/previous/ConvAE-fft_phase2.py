@@ -7,7 +7,7 @@ Created on Sun Sep  1 21:30:46 2024
 
 import numpy as np
 
-data_folder='Task_1_Level_4'
+data_folder='Task_3_Level_1'
 
 input_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_input.npy'%data_folder)
 output_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_output.npy'%data_folder)
@@ -152,7 +152,7 @@ gc.collect()
 K.clear_session()
 
 #model forecasting result
-model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft4.hdf5"%data_folder) #fft model
+model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft.hdf5"%data_folder) #fft model
 batch_size=8
 gc.collect()
 # predict magnitude
@@ -164,7 +164,7 @@ del log_predicted_fft_magnitude
 
 # predict phase
 predicted_phase = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\pred_phase2.npy'%data_folder)
-
+# predicted_phase = np.arctan2(np.sin(predicted_phase), np.cos(predicted_phase))
 
 # multiply magtinude with the phase (real and imagenary parts)
 predicted_output_fft = predicted_fft_magnitude * np.exp(1j * predicted_phase)
@@ -175,7 +175,7 @@ pred_data  = np.fft.ifft(predicted_output_fft, axis=1).real  # Take the real par
 del predicted_output_fft
 
 #%%
-np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-magnitude_phase.npy'%data_folder, pred_data)
+np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-magnitude_phase2.npy'%data_folder, pred_data)
 
 #%%
 sample = 1

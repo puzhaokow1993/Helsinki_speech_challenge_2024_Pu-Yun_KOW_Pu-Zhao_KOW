@@ -7,13 +7,12 @@ Created on Sun Sep  1 21:30:46 2024
 
 import numpy as np
 
-data_folder='Task_2_Level_2'
+data_folder='Task_2_Level_3'
 
 input_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_input.npy'%data_folder)
 output_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_output.npy'%data_folder)
 
 #%%
-import matplotlib.pyplot as plt
 
 # Perform FFT along the second axis (23000-dimensional)
 input_fft = np.fft.fft(input_data, axis=1)
@@ -57,7 +56,7 @@ gc.collect()
 K.clear_session()
 
 #model forecasting result
-model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft3.hdf5"%data_folder) #fft model
+model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft.hdf5"%data_folder) #fft model
 batch_size=8
 log_predicted_fft_diff = np.squeeze((model.predict(log_input_fft_magnitude,batch_size=batch_size))) 
 # predicted_fft_diff = np.exp(log_predicted_fft_diff)
@@ -65,7 +64,7 @@ log_predicted_fft_magnitude = log_input_fft_magnitude + log_predicted_fft_diff
 predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude )
 
 # predict phase
-predicted_phase = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\pred_phase2.npy'%data_folder)
+predicted_phase = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\pred_phase.npy'%data_folder)
 
 # multiply magtinude with the phase (real and imagenary parts)
 predicted_output_fft = predicted_fft_magnitude * np.exp(1j * predicted_phase)

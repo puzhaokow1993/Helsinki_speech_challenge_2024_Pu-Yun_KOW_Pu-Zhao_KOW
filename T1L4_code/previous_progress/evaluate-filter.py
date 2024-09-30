@@ -9,11 +9,11 @@ Created on Tue Sep  3 19:18:23 2024
 
 import numpy as np
 
-data_folder='Task_2_Level_3'
+data_folder='Task_1_Level_4'
 path = r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s'%data_folder
 
 model_name = 'ConvAE'
-pred_data = np.load(r'%s\%s\pred_data-fft.npy' % (path, model_name)).astype(np.int16)
+pred_data = np.load(r'%s\%s\pred_data-filter.npy' % (path, model_name)).astype(np.int16)
 
 #%% read clean and noisy file into int
 
@@ -172,6 +172,7 @@ for i in range(len(indices)):
     
     original_text = real_words.iloc[int(indices[i,2]),1]
     transcribed_text = model.stt(pred_data[i,:len(noisy_audio_int[i])])
+
     print(original_text, transcribed_text)
     
     metrics = calculate_metrics(original_text, transcribed_text, transformation)
@@ -183,7 +184,7 @@ for i in range(len(indices)):
 
 #%%
 df = pd.DataFrame(full_result)
-df.to_csv(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\result\%s\%s_resultt-fft.csv"%(data_folder,model_name), index=False)
+df.to_csv(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\result\%s\%s_result-filter.csv"%(data_folder,model_name), index=False)
 
 
 

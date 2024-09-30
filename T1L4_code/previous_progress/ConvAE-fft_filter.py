@@ -6,38 +6,25 @@ Created on Sun Sep  1 21:30:46 2024
 """
 
 import numpy as np
-import os
-os.chdir(os.path.dirname(__file__))
+import gc
 
 data_folder='Task_1_Level_4'
 # Load the data from the .npy file
-input_data = np.load(r'dataset\%s\new_input.npy'%data_folder)
-
-# Load the data from the .npy file
-output_data = np.load(r'dataset\%s\new_output.npy'%data_folder)
+input_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\filter_input_data.npy'%data_folder)
+output_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_output.npy'%data_folder)
 zero_indices = [np.where(np.abs(input_data[i, :]) < 150)[0] for i in range(input_data.shape[0])]
 
 #%%
-import matplotlib.pyplot as plt
-
 # Perform FFT along the second axis (23000-dimensional)
 input_fft = np.fft.fft(input_data, axis=1)
 output_fft = np.fft.fft(output_data, axis=1)
-
 # Get the magnitude (absolute value) of the FFT
 input_fft_magnitude = np.abs(input_fft)
 output_fft_magnitude = np.abs(output_fft)
-log_input_fft_magnitude = np.log10(input_fft_magnitude+1)
-log_output_fft_magnitude = np.log10(output_fft_magnitude+1)
-
-# log_fft_magnitude_diff = log_output_fft_magnitude - log_input_fft_magnitude
-
-input_fft_phase = np.angle(input_fft)
-
-# del input_data, output_data, input_fft, output_fft, input_fft_magnitude
+log_input_fft_magnitude = np.log1p(input_fft_magnitude+1)
+log_output_fft_magnitude = np.log1p(output_fft_magnitude+1)
 
 #%%
-import gc
 gc.collect()
 
 def transform_function(x, L, c, power):
@@ -47,17 +34,13 @@ def transform_function(x, L, c, power):
 
 # 假設 L 為 log_input_fft_magnitude 的長度，c 為常數
 L = log_input_fft_magnitude.shape[1]
-c = -1 # 根據具體情況設定
+c = -0.5 # 根據具體情況設定
 
 power = 2
 # 應用變換函數
 
 transformed_log_input_fft_magnitude = transform_function(log_input_fft_magnitude, L, c, power)
 
-# del log_input_fft_magnitude
-
-#%%
-gc.collect()
 def compression_function(x, c):
     # Step 1: Compute max(x), mean(x), and the first term
     max_x = np.max(x)
@@ -74,35 +57,35 @@ def compression_function(x, c):
     
     return z
 
-c=0.85
+c=0.6
 compressed_log_input_fft_magnitude = compression_function(transformed_log_input_fft_magnitude, c)
-diff = log_output_fft_magnitude - compressed_log_input_fft_magnitude
-# del transformed_log_input_fft_magnitude
 
 
 #%%
-sample = 10
+import matplotlib.pyplot as plt
+sample = 1
 
 # Create the first figure for training loss
+
 plt.figure()
-plt.semilogy(output_fft_magnitude[sample,:], label='output_fft', color='blue')
-plt.semilogy(input_fft_magnitude[sample,:], label='input_fft', color='red')
+plt.plot(output_fft_magnitude[sample,:], label='output_fft', color='blue')
+plt.plot(input_fft_magnitude[sample,:], label='input_fft', color='red')
 plt.show()
 
 plt.figure()
-plt.semilogy(log_output_fft_magnitude[sample,:], label='output_fft', color='blue')
-plt.semilogy(log_input_fft_magnitude[sample,:], label='input_fft', color='red')
+plt.plot(log_output_fft_magnitude[sample,:], label='output_fft', color='blue')
+plt.plot(transformed_log_input_fft_magnitude[sample,:], label='input_fft', color='red')
 plt.show()
 
 plt.figure()
-plt.semilogy(log_output_fft_magnitude[sample,:], label='output_fft', color='blue')
-plt.semilogy(transformed_log_input_fft_magnitude[sample,:], label='input_fft', color='red')
+plt.plot(log_output_fft_magnitude[sample,:], label='output_fft', color='blue')
+plt.plot(compressed_log_input_fft_magnitude[sample,:], label='input_fft', color='red')
 plt.show()
 
-plt.figure()
-plt.semilogy(log_output_fft_magnitude[sample,:], label='output_fft', color='blue')
-plt.semilogy(compressed_log_input_fft_magnitude[sample,:], label='input_fft', color='red')
-plt.show()
+#%%
+diff = log_output_fft_magnitude - compressed_log_input_fft_magnitude
+del output_fft, input_fft_magnitude, output_fft_magnitude
+del log_output_fft_magnitude, log_input_fft_magnitude, transformed_log_input_fft_magnitude
 
 #%%
 import tensorflow as tf
@@ -141,7 +124,7 @@ print(f"cuDNN version: {build_info.get('cudnn_version', 'Not found')}")
 
 def ConvAE_model(input_shape):
     inputs = Input(shape=(input_shape[1],))
-    # x = Masking(mask_value=0)(inputs)
+    x = Masking(mask_value=0)(inputs)
     x = Lambda(lambda x: tf.expand_dims(x, -1))(inputs)
     # Encoder
     x = Conv1D(filters=64, kernel_size=8, activation='linear', padding='same')(x)
@@ -165,71 +148,39 @@ def ConvAE_model(input_shape):
     model.summary()
     return model 
 
-def DenseAE_model(input_shape):
-    # Input shape is (233472, 1)
-    inputs = Input(shape=(input_shape[1],))  # Flattened input (batch_size, steps)
-    x = Masking(mask_value=0.0)(inputs)
-    # Flatten the input
-    x = Lambda(lambda x: tf.reshape(x, (-1, input_shape[1])))(x)  # Flatten (batch_size, steps * features)
-
-    # Encoder
-    x = Dense(64, activation='linear')(x)
-    x = Dense(32, activation='linear')(x)
-    encoded = Dense(16, activation='linear')(x)
-    
-    # Decoder
-    x = Dense(32, activation='linear')(encoded)
-    x = Dense(64, activation='linear')(x)
-    decoded = Dense(input_shape[1], activation='linear')(x)  # Output shape should match input shape
-
-    # Reshape back to the original dimensions
-    decoded = Reshape((input_shape[1],))(decoded)
-
-    model = Model(inputs=inputs, outputs=decoded)
-    model.summary()
-    return model
-
-# Custom loss function that penalizes underestimations more than overestimations
-def custom_loss(y_true, y_pred):
-    # Calculate the difference between true and predicted values
-    difference = K.abs(y_true) - K.abs(y_pred)
-
-    # Set different penalties for underestimations and overestimations
-    # Underestimation occurs when (y_pred < y_true), i.e., difference > 0
-    underestimation_penalty = 2.0  # Larger penalty for underestimation
-    overestimation_penalty = 1.0   # Lower penalty for overestimation
-
-    # Apply penalty based on whether the model is underestimating or overestimating
-    loss = tf.where(difference > 0, underestimation_penalty * tf.square(difference), overestimation_penalty * tf.square(difference))
-
-    # Take the mean loss over the batch
-    return tf.reduce_mean(loss)
-
 #%%
 gc.collect()
 K.clear_session()
 
-model=ConvAE_model(compressed_log_input_fft_magnitude.shape)
+def custom_loss(y_true, y_pred):
+    diff = y_true - y_pred
+    # Penalize underestimation more by scaling positive errors
+    return K.mean(K.square(K.maximum(0.0, diff)) + 0.5 * K.square(K.minimum(0.0, diff)))
+
+model=ConvAE_model(input_data.shape)
 learning_rate=0.001 #設定學習速率
 adam = Adam(lr=learning_rate) 
+# model.compile(optimizer=adam,loss="mse") 
 model.compile(optimizer=adam,loss=custom_loss) 
 earlystopper = EarlyStopping(monitor='val_loss', patience=20, verbose=0) 
-checkpoint =ModelCheckpoint(r"model\ConvAE-model-fft(new2).hdf5",save_best_only=True) 
+checkpoint =ModelCheckpoint(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft2.hdf5"%data_folder,save_best_only=True) 
 callback_list=[earlystopper,checkpoint]  
-# history=model.fit(input_fft_magnitude, output_fft_magnitude,epochs=100, batch_size=8,validation_split=0.2,callbacks=callback_list,shuffle=True) 
 history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_size=8,validation_split=0.2, callbacks=callback_list,shuffle=True)
+
 
 #%%
 
 K.clear_session()
 #model forecasting result
-model=load_model(r"model\ConvAE-model-fft(new2).hdf5", custom_objects={'custom_loss': custom_loss}) #把儲存好的最佳模式讀入
+model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft2.hdf5"%data_folder, custom_objects={'custom_loss': custom_loss}) #把儲存好的最佳模式讀入
 batch_size=8
 gc.collect()
+input_fft_phase = np.angle(input_fft)
+del input_fft
 predicted_diff = np.squeeze((model.predict(compressed_log_input_fft_magnitude,batch_size=batch_size))) 
 log_predicted_fft_magnitude = compressed_log_input_fft_magnitude + predicted_diff
-del compressed_log_input_fft_magnitude, predicted_diff
-predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude )
+del predicted_diff
+predicted_fft_magnitude = np.expm1(log_predicted_fft_magnitude)
 del log_predicted_fft_magnitude
 predicted_output_fft = predicted_fft_magnitude * np.exp(1j * input_fft_phase)
 del predicted_fft_magnitude 
@@ -237,25 +188,68 @@ del predicted_fft_magnitude
 pred_data  = np.fft.ifft(predicted_output_fft, axis=1).real  # Take the real part after IFFT
 del predicted_output_fft
 
-#%% plot figure
 
-sample=500
+#%% data postprocessing
+new_pred_data = np.copy(pred_data)
+for i in range(len(zero_indices)):
+    new_pred_data[i, zero_indices[i]] = 0
+    
+#%%
+
+sample = 0
+
+# Create the first figure for training loss
 plt.figure()
-plt.plot(output_data[sample,:], label='output', color='blue')
-plt.plot(input_data[sample,:], label='input', color='red')
+plt.plot(output_data[sample,:], label='output_data', color='blue')
+
+plt.plot(pred_data[sample,:], label='pred_data', color='red')
 plt.show()
 
 plt.figure()
 plt.plot(output_data[sample,:], label='output_data', color='blue')
-plt.plot(pred_data[sample,:], label='input_data', color='red')
+
+plt.plot(new_pred_data[sample,:], label='pred_data', color='red')
 plt.show()
 
-# plt.figure()
-# plt.plot(output_data[sample,:], label='output_data', color='blue')
-# plt.plot(new_pred_data[sample,:], label='input_data', color='red')
-# plt.show()
+plt.figure()
+plt.plot(output_data[sample,:], label='output_data', color='blue')
 
+plt.plot(input_data[sample,:], label='input_data', color='red')
+plt.show()
 
 #%%
-np.save('dataset\%s\ConvAE\pred_data-new2.npy'%data_folder, pred_data)
+np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-fft2.npy'%data_folder, new_pred_data)
 
+#%%
+
+# Extract loss and val_loss from history
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+
+# Create the first figure for training loss
+plt.figure()
+plt.plot(loss, label='Training Loss', color='red')
+plt.title("Training Loss")
+plt.xlabel("Epochs")
+plt.ylabel("MSE")
+plt.legend(loc='upper right')
+
+# Save the first figure
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\training_loss-fft2.png'%data_folder)
+
+# Show the first plot (optional)
+plt.show()
+
+# Create the second figure for validation loss
+plt.figure()
+plt.plot(val_loss, label='Validation Loss', color='blue')
+plt.title("Validation Loss")
+plt.xlabel("Epochs")
+plt.ylabel("MSE")
+plt.legend(loc='upper right')
+
+# Save the second figure
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\validation_loss-fft2.png'%data_folder)
+
+# Show the second plot (optional)
+plt.show()

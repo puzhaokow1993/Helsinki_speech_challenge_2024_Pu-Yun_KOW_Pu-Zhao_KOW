@@ -6,16 +6,13 @@ Created on Sun Sep  1 21:30:46 2024
 """
 
 import numpy as np
-import os
-os.chdir(os.path.dirname(__file__))
 
 data_folder='Task_1_Level_4'
 # Load the data from the .npy file
-input_data = np.load(r'dataset\%s\new_input.npy'%data_folder)
+input_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_input.npy'%data_folder)
 
 # Load the data from the .npy file
-output_data = np.load(r'dataset\%s\new_output.npy'%data_folder)
-zero_indices = [np.where(np.abs(input_data[i, :]) < 150)[0] for i in range(input_data.shape[0])]
+output_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_output.npy'%data_folder)
 
 #%%
 import matplotlib.pyplot as plt
@@ -189,22 +186,6 @@ def DenseAE_model(input_shape):
     model.summary()
     return model
 
-# Custom loss function that penalizes underestimations more than overestimations
-def custom_loss(y_true, y_pred):
-    # Calculate the difference between true and predicted values
-    difference = K.abs(y_true) - K.abs(y_pred)
-
-    # Set different penalties for underestimations and overestimations
-    # Underestimation occurs when (y_pred < y_true), i.e., difference > 0
-    underestimation_penalty = 2.0  # Larger penalty for underestimation
-    overestimation_penalty = 1.0   # Lower penalty for overestimation
-
-    # Apply penalty based on whether the model is underestimating or overestimating
-    loss = tf.where(difference > 0, underestimation_penalty * tf.square(difference), overestimation_penalty * tf.square(difference))
-
-    # Take the mean loss over the batch
-    return tf.reduce_mean(loss)
-
 #%%
 gc.collect()
 K.clear_session()
@@ -212,9 +193,9 @@ K.clear_session()
 model=ConvAE_model(compressed_log_input_fft_magnitude.shape)
 learning_rate=0.001 #設定學習速率
 adam = Adam(lr=learning_rate) 
-model.compile(optimizer=adam,loss=custom_loss) 
+model.compile(optimizer=adam,loss="mse") 
 earlystopper = EarlyStopping(monitor='val_loss', patience=20, verbose=0) 
-checkpoint =ModelCheckpoint(r"model\ConvAE-model-fft(new2).hdf5",save_best_only=True) 
+checkpoint =ModelCheckpoint(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft4.hdf5"%data_folder,save_best_only=True) 
 callback_list=[earlystopper,checkpoint]  
 # history=model.fit(input_fft_magnitude, output_fft_magnitude,epochs=100, batch_size=8,validation_split=0.2,callbacks=callback_list,shuffle=True) 
 history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_size=8,validation_split=0.2, callbacks=callback_list,shuffle=True)
@@ -223,7 +204,7 @@ history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_s
 
 K.clear_session()
 #model forecasting result
-model=load_model(r"model\ConvAE-model-fft(new2).hdf5", custom_objects={'custom_loss': custom_loss}) #把儲存好的最佳模式讀入
+model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-model-fft4.hdf5"%data_folder) #把儲存好的最佳模式讀入
 batch_size=8
 gc.collect()
 predicted_diff = np.squeeze((model.predict(compressed_log_input_fft_magnitude,batch_size=batch_size))) 
@@ -237,25 +218,45 @@ del predicted_fft_magnitude
 pred_data  = np.fft.ifft(predicted_output_fft, axis=1).real  # Take the real part after IFFT
 del predicted_output_fft
 
-#%% plot figure
-
-sample=500
-plt.figure()
-plt.plot(output_data[sample,:], label='output', color='blue')
-plt.plot(input_data[sample,:], label='input', color='red')
-plt.show()
-
-plt.figure()
-plt.plot(output_data[sample,:], label='output_data', color='blue')
-plt.plot(pred_data[sample,:], label='input_data', color='red')
-plt.show()
-
+#%%
 # plt.figure()
-# plt.plot(output_data[sample,:], label='output_data', color='blue')
-# plt.plot(new_pred_data[sample,:], label='input_data', color='red')
+# plt.semilogy(output_fft_magnitude[sample,:], label='output_fft', color='blue')
+# plt.semilogy(predicted_fft_magnitude[sample,:], label='input_fft', color='red')
 # plt.show()
 
+#%%
+np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-fft4.npy'%data_folder, pred_data)
 
 #%%
-np.save('dataset\%s\ConvAE\pred_data-new2.npy'%data_folder, pred_data)
 
+# Extract loss and val_loss from history
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+
+# Create the first figure for training loss
+plt.figure()
+plt.plot(loss, label='Training Loss', color='red')
+plt.title("Training Loss")
+plt.xlabel("Epochs")
+plt.ylabel("MSE")
+plt.legend(loc='upper right')
+
+# Save the first figure
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\training_loss-fft4.png'%data_folder)
+
+# Show the first plot (optional)
+plt.show()
+
+# Create the second figure for validation loss
+plt.figure()
+plt.plot(val_loss, label='Validation Loss', color='blue')
+plt.title("Validation Loss")
+plt.xlabel("Epochs")
+plt.ylabel("MSE")
+plt.legend(loc='upper right')
+
+# Save the second figure
+plt.savefig(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\figure\%s\ConvAE\validation_loss-fft4.png'%data_folder)
+
+# Show the second plot (optional)
+plt.show()

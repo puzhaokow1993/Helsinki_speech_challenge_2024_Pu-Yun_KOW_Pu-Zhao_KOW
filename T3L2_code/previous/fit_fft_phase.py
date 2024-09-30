@@ -7,7 +7,7 @@ Created on Sun Sep 15 16:19:18 2024
 
 import numpy as np
 
-data_folder='Task_2_Level_3'
+data_folder='Task_3_Level_2'
 input_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\unwrapped_input_fft_phase.npy'%data_folder)
 output_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\unwrapped_output_fft_phase.npy'%data_folder)
 
@@ -16,7 +16,7 @@ output_difference = output_data - input_data
 #%%
 from sklearn.decomposition import PCA
 # Reduce dimensionality to avoid memory issues
-pca = PCA(n_components=100)  # Adjust the number of components as needed
+pca = PCA(n_components=50)  # Adjust the number of components as needed
 X_reduced = pca.fit_transform(input_data)
 
 #%%
@@ -49,12 +49,12 @@ X_poly = poly_loaded.transform(X_reduced)
 pred_difference  = model_loaded.predict(X_poly)  # Make predictions
 pred_data = input_data + pred_difference
 
-np.save(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\pred_phase2.npy'%data_folder, pred_data)
+np.save(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\pred_phase.npy'%data_folder, pred_data)
 
 #%%
 import matplotlib.pyplot as plt
 
-sample = 321
+sample = 200
 
 
 plt.figure()

@@ -7,9 +7,10 @@ Created on Sun Sep  1 21:30:46 2024
 
 import numpy as np
 import os
-os.chdir(os.path.dirname(__file__))
+path=r"D:\important\Hensinki_Speech_Challenge_2024\my_project"
+os.chdir(path)
 
-data_folder='Task_1_Level_4'
+data_folder='Task_1_Level_7'
 # Load the data from the .npy file
 input_data = np.load(r'dataset\%s\new_input.npy'%data_folder)
 
@@ -47,7 +48,7 @@ def transform_function(x, L, c, power):
 
 # 假設 L 為 log_input_fft_magnitude 的長度，c 為常數
 L = log_input_fft_magnitude.shape[1]
-c = -1 # 根據具體情況設定
+c = -2 # 根據具體情況設定
 
 power = 2
 # 應用變換函數
@@ -76,7 +77,9 @@ def compression_function(x, c):
 
 c=0.85
 compressed_log_input_fft_magnitude = compression_function(transformed_log_input_fft_magnitude, c)
-diff = log_output_fft_magnitude - compressed_log_input_fft_magnitude
+
+#%%
+diff = log_output_fft_magnitude - log_input_fft_magnitude
 # del transformed_log_input_fft_magnitude
 
 
@@ -165,30 +168,6 @@ def ConvAE_model(input_shape):
     model.summary()
     return model 
 
-def DenseAE_model(input_shape):
-    # Input shape is (233472, 1)
-    inputs = Input(shape=(input_shape[1],))  # Flattened input (batch_size, steps)
-    x = Masking(mask_value=0.0)(inputs)
-    # Flatten the input
-    x = Lambda(lambda x: tf.reshape(x, (-1, input_shape[1])))(x)  # Flatten (batch_size, steps * features)
-
-    # Encoder
-    x = Dense(64, activation='linear')(x)
-    x = Dense(32, activation='linear')(x)
-    encoded = Dense(16, activation='linear')(x)
-    
-    # Decoder
-    x = Dense(32, activation='linear')(encoded)
-    x = Dense(64, activation='linear')(x)
-    decoded = Dense(input_shape[1], activation='linear')(x)  # Output shape should match input shape
-
-    # Reshape back to the original dimensions
-    decoded = Reshape((input_shape[1],))(decoded)
-
-    model = Model(inputs=inputs, outputs=decoded)
-    model.summary()
-    return model
-
 # Custom loss function that penalizes underestimations more than overestimations
 def custom_loss(y_true, y_pred):
     # Calculate the difference between true and predicted values
@@ -196,8 +175,8 @@ def custom_loss(y_true, y_pred):
 
     # Set different penalties for underestimations and overestimations
     # Underestimation occurs when (y_pred < y_true), i.e., difference > 0
-    underestimation_penalty = 2.0  # Larger penalty for underestimation
-    overestimation_penalty = 1.0   # Lower penalty for overestimation
+    underestimation_penalty = 2  # Larger penalty for underestimation
+    overestimation_penalty = 1   # Lower penalty for overestimation
 
     # Apply penalty based on whether the model is underestimating or overestimating
     loss = tf.where(difference > 0, underestimation_penalty * tf.square(difference), overestimation_penalty * tf.square(difference))
@@ -209,26 +188,26 @@ def custom_loss(y_true, y_pred):
 gc.collect()
 K.clear_session()
 
-model=ConvAE_model(compressed_log_input_fft_magnitude.shape)
-learning_rate=0.001 #設定學習速率
+model=ConvAE_model(log_input_fft_magnitude.shape)
+learning_rate=0.01 #設定學習速率
 adam = Adam(lr=learning_rate) 
 model.compile(optimizer=adam,loss=custom_loss) 
 earlystopper = EarlyStopping(monitor='val_loss', patience=20, verbose=0) 
-checkpoint =ModelCheckpoint(r"model\ConvAE-model-fft(new2).hdf5",save_best_only=True) 
+checkpoint =ModelCheckpoint(r"model\ConvAE-model-fft(new).hdf5",save_best_only=True) 
 callback_list=[earlystopper,checkpoint]  
 # history=model.fit(input_fft_magnitude, output_fft_magnitude,epochs=100, batch_size=8,validation_split=0.2,callbacks=callback_list,shuffle=True) 
-history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_size=8,validation_split=0.2, callbacks=callback_list,shuffle=True)
+history=model.fit(log_input_fft_magnitude, diff, epochs=100,  batch_size=8,validation_split=0.2, callbacks=callback_list,shuffle=True)
 
 #%%
 
 K.clear_session()
 #model forecasting result
-model=load_model(r"model\ConvAE-model-fft(new2).hdf5", custom_objects={'custom_loss': custom_loss}) #把儲存好的最佳模式讀入
+model=load_model(r"model\ConvAE-model-fft(new).hdf5", custom_objects={'custom_loss': custom_loss}) #把儲存好的最佳模式讀入
 batch_size=8
 gc.collect()
-predicted_diff = np.squeeze((model.predict(compressed_log_input_fft_magnitude,batch_size=batch_size))) 
-log_predicted_fft_magnitude = compressed_log_input_fft_magnitude + predicted_diff
-del compressed_log_input_fft_magnitude, predicted_diff
+predicted_diff = np.squeeze((model.predict(log_input_fft_magnitude,batch_size=batch_size))) 
+log_predicted_fft_magnitude = log_input_fft_magnitude + predicted_diff
+del log_input_fft_magnitude, predicted_diff
 predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude )
 del log_predicted_fft_magnitude
 predicted_output_fft = predicted_fft_magnitude * np.exp(1j * input_fft_phase)
@@ -239,15 +218,15 @@ del predicted_output_fft
 
 #%% plot figure
 
-sample=500
+sample=50
 plt.figure()
 plt.plot(output_data[sample,:], label='output', color='blue')
 plt.plot(input_data[sample,:], label='input', color='red')
 plt.show()
 
 plt.figure()
-plt.plot(output_data[sample,:], label='output_data', color='blue')
 plt.plot(pred_data[sample,:], label='input_data', color='red')
+plt.plot(output_data[sample,:], label='output_data', color='blue')
 plt.show()
 
 # plt.figure()
@@ -257,5 +236,5 @@ plt.show()
 
 
 #%%
-np.save('dataset\%s\ConvAE\pred_data-new2.npy'%data_folder, pred_data)
+np.save('dataset\%s\ConvAE\pred_data-new.npy'%data_folder, pred_data)
 

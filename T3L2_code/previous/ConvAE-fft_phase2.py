@@ -6,16 +6,11 @@ Created on Sun Sep  1 21:30:46 2024
 """
 
 import numpy as np
-import os
-os.chdir(os.path.dirname(__file__))
 
-data_folder='Task_1_Level_4'
-# Load the data from the .npy file
-input_data = np.load(r'dataset\%s\new_input.npy'%data_folder)
+data_folder='Task_3_Level_1'
 
-# Load the data from the .npy file
-output_data = np.load(r'dataset\%s\new_output.npy'%data_folder)
-zero_indices = [np.where(np.abs(input_data[i, :]) < 150)[0] for i in range(input_data.shape[0])]
+input_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_input.npy'%data_folder)
+output_data = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\new_output.npy'%data_folder)
 
 #%%
 import matplotlib.pyplot as plt
@@ -23,6 +18,9 @@ import matplotlib.pyplot as plt
 # Perform FFT along the second axis (23000-dimensional)
 input_fft = np.fft.fft(input_data, axis=1)
 output_fft = np.fft.fft(output_data, axis=1)
+output_phase=np.angle(output_fft)
+
+del input_data, output_data
 
 # Get the magnitude (absolute value) of the FFT
 input_fft_magnitude = np.abs(input_fft)
@@ -30,11 +28,7 @@ output_fft_magnitude = np.abs(output_fft)
 log_input_fft_magnitude = np.log10(input_fft_magnitude+1)
 log_output_fft_magnitude = np.log10(output_fft_magnitude+1)
 
-# log_fft_magnitude_diff = log_output_fft_magnitude - log_input_fft_magnitude
-
-input_fft_phase = np.angle(input_fft)
-
-# del input_data, output_data, input_fft, output_fft, input_fft_magnitude
+del input_fft_magnitude, output_fft_magnitude
 
 #%%
 import gc
@@ -48,13 +42,11 @@ def transform_function(x, L, c, power):
 # 假設 L 為 log_input_fft_magnitude 的長度，c 為常數
 L = log_input_fft_magnitude.shape[1]
 c = -1 # 根據具體情況設定
-
 power = 2
 # 應用變換函數
 
 transformed_log_input_fft_magnitude = transform_function(log_input_fft_magnitude, L, c, power)
-
-# del log_input_fft_magnitude
+del log_input_fft_magnitude
 
 #%%
 gc.collect()
@@ -76,47 +68,19 @@ def compression_function(x, c):
 
 c=0.85
 compressed_log_input_fft_magnitude = compression_function(transformed_log_input_fft_magnitude, c)
-diff = log_output_fft_magnitude - compressed_log_input_fft_magnitude
-# del transformed_log_input_fft_magnitude
-
-
-#%%
-sample = 10
-
-# Create the first figure for training loss
-plt.figure()
-plt.semilogy(output_fft_magnitude[sample,:], label='output_fft', color='blue')
-plt.semilogy(input_fft_magnitude[sample,:], label='input_fft', color='red')
-plt.show()
-
-plt.figure()
-plt.semilogy(log_output_fft_magnitude[sample,:], label='output_fft', color='blue')
-plt.semilogy(log_input_fft_magnitude[sample,:], label='input_fft', color='red')
-plt.show()
-
-plt.figure()
-plt.semilogy(log_output_fft_magnitude[sample,:], label='output_fft', color='blue')
-plt.semilogy(transformed_log_input_fft_magnitude[sample,:], label='input_fft', color='red')
-plt.show()
-
-plt.figure()
-plt.semilogy(log_output_fft_magnitude[sample,:], label='output_fft', color='blue')
-plt.semilogy(compressed_log_input_fft_magnitude[sample,:], label='input_fft', color='red')
-plt.show()
+del transformed_log_input_fft_magnitude
 
 #%%
 import tensorflow as tf
-from tensorflow.keras import regularizers
 from tensorflow.keras import Model
 from tensorflow.keras.layers import Input, BatchNormalization
 from tensorflow.keras.models import load_model
 from tensorflow.keras import backend as K
-from tensorflow.keras.layers import Dense,Conv1DTranspose,Conv1D,Flatten,Concatenate,Masking, Reshape, Lambda,Layer,MaxPooling1D,UpSampling1D
+from tensorflow.keras.layers import Dense,Conv1DTranspose,Conv1D,Masking, Reshape, Lambda
 
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.callbacks import ModelCheckpoint
 from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.regularizers import  l2
 
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
 print("Available GPUs:", physical_devices)
@@ -153,8 +117,6 @@ def ConvAE_model(input_shape):
     x = Conv1D(filters=16, kernel_size=4, activation='linear', padding='same')(x)
     
     # Decoder
-    # x = Conv1DTranspose(filters=16, kernel_size=4, activation='linear', padding='same')(x)
-    # x = BatchNormalization()(x)
     x = Conv1DTranspose(filters=32, kernel_size=8, activation='linear', padding='same')(x)
     x = BatchNormalization()(x)
     x = Conv1DTranspose(filters=64, kernel_size=8, activation='linear', padding='same')(x)
@@ -175,10 +137,6 @@ def DenseAE_model(input_shape):
     # Encoder
     x = Dense(64, activation='linear')(x)
     x = Dense(32, activation='linear')(x)
-    encoded = Dense(16, activation='linear')(x)
-    
-    # Decoder
-    x = Dense(32, activation='linear')(encoded)
     x = Dense(64, activation='linear')(x)
     decoded = Dense(input_shape[1], activation='linear')(x)  # Output shape should match input shape
 
@@ -189,73 +147,49 @@ def DenseAE_model(input_shape):
     model.summary()
     return model
 
-# Custom loss function that penalizes underestimations more than overestimations
-def custom_loss(y_true, y_pred):
-    # Calculate the difference between true and predicted values
-    difference = K.abs(y_true) - K.abs(y_pred)
-
-    # Set different penalties for underestimations and overestimations
-    # Underestimation occurs when (y_pred < y_true), i.e., difference > 0
-    underestimation_penalty = 2.0  # Larger penalty for underestimation
-    overestimation_penalty = 1.0   # Lower penalty for overestimation
-
-    # Apply penalty based on whether the model is underestimating or overestimating
-    loss = tf.where(difference > 0, underestimation_penalty * tf.square(difference), overestimation_penalty * tf.square(difference))
-
-    # Take the mean loss over the batch
-    return tf.reduce_mean(loss)
-
 #%%
 gc.collect()
 K.clear_session()
 
-model=ConvAE_model(compressed_log_input_fft_magnitude.shape)
-learning_rate=0.001 #設定學習速率
-adam = Adam(lr=learning_rate) 
-model.compile(optimizer=adam,loss=custom_loss) 
-earlystopper = EarlyStopping(monitor='val_loss', patience=20, verbose=0) 
-checkpoint =ModelCheckpoint(r"model\ConvAE-model-fft(new2).hdf5",save_best_only=True) 
-callback_list=[earlystopper,checkpoint]  
-# history=model.fit(input_fft_magnitude, output_fft_magnitude,epochs=100, batch_size=8,validation_split=0.2,callbacks=callback_list,shuffle=True) 
-history=model.fit(compressed_log_input_fft_magnitude, diff, epochs=100,  batch_size=8,validation_split=0.2, callbacks=callback_list,shuffle=True)
-
-#%%
-
-K.clear_session()
 #model forecasting result
-model=load_model(r"model\ConvAE-model-fft(new2).hdf5", custom_objects={'custom_loss': custom_loss}) #把儲存好的最佳模式讀入
+model=load_model(r"D:\important\Hensinki_Speech_Challenge_2024\my_project\model\%s\ConvAE-fft.hdf5"%data_folder) #fft model
 batch_size=8
 gc.collect()
+# predict magnitude
 predicted_diff = np.squeeze((model.predict(compressed_log_input_fft_magnitude,batch_size=batch_size))) 
 log_predicted_fft_magnitude = compressed_log_input_fft_magnitude + predicted_diff
 del compressed_log_input_fft_magnitude, predicted_diff
-predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude )
+predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)
 del log_predicted_fft_magnitude
-predicted_output_fft = predicted_fft_magnitude * np.exp(1j * input_fft_phase)
-del predicted_fft_magnitude 
+
+# predict phase
+predicted_phase = np.load(r'D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\pred_phase2.npy'%data_folder)
+# predicted_phase = np.arctan2(np.sin(predicted_phase), np.cos(predicted_phase))
+
+# multiply magtinude with the phase (real and imagenary parts)
+predicted_output_fft = predicted_fft_magnitude * np.exp(1j * predicted_phase)
+# del predicted_fft_magnitude, predicted_real, predicted_imag  
+
 # Perform inverse FFT to transform back to the time domain
 pred_data  = np.fft.ifft(predicted_output_fft, axis=1).real  # Take the real part after IFFT
 del predicted_output_fft
 
-#%% plot figure
-
-sample=500
-plt.figure()
-plt.plot(output_data[sample,:], label='output', color='blue')
-plt.plot(input_data[sample,:], label='input', color='red')
-plt.show()
-
-plt.figure()
-plt.plot(output_data[sample,:], label='output_data', color='blue')
-plt.plot(pred_data[sample,:], label='input_data', color='red')
-plt.show()
-
-# plt.figure()
-# plt.plot(output_data[sample,:], label='output_data', color='blue')
-# plt.plot(new_pred_data[sample,:], label='input_data', color='red')
-# plt.show()
-
+#%%
+np.save('D:\important\Hensinki_Speech_Challenge_2024\my_project\dataset\%s\ConvAE\pred_data-magnitude_phase2.npy'%data_folder, pred_data)
 
 #%%
-np.save('dataset\%s\ConvAE\pred_data-new2.npy'%data_folder, pred_data)
+sample = 1
 
+# plt.figure()
+# plt.plot(output_phase[sample,:], label='output_phase', color='blue')
+# plt.plot(predicted_phase[sample,:], label='predicted_phase', color='red')
+# plt.show()
+
+array1=output_phase[sample,:]
+array2=predicted_phase[sample,:]
+
+# Calculate the correlation coefficient
+correlation_matrix = np.corrcoef(array1, array2)
+
+# The correlation coefficient is the off-diagonal element
+correlation_coefficient = correlation_matrix[0, 1]
