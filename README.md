@@ -12,7 +12,7 @@ We use similar approach for all tasts and levels. We first transform both clean 
 
 # Installation instructions, including any requirements 
 
-In the spirit of open science, we include all the program in this resipotory. The folder `model`, folder `output_denoise` (containing folders `Task_1_Level_1` ... `Task_3_Level_2`) and the main program `main.py` must place in a same directory.  
+In the spirit of open science, we include all the program in this repository. The folder `model`, folder `output_denoise` (containing folders `Task_1_Level_1` ... `Task_3_Level_2`) and the main program `main.py` must place in a same directory.  
 
 - Python 3.8.19 is used for the main program `main.py` with requirements in `main_requirements.txt`; but 
 - Python 3.8.19 is used for the model training program (including `data_preprocessing.py`) with requirements in `training_requirements.txt`
@@ -33,7 +33,7 @@ Here xxxx can be either `T1L1`, `T1L2`, `T1L3`, `T1L4`, `T1L5`, `T1L6`, `T1L7`, 
 > The programs only handle 16-bit 16kHz audio files, in `.wav` format.
 
 > [!IMPORTANT]
-> One has to prepare empty folders as in the structure of the folder `output_denoise` before executing the main program `main.py`, the program unable create empty folder by itself. The structure of the folders are demonstrated as in the resipotory. One easy way is simply download the folder `model` and `output_denoise` in the resopotory and delete all the `.wav` files therein. 
+> One has to prepare empty folders as in the structure of the folder `output_denoise` before executing the main program `main.py`, the program unable create empty folder by itself. The structure of the folders are demonstrated as in the repository. One easy way is simply download the folder `model` and `output_denoise` in the resopotory and delete all the `.wav` files therein. 
 
 > [!IMPORTANT]
 > One has to change the background directory to the one which contained `main.py` (as well as the folders `model` and `output_denoise`) using the cmd command `cd` before executing the program. 
