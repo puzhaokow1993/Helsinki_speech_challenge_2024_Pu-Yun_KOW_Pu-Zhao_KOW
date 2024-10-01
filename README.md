@@ -23,7 +23,7 @@ In the spirit of open science, we include all the program in this repository. Th
 
 # Usage instructions 
 
-The main function `main.py` can be called (via Anaconda prompt) with format 
+The main program `main.py` can be called (via Anaconda prompt) with format 
 
 `python main.py --input_wav_dir "path/to/files" --task_ID "xxxx"`. 
 
@@ -42,7 +42,7 @@ Here xxxx can be either `T1L1`, `T1L2`, `T1L3`, `T1L4`, `T1L5`, `T1L6`, `T1L7`, 
 > (In case) If the program halt after importing `tensor flow` and `cuda`, press `enter` to continue, and the command promt will print the file names of the output denoised wav files.
 
 > [!NOTE]
-> The python script `data_preprocessing.py` is for the training only (which can be executed in the same environment with `evaluate.py`), which not required by `main.py`. 
+> The python script `data_preprocessing.py` is only for the training purpose (which required the same environment with `evaluate.py`), which not required by `main.py`. 
 
 # An illustration of some example results 
 
