@@ -39,7 +39,10 @@ Here xxxx can be either `T1L1`, `T1L2`, `T1L3`, `T1L4`, `T1L5`, `T1L6`, `T1L7`, 
 > One has to change the background directory to the one which contained `main.py` (as well as the folders `model` and `output_denoise`) using the cmd command `cd` before executing the program. 
 
 > [!NOTE] 
-> (In case) If the program halt after importing `tensor flow` and `cuda`, press `enter` to continue, and the command promt will print the file names of the output denoised wav files.  
+> (In case) If the program halt after importing `tensor flow` and `cuda`, press `enter` to continue, and the command promt will print the file names of the output denoised wav files.
+
+> [!NOTE]
+> The python script `data_preprocessing.py` is for the training only (which can be executed in the same environment with `evaluate.py`), which not required by `main.py`. 
 
 # An illustration of some example results 
 
