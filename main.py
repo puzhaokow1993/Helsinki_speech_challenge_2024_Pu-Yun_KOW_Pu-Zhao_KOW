@@ -144,7 +144,7 @@ def ConvAEfft(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len
         old_name = audio_filenames[i]
         new_name = old_name.replace('recorded', 'denoise')
         output_wav = os.path.join('output_denoise', task_level, new_name)
-        
+        print(new_name)
         # Convert predicted data to int16 format and save as wav file
         audio_int16 = pred_data[i].astype(np.int16)
         save_to_wav(audio_int16, sr, output_wav)
@@ -273,14 +273,9 @@ def ConvAEfft3(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_le
             del transformed_log_input_fft_magnitude
             log_predicted_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
             # Decompress and denormalize the predicted magnitude
-            predicted_fft_magnitude = fft_compressed_log_denorm(log_input_fft_magnitude, log_predicted_diff)
-        del log_predicted_diff
-        
-        log_predicted_fft_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
-        # Decompress and denormalize the predicted magnitude
-        log_predicted_fft_magnitude = log_input_fft_magnitude + log_predicted_fft_diff 
-        del log_input_fft_magnitude
-        predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)
+            log_predicted_fft_magnitude = fft_compressed_log_denorm(log_input_fft_magnitude, log_predicted_diff)   
+            predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)
+            
         predicted_output_fft = predicted_fft_magnitude * np.exp(1j * input_fft_phase)
             
         # Perform inverse FFT to return to the time domain
@@ -353,14 +348,10 @@ def ConvAEfft4(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_le
             del transformed_log_input_fft_magnitude
             log_predicted_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
             # Decompress and denormalize the predicted magnitude
-            predicted_fft_magnitude = fft_compressed_log_denorm(log_input_fft_magnitude, log_predicted_diff)
-        del log_predicted_diff
-        
-        log_predicted_fft_diff = np.squeeze(model.predict(log_input_fft_magnitude, batch_size=batch_size))
-        # Decompress and denormalize the predicted magnitude
-        log_predicted_fft_magnitude = log_input_fft_magnitude + log_predicted_fft_diff 
-        del log_input_fft_magnitude
-        predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)
+            log_predicted_fft_magnitude = fft_compressed_log_denorm(log_input_fft_magnitude, log_predicted_diff)
+            del log_predicted_diff
+            predicted_fft_magnitude = np.power(10, log_predicted_fft_magnitude)
+            
         predicted_output_fft = predicted_fft_magnitude * np.exp(1j * input_fft_phase)
             
         # Perform inverse FFT to return to the time domain
