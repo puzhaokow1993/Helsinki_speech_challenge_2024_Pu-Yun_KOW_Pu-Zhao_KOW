@@ -499,9 +499,9 @@ def sampling(audio_dir):
     return audio_int, audio_files
 
 def fill_zeros(raw_signal_list, max_len, index=0, lag=0):
-    processed_list = []
-    split_count_list = []
     try:
+        processed_list = []
+        split_count_list = []
         for signal in raw_signal_list:
             if index != 0:
                 if lag!=0:
@@ -530,6 +530,8 @@ def fill_zeros(raw_signal_list, max_len, index=0, lag=0):
                 # Record how many times the signal was split
                 split_count_list.append(num_splits)
     except:
+        processed_list = []
+        split_count_list = []
         signal = adjust_signal(raw_signal_list, lag)
         num_splits = int(np.ceil(len(signal) / max_len))
         if num_splits == 1:
