@@ -462,7 +462,7 @@ def fft_log_norm(input_int16_list,input_len,index=0,lag=0):
         input_fft_phase = np.angle(input_fft)
         return log_input_fft_magnitude,input_fft_phase, split_count
     else:
-        input_int16_array, split_count= np.array(fill_zeros(input_int16_list,input_len,1,lag))
+        input_int16_array, split_count= fill_zeros(input_int16_list,input_len,1,lag)
         try:
             input_fft = np.fft.fft(input_int16_array,axis=1)
         except:

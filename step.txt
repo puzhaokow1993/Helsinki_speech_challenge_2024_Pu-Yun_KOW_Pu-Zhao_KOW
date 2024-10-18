@@ -2,7 +2,7 @@ Step 1: conda create -n main python=3.8.19
 Step 2: conda activate main
 Step 3: pip install -r  D:\personal\Hensinki_Speech_Challenge_2024\main_requirements.txt
 Step 4: cd to the directory where main.py located at
-Step 5: Please ensure that the "outputs_denoise" directory is located in the same directory as model.py. Inside this directory, include several empty files to act as placeholders for future outputs. If the directory and files do not exist, create them (See github).
+Step 5: Please ensure that the "outputs_denoise" directory is located in the same directory as main.py. Inside this directory, include several empty files to act as placeholders for future outputs. If the directory and files do not exist, create them (See github).
 Step 6: Take task 1 level 1 as example, run the code below:
 python main.py --input_wav_dir "D:\personal\Hensinki_Speech_Challenge_2024\raw_dataset\Task_1_Level_1\Recorded" --task_ID "T1L1"
 
