@@ -451,8 +451,11 @@ def fft_compressed_log_denorm(compressed_log_input_fft_magnitude, predicted_diff
 
 def fft_log_norm(input_int16_list,input_len,index=0,lag=0):
     if index==0:
-        input_int16_array, split_count= np.array(fill_zeros(input_int16_list,input_len))
-        input_fft = np.fft.fft(input_int16_array,axis=1)
+        input_int16_array, split_count= fill_zeros(input_int16_list,input_len)
+        try:
+            input_fft = np.fft.fft(input_int16_array,axis=1)
+        except:
+            input_fft = np.fft.fft(input_int16_array)
         # Get the magnitude (absolute value) of the FFT
         input_fft_magnitude = np.abs(input_fft)
         log_input_fft_magnitude = np.log10(input_fft_magnitude+1)
@@ -460,7 +463,10 @@ def fft_log_norm(input_int16_list,input_len,index=0,lag=0):
         return log_input_fft_magnitude,input_fft_phase, split_count
     else:
         input_int16_array, split_count= np.array(fill_zeros(input_int16_list,input_len,1,lag))
-        input_fft = np.fft.fft(input_int16_array,axis=1)
+        try:
+            input_fft = np.fft.fft(input_int16_array,axis=1)
+        except:
+            input_fft = np.fft.fft(input_int16_array)
         # Get the magnitude (absolute value) of the FFT
         input_fft_magnitude = np.abs(input_fft)
         log_input_fft_magnitude = np.log10(input_fft_magnitude+1)
@@ -495,15 +501,37 @@ def sampling(audio_dir):
 def fill_zeros(raw_signal_list, max_len, index=0, lag=0):
     processed_list = []
     split_count_list = []
-
-    for signal in raw_signal_list:
-        if index != 0:
-            if lag!=0:
-                signal = adjust_signal(signal, lag)
-
-        # Determine how many parts to split the signal into
+    try:
+        for signal in raw_signal_list:
+            if index != 0:
+                if lag!=0:
+                    signal = adjust_signal(signal, lag)
+    
+            # Determine how many parts to split the signal into
+            num_splits = int(np.ceil(len(signal) / max_len))
+    
+            if num_splits == 1:
+                # If the signal is less than or equal to max_len, pad it with zeros
+                padded_signal = np.pad(signal, (0, max_len - len(signal)), 'constant')
+                processed_list.append(padded_signal)
+                split_count_list.append(1)  # Record that it wasn't split
+    
+            else:
+                # Split the signal into parts and pad each part separately
+                for i in range(num_splits):
+                    start_idx = i * max_len
+                    end_idx = start_idx + max_len
+                    part = signal[start_idx:end_idx]
+    
+                    # Pad the part with zeros to max_len
+                    padded_part = np.pad(part, (0, max_len - len(part)), 'constant')
+                    processed_list.append(padded_part)
+    
+                # Record how many times the signal was split
+                split_count_list.append(num_splits)
+    except:
+        signal = adjust_signal(raw_signal_list, lag)
         num_splits = int(np.ceil(len(signal) / max_len))
-
         if num_splits == 1:
             # If the signal is less than or equal to max_len, pad it with zeros
             padded_signal = np.pad(signal, (0, max_len - len(signal)), 'constant')
