@@ -16,6 +16,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras import backend as K
 import tensorflow as tf
 from scipy import stats
+import copy
 
 # os.chdir(os.path.dirname(__file__))
 
@@ -141,8 +142,10 @@ def ConvAEfft(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_len
     
     # Save the denoised audio back as wav files
     for i in range(len(audio_filenames)):
-        old_name = audio_filenames[i]
-        new_name = old_name.replace('recorded', 'denoise')
+        new_name = copy.deepcopy(audio_filenames[i])
+        if 'recorded' in new_name:
+            new_name = new_name.replace('recorded', 'denoise')
+
         output_wav = os.path.join('output_denoise', task_level, new_name)
         print(new_name)
         # Convert predicted data to int16 format and save as wav file
@@ -211,12 +214,13 @@ def ConvAEfft2(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_le
         
     # Save the denoised audio back as wav files
     for i in range(len(audio_filenames)):
-        old_name = audio_filenames[i]
-        new_name = old_name.replace('recorded', 'denoise')
-        print(new_name)
+        new_name = copy.deepcopy(audio_filenames[i])
+        if 'recorded' in new_name:
+            new_name = new_name.replace('recorded', 'denoise')
+
         output_wav = os.path.join('output_denoise', task_level, new_name)
-        
-        # Convert the predicted data to int16 format and save as a wav file
+        print(new_name)
+        # Convert predicted data to int16 format and save as wav file
         audio_int16 = pred_data[i].astype(np.int16)
         save_to_wav(audio_int16, sr, output_wav)
 
@@ -286,12 +290,13 @@ def ConvAEfft3(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_le
         
     # Save the denoised audio back as wav files
     for i in range(len(audio_filenames)):
-        old_name = audio_filenames[i]
-        new_name = old_name.replace('recorded', 'denoise')
-        print(new_name)
+        new_name = copy.deepcopy(audio_filenames[i])
+        if 'recorded' in new_name:
+            new_name = new_name.replace('recorded', 'denoise')
+
         output_wav = os.path.join('output_denoise', task_level, new_name)
-        
-        # Convert the predicted data to int16 format and save as a wav file
+        print(new_name)
+        # Convert predicted data to int16 format and save as wav file
         audio_int16 = pred_data[i].astype(np.int16)
         save_to_wav(audio_int16, sr, output_wav)
 
@@ -362,15 +367,16 @@ def ConvAEfft4(input_wav_dir, stage, task_level, task_ID, batch_size, sr, max_le
         
     # Save the denoised audio back as wav files
     for i in range(len(audio_filenames)):
-        old_name = audio_filenames[i]
-        new_name = old_name.replace('recorded', 'denoise')
-        print(new_name)
+        new_name = copy.deepcopy(audio_filenames[i])
+        if 'recorded' in new_name:
+            new_name = new_name.replace('recorded', 'denoise')
+
         output_wav = os.path.join('output_denoise', task_level, new_name)
-        
-        # Convert the predicted data to int16 format and save as a wav file
+        print(new_name)
+        # Convert predicted data to int16 format and save as wav file
         audio_int16 = pred_data[i].astype(np.int16)
         save_to_wav(audio_int16, sr, output_wav)
-
+        
     return pred_data
 
 def merge_signals(processed_list, split_count_list):
@@ -492,7 +498,7 @@ def sampling(audio_dir):
     audio_files = [f for f in os.listdir(audio_dir) if f.endswith('.wav')]
     
     audio_int=[]
-    for audio_file in sorted(audio_files):
+    for audio_file in audio_files:
         full_path = os.path.join(audio_dir, audio_file)
         audio_int.append(process(full_path))
     
