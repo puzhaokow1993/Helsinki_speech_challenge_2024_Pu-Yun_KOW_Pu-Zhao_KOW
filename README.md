@@ -6,7 +6,7 @@
 
 # Brief description of algorithms 
 
-This is an audio deconvolution program, which is specially designed for the [Helsinki Speech Challenge 2024](https://blogs.helsinki.fi/helsinki-speech-challenge/). In the spirit of open science, we also provide the codes which we used to train the models. 
+This is an audio deconvolution program, which is specially designed for the [Helsinki Speech Challenge 2024](https://blogs.helsinki.fi/helsinki-speech-challenge/), we published our methods in [arXiv:2501.01650](https://arxiv.org/abs/2501.01650). In the spirit of open science, we also provide the codes which we used to train the models. 
 
 We use similar approach for all tasts and levels. We first transform both clean and polluted data using [fast fourier transformc (FFT)](https://numpy.org/doc/stable/reference/routines.fft.html) in `numpy`. Consequently, we train the magnitude of the transformed data using the convolutional-based auto-encoder, and we **do not** train the phase (which is highly unstable, may easily led overfitting). We multiply the trained magnitude and the original phase, and the inverse FFT outputs the denoised data. We adjust loss function for each different level by implementing some penalty terms to adjust underestimation/overestimation. 
 
